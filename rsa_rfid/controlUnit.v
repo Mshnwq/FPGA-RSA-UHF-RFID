@@ -1,3 +1,4 @@
+`timescale 1 ps / 1 ps
 module controlUnit
 	(
 	input clk, reset, go,
@@ -49,7 +50,7 @@ module controlUnit
 				end
 			S1:
 				begin
-				
+					
 					if(~over) 
 					begin
 						running = 1;					

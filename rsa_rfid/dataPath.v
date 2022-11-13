@@ -1,5 +1,5 @@
 module dataPath
-	#(parameter WordSize = 8)
+	#(parameter WordSize = 32)
 	(  
 	input clk, reset,
 	
@@ -11,7 +11,8 @@ module dataPath
 	
 	// Controller I/O
 	input wire load, running,   // enablers
-	output wire over            // flags
+	output wire over,            // flags
+	input divide
 	);
 	
 	wire [WordSize-1:0]  inMux; // from input
@@ -20,7 +21,7 @@ module dataPath
 	wire [WordSize-1:0]  outMux; // to output
 	
 	wire [WordSize-1:0] ground; 
-	staticValue #(WordSize, 'hzzzz) outDefValue(ground);
+	staticValue outDefValue(ground);
 	
 	mux2to1 loadInpMux(ground, input_text, load, inMux);       // to get input from MUX
 	mux2to1 loadKeyMux(ground, key,        load, keyMux);      // to get input from MUX
@@ -33,7 +34,7 @@ module dataPath
 	.modulo(modMux),
 	.exponent(keyMux),
 	.clk(clk),
-	.reset(reset),
+	.reset(divide),
 	.finish(over),
 	.result(outMux)
 );

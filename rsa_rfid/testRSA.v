@@ -1,17 +1,18 @@
+`timescale 1 ps / 1 ps
 module testRSA;
 
 	//inputs
-	reg [7:0] input_text;
-	reg [7:0] key;
-	reg [7:0] mod;
-	reg go, reset, clk;
+	reg [31:0] input_text;
+	reg [31:0] key;
+	reg [31:0] mod;
+	reg go, reset, clk, divide;
 	
 	//outputs
 	wire done;
-	wire [7:0] output_text;
+	wire [31:0] output_text;
 	
 	//module to test
-	rsa_rfid RSA(clk, reset, go, input_text, key, mod, output_text, done);
+	rsa_rfid RSA(clk, reset, input_text, key, mod, output_text, go, done, divide);
 	
 	always
 		#5 clk = ~clk;
@@ -27,13 +28,19 @@ module testRSA;
 		@(posedge clk);
 		input_text = 5;
 		key        = 65537;
-		mod        = 36349
+		mod        = 36349;
 		
 		@(posedge clk);
 		go = 1;
+		divide = 1;
+		
+		@(posedge clk);
+		divide = 0;
 		
 		@(posedge clk);
 		go = 0;
+		
+		
 		
 		#100000; // let ir run for 10000 cycles
 		$stop;

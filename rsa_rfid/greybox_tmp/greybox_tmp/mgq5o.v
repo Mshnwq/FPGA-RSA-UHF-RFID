@@ -1,13 +1,13 @@
 //lpm_divide CBX_SINGLE_OUTPUT_FILE="ON" LPM_DREPRESENTATION="UNSIGNED" LPM_HINT="MAXIMIZE_SPEED=6,LPM_REMAINDERPOSITIVE=TRUE" LPM_NREPRESENTATION="UNSIGNED" LPM_PIPELINE=20 LPM_TYPE="LPM_DIVIDE" LPM_WIDTHD=64 LPM_WIDTHN=64 clock denom numer quotient remain
-//VERSION_BEGIN 21.1 cbx_mgl 2021:10:21:11:03:46:SJ cbx_stratixii 2021:10:21:11:03:22:SJ cbx_util_mgl 2021:10:21:11:03:22:SJ  VERSION_END
+//VERSION_BEGIN 18.0 cbx_mgl 2018:04:24:18:08:49:SJ cbx_stratixii 2018:04:24:18:04:18:SJ cbx_util_mgl 2018:04:24:18:04:18:SJ  VERSION_END
 // synthesis VERILOG_INPUT_VERSION VERILOG_2001
 // altera message_off 10463
 
 
 
-// Copyright (C) 2021  Intel Corporation. All rights reserved.
+// Copyright (C) 2018  Intel Corporation. All rights reserved.
 //  Your use of Intel Corporation's design tools, logic functions 
-//  and other software and tools, and any partner logic 
+//  and other software and tools, and its AMPP partner logic 
 //  functions, and any output files from any of the foregoing 
 //  (including device programming or simulation files), and any 
 //  associated documentation or information are expressly subject 
@@ -17,8 +17,7 @@
 //  agreement, including, without limitation, that your use is for
 //  the sole purpose of programming logic devices manufactured by
 //  Intel and sold by Intel or its authorized distributors.  Please
-//  refer to the applicable agreement for further details, at
-//  https://fpgasoftware.intel.com/eula.
+//  refer to the applicable agreement for further details.
 
 
 

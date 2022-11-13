@@ -1,0 +1,190 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Abdallah/Desktop/RSA/FPGA_RSA_UHF_RFID/rsa_rfid/simulation/modelsim
+vcontrolUnit
+Z1 !s110 1668371302
+!i10b 1
+!s100 9McO2n5M6d2Kz;GjKgzAH3
+I8R=ePHMgH>1d=6>D@:E_J1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1668367484
+8C:/Users/Abdallah/Desktop/RSA/FPGA_RSA_UHF_RFID/rsa_rfid/controlunit.v
+FC:/Users/Abdallah/Desktop/RSA/FPGA_RSA_UHF_RFID/rsa_rfid/controlunit.v
+L0 2
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1668371302.000000
+!s107 C:/Users/Abdallah/Desktop/RSA/FPGA_RSA_UHF_RFID/rsa_rfid/controlunit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Abdallah/Desktop/RSA/FPGA_RSA_UHF_RFID/rsa_rfid|C:/Users/Abdallah/Desktop/RSA/FPGA_RSA_UHF_RFID/rsa_rfid/controlunit.v|
+!i113 1
+Z5 o-vlog01compat -work work
+Z6 !s92 -vlog01compat -work work +incdir+C:/Users/Abdallah/Desktop/RSA/FPGA_RSA_UHF_RFID/rsa_rfid
+Z7 tCvgOpt 0
+ncontrol@unit
+vdataPath
+R1
+!i10b 1
+!s100 m1M;ezJMLekUFT@8SmCUd3
+IM6>cVae_NU@l65Fj6ePPL1
+R2
+R0
+w1668369856
+8C:/Users/Abdallah/Desktop/RSA/FPGA_RSA_UHF_RFID/rsa_rfid/datapath.v
+FC:/Users/Abdallah/Desktop/RSA/FPGA_RSA_UHF_RFID/rsa_rfid/datapath.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/Abdallah/Desktop/RSA/FPGA_RSA_UHF_RFID/rsa_rfid/datapath.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Abdallah/Desktop/RSA/FPGA_RSA_UHF_RFID/rsa_rfid|C:/Users/Abdallah/Desktop/RSA/FPGA_RSA_UHF_RFID/rsa_rfid/datapath.v|
+!i113 1
+R5
+R6
+R7
+ndata@path
+vdivider64
+R1
+!i10b 1
+!s100 _jRhV?GmIWMU[z1COmLUo3
+IabLWZ0KJTOgccPZ0B?GmE0
+R2
+R0
+w1668368815
+8C:/Users/Abdallah/Desktop/RSA/FPGA_RSA_UHF_RFID/rsa_rfid/divider64.v
+FC:/Users/Abdallah/Desktop/RSA/FPGA_RSA_UHF_RFID/rsa_rfid/divider64.v
+L0 39
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/Abdallah/Desktop/RSA/FPGA_RSA_UHF_RFID/rsa_rfid/divider64.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Abdallah/Desktop/RSA/FPGA_RSA_UHF_RFID/rsa_rfid|C:/Users/Abdallah/Desktop/RSA/FPGA_RSA_UHF_RFID/rsa_rfid/divider64.v|
+!i113 1
+R5
+R6
+R7
+vencrypt_decrypt
+R1
+!i10b 1
+!s100 m?oFmE9><k;DXMB:?UdJ82
+I@JTJTbA[hhJHQhzR3_EVc0
+R2
+R0
+w1668368862
+8C:/Users/Abdallah/Desktop/RSA/FPGA_RSA_UHF_RFID/rsa_rfid/encrypt_decrypt.v
+FC:/Users/Abdallah/Desktop/RSA/FPGA_RSA_UHF_RFID/rsa_rfid/encrypt_decrypt.v
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/Abdallah/Desktop/RSA/FPGA_RSA_UHF_RFID/rsa_rfid/encrypt_decrypt.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Abdallah/Desktop/RSA/FPGA_RSA_UHF_RFID/rsa_rfid|C:/Users/Abdallah/Desktop/RSA/FPGA_RSA_UHF_RFID/rsa_rfid/encrypt_decrypt.v|
+!i113 1
+R5
+R6
+R7
+vmux2to1
+R1
+!i10b 1
+!s100 LIYd;AYRH=_VCjWcLIfG_2
+IT5Xo>S<k5o1:`4;d6RHXB2
+R2
+R0
+Z8 w1668366232
+8C:/Users/Abdallah/Desktop/RSA/FPGA_RSA_UHF_RFID/rsa_rfid/mux2to1.v
+FC:/Users/Abdallah/Desktop/RSA/FPGA_RSA_UHF_RFID/rsa_rfid/mux2to1.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/Abdallah/Desktop/RSA/FPGA_RSA_UHF_RFID/rsa_rfid/mux2to1.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Abdallah/Desktop/RSA/FPGA_RSA_UHF_RFID/rsa_rfid|C:/Users/Abdallah/Desktop/RSA/FPGA_RSA_UHF_RFID/rsa_rfid/mux2to1.v|
+!i113 1
+R5
+R6
+R7
+vrsa_rfid
+R1
+!i10b 1
+!s100 HR[BH9_Ah7f7JFXB3VaLl0
+Icz^7a1?>m@ag@NYoPIe?k2
+R2
+R0
+w1668370109
+8C:/Users/Abdallah/Desktop/RSA/FPGA_RSA_UHF_RFID/rsa_rfid/rsa_rfid.v
+FC:/Users/Abdallah/Desktop/RSA/FPGA_RSA_UHF_RFID/rsa_rfid/rsa_rfid.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/Abdallah/Desktop/RSA/FPGA_RSA_UHF_RFID/rsa_rfid/rsa_rfid.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Abdallah/Desktop/RSA/FPGA_RSA_UHF_RFID/rsa_rfid|C:/Users/Abdallah/Desktop/RSA/FPGA_RSA_UHF_RFID/rsa_rfid/rsa_rfid.v|
+!i113 1
+R5
+R6
+R7
+vstaticValue
+R1
+!i10b 1
+!s100 N:G3@hWDnf[0@K1l;ae@N1
+I]X6X[;0H5=fi@]@@2=b183
+R2
+R0
+R8
+8C:/Users/Abdallah/Desktop/RSA/FPGA_RSA_UHF_RFID/rsa_rfid/staticvalue.v
+FC:/Users/Abdallah/Desktop/RSA/FPGA_RSA_UHF_RFID/rsa_rfid/staticvalue.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/Abdallah/Desktop/RSA/FPGA_RSA_UHF_RFID/rsa_rfid/staticvalue.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Abdallah/Desktop/RSA/FPGA_RSA_UHF_RFID/rsa_rfid|C:/Users/Abdallah/Desktop/RSA/FPGA_RSA_UHF_RFID/rsa_rfid/staticvalue.v|
+!i113 1
+R5
+R6
+R7
+nstatic@value
+vtestRSA
+R1
+!i10b 1
+!s100 DeLF3`E_>mbZiXZ^f@iAG0
+I>K6L:kc2S<4AY:=XUo:G;2
+R2
+R0
+w1668371291
+8C:/Users/Abdallah/Desktop/RSA/FPGA_RSA_UHF_RFID/rsa_rfid/testRSA.v
+FC:/Users/Abdallah/Desktop/RSA/FPGA_RSA_UHF_RFID/rsa_rfid/testRSA.v
+L0 2
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/Abdallah/Desktop/RSA/FPGA_RSA_UHF_RFID/rsa_rfid/testRSA.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Abdallah/Desktop/RSA/FPGA_RSA_UHF_RFID/rsa_rfid|C:/Users/Abdallah/Desktop/RSA/FPGA_RSA_UHF_RFID/rsa_rfid/testRSA.v|
+!i113 1
+R5
+R6
+R7
+ntest@r@s@a

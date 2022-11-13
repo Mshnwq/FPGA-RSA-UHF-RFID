@@ -1,5 +1,5 @@
 module mux2to1 
-	#(parameter bits = 8 )
+	#(parameter bits = 32)
 	(  
 	input [bits-1:0] inA, 
 	input [bits-1:0] inB, 

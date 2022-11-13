@@ -1,5 +1,5 @@
 module rsa_rfid
-	#(parameter WordSize = 8) 
+	#(parameter WordSize = 32) 
 	(  
 	// Top Level  I/O
 	input clk, reset,
@@ -13,12 +13,13 @@ module rsa_rfid
 	
 	// Controller I/O
 	input wire go,       // enablers
-	output wire done     // flags
+	output wire done,     // flags
+	input wire divide       // enablers
 	);
 	
 	wire load, running, over;
 	
-	dataPath DP(clk, reset, input_text, key, mod, output_text, load, running, over);
+	dataPath DP(clk, reset, input_text, key, mod, output_text, load, running, over, divide);
 	controlUnit CU(clk, reset, go, done, load, running, over);
 
 

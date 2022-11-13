@@ -1,7 +1,7 @@
 //module that performs encryption and decryption
 //modulo exponentiation is performed using the algorithm in Applied Cryptography by Bruce Schneier
 module encrypt_decrypt
-   #(parameter WORDSIZE = 8)
+   #(parameter WORDSIZE = 16)
 	(
 	input [WORDSIZE*2-1:0] base,
 	input [WORDSIZE*2-1:0] modulo,
