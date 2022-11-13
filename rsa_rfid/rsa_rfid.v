@@ -16,7 +16,7 @@ module rsa_rfid
 	output wire done     // flags
 	);
 	
-	wire load, running, done;
+	wire load, running, over;
 	
 	dataPath DP(clk, reset, input_text, key, mod, output_text, load, running, over);
 	controlUnit CU(clk, reset, go, done, load, running, over);

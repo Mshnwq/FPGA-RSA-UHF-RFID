@@ -22,13 +22,12 @@ module dataPath
 	wire [WordSize-1:0] ground; 
 	staticValue #(WordSize, 'hzzzz) outDefValue(ground);
 	
-	
 	mux2to1 loadInpMux(ground, input_text, load, inMux);       // to get input from MUX
 	mux2to1 loadKeyMux(ground, key,        load, keyMux);      // to get input from MUX
 	mux2to1 loadModMux(ground, mod,        load, modMux);      // to get input from MUX
 	mux2to1 loadOutMux(ground, outMux,     over, output_text); // to get output from MUX
 	
-endmodule 
+
 	encrypt_decrypt encrypt_decrypt_state_machine(
 	.base(inMux),
 	.modulo(modMux),

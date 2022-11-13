@@ -12,7 +12,7 @@ module encrypt_decrypt
 	output [WORDSIZE*2-1:0] result
 	);
 
-	localparam WORDSIZE = 8;
+	//localparam WORDSIZE = 8;
 	localparam DIVIDE_LATENCY = 5'd20;
 	//state definitions
 	localparam DIVIDING = 2'd1;

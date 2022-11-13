@@ -70,7 +70,7 @@ module divider64 (
 		LPM_DIVIDE_component.lpm_pipeline = 20,
 		LPM_DIVIDE_component.lpm_type = "LPM_DIVIDE",
 		LPM_DIVIDE_component.lpm_widthd = 64,
-		LPM_DIVIDE_component.lpm_widthn = 64;
+s		LPM_DIVIDE_component.lpm_widthn = 64;
 
 
 endmodule
