@@ -1,0 +1,15 @@
+module stringDivider
+	#(parameter bits = 8 )
+	(
+
+	reg[(8*10)-1:0]str;
+	
+	case (select)
+	str1="HelloWorld";
+	$display("str1= %s",str1);
+	
+	$display("str1= %s",str1[:40]);
+	)
+	endcase
+	
+endmodule 
