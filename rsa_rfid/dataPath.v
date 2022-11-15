@@ -11,8 +11,7 @@ module dataPath
 	
 	// Controller I/O
 	input wire load, running,   // enablers
-	output wire over,            // flags
-	input divide
+	output wire over            // flags
 	);
 	
 	wire [WordSize-1:0]  inMux; // from input
@@ -34,7 +33,7 @@ module dataPath
 	.modulo(modMux),
 	.exponent(keyMux),
 	.clk(clk),
-	.reset(divide),
+	.reset(load),
 	.finish(over),
 	.result(outMux)
 );

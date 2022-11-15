@@ -12,7 +12,7 @@ module testRSA;
 	wire [31:0] output_text;
 	
 	//module to test
-	rsa_rfid RSA(clk, reset, input_text, key, mod, output_text, go, done, divide);
+	rsa_rfid RSA(clk, reset, input_text, key, mod, output_text, go, done);
 	
 	always
 		#5 clk = ~clk;
@@ -32,17 +32,13 @@ module testRSA;
 		
 		@(posedge clk);
 		go = 1;
-		divide = 1;
-		
-		@(posedge clk);
-		divide = 0;
-		
+	
 		@(posedge clk);
 		go = 0;
 		
 		
 		
-		#100000; // let ir run for 10000 cycles
+		#10000; // let ir run for 10000 cycles
 		$stop;
 		
 		

@@ -1,9 +1,8 @@
 module counter (  input clk,               // Declare input port for clock to allow counter to count up
                   input rstn,              // Declare input port for reset to allow the counter to be reset to 0 when required
-						input load,
 						input count,
-						input  [2:0] current,
-                  output reg[2:0] out);    // Declare 4-bit output port to get the counter values
+						input  [1:0] current,
+                  output reg[1:0] out);    // Declare 4-bit output port to get the counter values
 
   // This always block will be triggered at the rising edge of clk (0->1)
   // Once inside this block, it checks if the reset is 0, if yes then change out to zero

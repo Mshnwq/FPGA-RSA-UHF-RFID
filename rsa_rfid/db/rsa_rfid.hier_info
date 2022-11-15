@@ -97,41 +97,40 @@ mod[28] => mod[28].IN1
 mod[29] => mod[29].IN1
 mod[30] => mod[30].IN1
 mod[31] => mod[31].IN1
-output_text[0] <= dataPath:DP.port5
-output_text[1] <= dataPath:DP.port5
-output_text[2] <= dataPath:DP.port5
-output_text[3] <= dataPath:DP.port5
-output_text[4] <= dataPath:DP.port5
-output_text[5] <= dataPath:DP.port5
-output_text[6] <= dataPath:DP.port5
-output_text[7] <= dataPath:DP.port5
-output_text[8] <= dataPath:DP.port5
-output_text[9] <= dataPath:DP.port5
-output_text[10] <= dataPath:DP.port5
-output_text[11] <= dataPath:DP.port5
-output_text[12] <= dataPath:DP.port5
-output_text[13] <= dataPath:DP.port5
-output_text[14] <= dataPath:DP.port5
-output_text[15] <= dataPath:DP.port5
-output_text[16] <= dataPath:DP.port5
-output_text[17] <= dataPath:DP.port5
-output_text[18] <= dataPath:DP.port5
-output_text[19] <= dataPath:DP.port5
-output_text[20] <= dataPath:DP.port5
-output_text[21] <= dataPath:DP.port5
-output_text[22] <= dataPath:DP.port5
-output_text[23] <= dataPath:DP.port5
-output_text[24] <= dataPath:DP.port5
-output_text[25] <= dataPath:DP.port5
-output_text[26] <= dataPath:DP.port5
-output_text[27] <= dataPath:DP.port5
-output_text[28] <= dataPath:DP.port5
-output_text[29] <= dataPath:DP.port5
-output_text[30] <= dataPath:DP.port5
-output_text[31] <= dataPath:DP.port5
+output_text[0] << dataPath:DP.port5
+output_text[1] << dataPath:DP.port5
+output_text[2] << dataPath:DP.port5
+output_text[3] << dataPath:DP.port5
+output_text[4] << dataPath:DP.port5
+output_text[5] << dataPath:DP.port5
+output_text[6] << dataPath:DP.port5
+output_text[7] << dataPath:DP.port5
+output_text[8] << dataPath:DP.port5
+output_text[9] << dataPath:DP.port5
+output_text[10] << dataPath:DP.port5
+output_text[11] << dataPath:DP.port5
+output_text[12] << dataPath:DP.port5
+output_text[13] << dataPath:DP.port5
+output_text[14] << dataPath:DP.port5
+output_text[15] << dataPath:DP.port5
+output_text[16] << dataPath:DP.port5
+output_text[17] << dataPath:DP.port5
+output_text[18] << dataPath:DP.port5
+output_text[19] << dataPath:DP.port5
+output_text[20] << dataPath:DP.port5
+output_text[21] << dataPath:DP.port5
+output_text[22] << dataPath:DP.port5
+output_text[23] << dataPath:DP.port5
+output_text[24] << dataPath:DP.port5
+output_text[25] << dataPath:DP.port5
+output_text[26] << dataPath:DP.port5
+output_text[27] << dataPath:DP.port5
+output_text[28] << dataPath:DP.port5
+output_text[29] << dataPath:DP.port5
+output_text[30] << dataPath:DP.port5
+output_text[31] << dataPath:DP.port5
 go => go.IN1
-done <= controlUnit:CU.port3
-divide => divide.IN1
+done << controlUnit:CU.port5
 
 
 |rsa_rfid|dataPath:DP
@@ -265,10 +264,9 @@ output_text[28] <= mux2to1:loadOutMux.port3
 output_text[29] <= mux2to1:loadOutMux.port3
 output_text[30] <= mux2to1:loadOutMux.port3
 output_text[31] <= mux2to1:loadOutMux.port3
-load => load.IN3
+load => load.IN4
 running => ~NO_FANOUT~
 over <= over.DB_MAX_OUTPUT_PORT_TYPE
-divide => divide.IN1
 
 
 |rsa_rfid|dataPath:DP|staticValue:outDefValue
@@ -7536,18 +7534,65 @@ result[1] <= sum_eqn[1].DB_MAX_OUTPUT_PORT_TYPE
 
 
 |rsa_rfid|controlUnit:CU
-clk => state~1.DATAIN
-reset => state~3.DATAIN
-go => Selector1.IN2
-go => load.DATAB
-go => Selector2.IN2
-go => Selector0.IN2
-done <= Selector3.DB_MAX_OUTPUT_PORT_TYPE
-load <= load.DB_MAX_OUTPUT_PORT_TYPE
-running <= Selector2.DB_MAX_OUTPUT_PORT_TYPE
-over => nextState.S2.DATAB
-over => Selector3.IN2
-over => Selector2.IN1
-over => Selector1.IN1
+clk => clk.IN2
+reset => reset.IN1
+go => _.IN1
+load <= ROM:rom0.port4
+running <= ROM:rom0.port5
+done <= ROM:rom0.port6
+over => _.IN1
+
+
+|rsa_rfid|controlUnit:CU|counter:counter0
+clk => out[0]~reg0.CLK
+clk => out[1]~reg0.CLK
+rstn => out.OUTPUTSELECT
+rstn => out.OUTPUTSELECT
+count => out.OUTPUTSELECT
+count => out.OUTPUTSELECT
+current[0] => out.DATAA
+current[1] => out.DATAA
+out[0] <= out[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= out[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|rsa_rfid|controlUnit:CU|ROM:rom0
+addr[0] => Mux0.IN5
+addr[0] => Mux1.IN5
+addr[0] => Mux2.IN5
+addr[0] => Mux3.IN5
+addr[0] => Mux4.IN5
+addr[0] => Mux5.IN5
+addr[1] => Mux0.IN4
+addr[1] => Mux1.IN4
+addr[1] => Mux2.IN4
+addr[1] => Mux3.IN4
+addr[1] => Mux4.IN4
+addr[1] => Mux5.IN4
+CS => Done~reg0.CLK
+CS => Running~reg0.CLK
+CS => Load~reg0.CLK
+CS => NST[0]~reg0.CLK
+CS => NST[1]~reg0.CLK
+CS => TEST[0]~reg0.CLK
+CS => TEST[1]~reg0.CLK
+TEST[0] <= TEST[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+TEST[1] <= TEST[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+NST[0] <= NST[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+NST[1] <= NST[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Load <= Load~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Running <= Running~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Done <= Done~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|rsa_rfid|controlUnit:CU|mux4to1:mux0
+a => out.DATAA
+b => out.DATAB
+c => out.DATAA
+d => out.DATAB
+sel[0] => out.OUTPUTSELECT
+sel[0] => out.OUTPUTSELECT
+sel[1] => out.OUTPUTSELECT
+out <= out.DB_MAX_OUTPUT_PORT_TYPE
 
 

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for rsa_rfid
-Sun Nov 13 23:08:41 2022
+Tue Nov 15 15:36:38 2022
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -15,46 +15,46 @@ Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
   7. Analysis & Synthesis Resource Utilization by Entity
   8. Analysis & Synthesis RAM Summary
   9. Analysis & Synthesis DSP Block Usage Summary
- 10. State Machine - |rsa_rfid|controlUnit:CU|state
- 11. State Machine - |rsa_rfid|dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|state
- 12. Registers Removed During Synthesis
- 13. Removed Registers Triggering Further Register Optimizations
- 14. General Register Statistics
- 15. Inverted Register Statistics
- 16. Registers Packed Into Inferred Megafunctions
- 17. Multiplexer Restructuring Statistics (Restructuring Performed)
- 18. Source assignments for dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|divider64:base_squared_mod_modulo|lpm_divide:LPM_DIVIDE_component|lpm_divide_cou:auto_generated|sign_div_unsign_8ai:divider|alt_u_div_r7f:divider
- 19. Source assignments for dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|divider64:result_mul_base_mod_modulo|lpm_divide:LPM_DIVIDE_component|lpm_divide_cou:auto_generated|sign_div_unsign_8ai:divider|alt_u_div_r7f:divider
- 20. Source assignments for dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|divider64:result_mul_base_mod_modulo|lpm_divide:LPM_DIVIDE_component|lpm_divide_cou:auto_generated|sign_div_unsign_8ai:divider|alt_u_div_r7f:divider|altshift_taps:DFFNumerator_rtl_0|shift_taps_c3o:auto_generated|altsyncram_to71:altsyncram2
- 21. Source assignments for dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|divider64:result_mul_base_mod_modulo|lpm_divide:LPM_DIVIDE_component|lpm_divide_cou:auto_generated|sign_div_unsign_8ai:divider|alt_u_div_r7f:divider|altshift_taps:DFFNumerator_rtl_1|shift_taps_d3o:auto_generated|altsyncram_vo71:altsyncram2
- 22. Source assignments for dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|divider64:result_mul_base_mod_modulo|lpm_divide:LPM_DIVIDE_component|lpm_divide_cou:auto_generated|sign_div_unsign_8ai:divider|alt_u_div_r7f:divider|altshift_taps:DFFNumerator_rtl_2|shift_taps_e3o:auto_generated|altsyncram_no71:altsyncram2
- 23. Source assignments for dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|divider64:result_mul_base_mod_modulo|lpm_divide:LPM_DIVIDE_component|lpm_divide_cou:auto_generated|sign_div_unsign_8ai:divider|alt_u_div_r7f:divider|altshift_taps:DFFNumerator_rtl_3|shift_taps_f3o:auto_generated|altsyncram_po71:altsyncram2
- 24. Source assignments for dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|divider64:result_mul_base_mod_modulo|lpm_divide:LPM_DIVIDE_component|lpm_divide_cou:auto_generated|sign_div_unsign_8ai:divider|alt_u_div_r7f:divider|altshift_taps:DFFNumerator_rtl_4|shift_taps_g3o:auto_generated|altsyncram_ko71:altsyncram2
- 25. Source assignments for dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|divider64:result_mul_base_mod_modulo|lpm_divide:LPM_DIVIDE_component|lpm_divide_cou:auto_generated|sign_div_unsign_8ai:divider|alt_u_div_r7f:divider|altshift_taps:DFFNumerator_rtl_5|shift_taps_h3o:auto_generated|altsyncram_io71:altsyncram2
- 26. Source assignments for dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|divider64:result_mul_base_mod_modulo|lpm_divide:LPM_DIVIDE_component|lpm_divide_cou:auto_generated|sign_div_unsign_8ai:divider|alt_u_div_r7f:divider|altshift_taps:DFFNumerator_rtl_6|shift_taps_03o:auto_generated|altsyncram_vl71:altsyncram2
- 27. Source assignments for dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|divider64:result_mul_base_mod_modulo|lpm_divide:LPM_DIVIDE_component|lpm_divide_cou:auto_generated|sign_div_unsign_8ai:divider|alt_u_div_r7f:divider|altshift_taps:DFFNumerator_rtl_7|shift_taps_s1o:auto_generated|altsyncram_ql71:altsyncram2
- 28. Parameter Settings for User Entity Instance: Top-level Entity: |rsa_rfid
- 29. Parameter Settings for User Entity Instance: dataPath:DP
- 30. Parameter Settings for User Entity Instance: dataPath:DP|staticValue:outDefValue
- 31. Parameter Settings for User Entity Instance: dataPath:DP|mux2to1:loadInpMux
- 32. Parameter Settings for User Entity Instance: dataPath:DP|mux2to1:loadKeyMux
- 33. Parameter Settings for User Entity Instance: dataPath:DP|mux2to1:loadModMux
- 34. Parameter Settings for User Entity Instance: dataPath:DP|mux2to1:loadOutMux
- 35. Parameter Settings for User Entity Instance: dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine
- 36. Parameter Settings for User Entity Instance: dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|divider64:base_squared_mod_modulo|lpm_divide:LPM_DIVIDE_component
- 37. Parameter Settings for User Entity Instance: dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|divider64:result_mul_base_mod_modulo|lpm_divide:LPM_DIVIDE_component
- 38. Parameter Settings for Inferred Entity Instance: dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|divider64:result_mul_base_mod_modulo|lpm_divide:LPM_DIVIDE_component|lpm_divide_cou:auto_generated|sign_div_unsign_8ai:divider|alt_u_div_r7f:divider|altshift_taps:DFFNumerator_rtl_0
- 39. Parameter Settings for Inferred Entity Instance: dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|divider64:result_mul_base_mod_modulo|lpm_divide:LPM_DIVIDE_component|lpm_divide_cou:auto_generated|sign_div_unsign_8ai:divider|alt_u_div_r7f:divider|altshift_taps:DFFNumerator_rtl_1
- 40. Parameter Settings for Inferred Entity Instance: dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|divider64:result_mul_base_mod_modulo|lpm_divide:LPM_DIVIDE_component|lpm_divide_cou:auto_generated|sign_div_unsign_8ai:divider|alt_u_div_r7f:divider|altshift_taps:DFFNumerator_rtl_2
- 41. Parameter Settings for Inferred Entity Instance: dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|divider64:result_mul_base_mod_modulo|lpm_divide:LPM_DIVIDE_component|lpm_divide_cou:auto_generated|sign_div_unsign_8ai:divider|alt_u_div_r7f:divider|altshift_taps:DFFNumerator_rtl_3
- 42. Parameter Settings for Inferred Entity Instance: dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|divider64:result_mul_base_mod_modulo|lpm_divide:LPM_DIVIDE_component|lpm_divide_cou:auto_generated|sign_div_unsign_8ai:divider|alt_u_div_r7f:divider|altshift_taps:DFFNumerator_rtl_4
- 43. Parameter Settings for Inferred Entity Instance: dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|divider64:result_mul_base_mod_modulo|lpm_divide:LPM_DIVIDE_component|lpm_divide_cou:auto_generated|sign_div_unsign_8ai:divider|alt_u_div_r7f:divider|altshift_taps:DFFNumerator_rtl_5
- 44. Parameter Settings for Inferred Entity Instance: dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|divider64:result_mul_base_mod_modulo|lpm_divide:LPM_DIVIDE_component|lpm_divide_cou:auto_generated|sign_div_unsign_8ai:divider|alt_u_div_r7f:divider|altshift_taps:DFFNumerator_rtl_6
- 45. Parameter Settings for Inferred Entity Instance: dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|divider64:result_mul_base_mod_modulo|lpm_divide:LPM_DIVIDE_component|lpm_divide_cou:auto_generated|sign_div_unsign_8ai:divider|alt_u_div_r7f:divider|altshift_taps:DFFNumerator_rtl_7
- 46. Parameter Settings for Inferred Entity Instance: dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|lpm_mult:Mult0
- 47. Parameter Settings for Inferred Entity Instance: dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|lpm_mult:Mult1
- 48. altshift_taps Parameter Settings by Entity Instance
- 49. lpm_mult Parameter Settings by Entity Instance
+ 10. State Machine - |rsa_rfid|dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|state
+ 11. Registers Removed During Synthesis
+ 12. Removed Registers Triggering Further Register Optimizations
+ 13. General Register Statistics
+ 14. Inverted Register Statistics
+ 15. Registers Packed Into Inferred Megafunctions
+ 16. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 17. Source assignments for dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|divider64:base_squared_mod_modulo|lpm_divide:LPM_DIVIDE_component|lpm_divide_cou:auto_generated|sign_div_unsign_8ai:divider|alt_u_div_r7f:divider
+ 18. Source assignments for dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|divider64:result_mul_base_mod_modulo|lpm_divide:LPM_DIVIDE_component|lpm_divide_cou:auto_generated|sign_div_unsign_8ai:divider|alt_u_div_r7f:divider
+ 19. Source assignments for dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|divider64:result_mul_base_mod_modulo|lpm_divide:LPM_DIVIDE_component|lpm_divide_cou:auto_generated|sign_div_unsign_8ai:divider|alt_u_div_r7f:divider|altshift_taps:DFFNumerator_rtl_0|shift_taps_c3o:auto_generated|altsyncram_to71:altsyncram2
+ 20. Source assignments for dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|divider64:result_mul_base_mod_modulo|lpm_divide:LPM_DIVIDE_component|lpm_divide_cou:auto_generated|sign_div_unsign_8ai:divider|alt_u_div_r7f:divider|altshift_taps:DFFNumerator_rtl_1|shift_taps_d3o:auto_generated|altsyncram_vo71:altsyncram2
+ 21. Source assignments for dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|divider64:result_mul_base_mod_modulo|lpm_divide:LPM_DIVIDE_component|lpm_divide_cou:auto_generated|sign_div_unsign_8ai:divider|alt_u_div_r7f:divider|altshift_taps:DFFNumerator_rtl_2|shift_taps_e3o:auto_generated|altsyncram_no71:altsyncram2
+ 22. Source assignments for dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|divider64:result_mul_base_mod_modulo|lpm_divide:LPM_DIVIDE_component|lpm_divide_cou:auto_generated|sign_div_unsign_8ai:divider|alt_u_div_r7f:divider|altshift_taps:DFFNumerator_rtl_3|shift_taps_f3o:auto_generated|altsyncram_po71:altsyncram2
+ 23. Source assignments for dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|divider64:result_mul_base_mod_modulo|lpm_divide:LPM_DIVIDE_component|lpm_divide_cou:auto_generated|sign_div_unsign_8ai:divider|alt_u_div_r7f:divider|altshift_taps:DFFNumerator_rtl_4|shift_taps_g3o:auto_generated|altsyncram_ko71:altsyncram2
+ 24. Source assignments for dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|divider64:result_mul_base_mod_modulo|lpm_divide:LPM_DIVIDE_component|lpm_divide_cou:auto_generated|sign_div_unsign_8ai:divider|alt_u_div_r7f:divider|altshift_taps:DFFNumerator_rtl_5|shift_taps_h3o:auto_generated|altsyncram_io71:altsyncram2
+ 25. Source assignments for dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|divider64:result_mul_base_mod_modulo|lpm_divide:LPM_DIVIDE_component|lpm_divide_cou:auto_generated|sign_div_unsign_8ai:divider|alt_u_div_r7f:divider|altshift_taps:DFFNumerator_rtl_6|shift_taps_03o:auto_generated|altsyncram_vl71:altsyncram2
+ 26. Source assignments for dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|divider64:result_mul_base_mod_modulo|lpm_divide:LPM_DIVIDE_component|lpm_divide_cou:auto_generated|sign_div_unsign_8ai:divider|alt_u_div_r7f:divider|altshift_taps:DFFNumerator_rtl_7|shift_taps_s1o:auto_generated|altsyncram_ql71:altsyncram2
+ 27. Parameter Settings for User Entity Instance: Top-level Entity: |rsa_rfid
+ 28. Parameter Settings for User Entity Instance: dataPath:DP
+ 29. Parameter Settings for User Entity Instance: dataPath:DP|staticValue:outDefValue
+ 30. Parameter Settings for User Entity Instance: dataPath:DP|mux2to1:loadInpMux
+ 31. Parameter Settings for User Entity Instance: dataPath:DP|mux2to1:loadKeyMux
+ 32. Parameter Settings for User Entity Instance: dataPath:DP|mux2to1:loadModMux
+ 33. Parameter Settings for User Entity Instance: dataPath:DP|mux2to1:loadOutMux
+ 34. Parameter Settings for User Entity Instance: dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine
+ 35. Parameter Settings for User Entity Instance: dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|divider64:base_squared_mod_modulo|lpm_divide:LPM_DIVIDE_component
+ 36. Parameter Settings for User Entity Instance: dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|divider64:result_mul_base_mod_modulo|lpm_divide:LPM_DIVIDE_component
+ 37. Parameter Settings for Inferred Entity Instance: dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|divider64:result_mul_base_mod_modulo|lpm_divide:LPM_DIVIDE_component|lpm_divide_cou:auto_generated|sign_div_unsign_8ai:divider|alt_u_div_r7f:divider|altshift_taps:DFFNumerator_rtl_0
+ 38. Parameter Settings for Inferred Entity Instance: dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|divider64:result_mul_base_mod_modulo|lpm_divide:LPM_DIVIDE_component|lpm_divide_cou:auto_generated|sign_div_unsign_8ai:divider|alt_u_div_r7f:divider|altshift_taps:DFFNumerator_rtl_1
+ 39. Parameter Settings for Inferred Entity Instance: dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|divider64:result_mul_base_mod_modulo|lpm_divide:LPM_DIVIDE_component|lpm_divide_cou:auto_generated|sign_div_unsign_8ai:divider|alt_u_div_r7f:divider|altshift_taps:DFFNumerator_rtl_2
+ 40. Parameter Settings for Inferred Entity Instance: dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|divider64:result_mul_base_mod_modulo|lpm_divide:LPM_DIVIDE_component|lpm_divide_cou:auto_generated|sign_div_unsign_8ai:divider|alt_u_div_r7f:divider|altshift_taps:DFFNumerator_rtl_3
+ 41. Parameter Settings for Inferred Entity Instance: dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|divider64:result_mul_base_mod_modulo|lpm_divide:LPM_DIVIDE_component|lpm_divide_cou:auto_generated|sign_div_unsign_8ai:divider|alt_u_div_r7f:divider|altshift_taps:DFFNumerator_rtl_4
+ 42. Parameter Settings for Inferred Entity Instance: dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|divider64:result_mul_base_mod_modulo|lpm_divide:LPM_DIVIDE_component|lpm_divide_cou:auto_generated|sign_div_unsign_8ai:divider|alt_u_div_r7f:divider|altshift_taps:DFFNumerator_rtl_5
+ 43. Parameter Settings for Inferred Entity Instance: dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|divider64:result_mul_base_mod_modulo|lpm_divide:LPM_DIVIDE_component|lpm_divide_cou:auto_generated|sign_div_unsign_8ai:divider|alt_u_div_r7f:divider|altshift_taps:DFFNumerator_rtl_6
+ 44. Parameter Settings for Inferred Entity Instance: dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|divider64:result_mul_base_mod_modulo|lpm_divide:LPM_DIVIDE_component|lpm_divide_cou:auto_generated|sign_div_unsign_8ai:divider|alt_u_div_r7f:divider|altshift_taps:DFFNumerator_rtl_7
+ 45. Parameter Settings for Inferred Entity Instance: dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|lpm_mult:Mult0
+ 46. Parameter Settings for Inferred Entity Instance: dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|lpm_mult:Mult1
+ 47. altshift_taps Parameter Settings by Entity Instance
+ 48. lpm_mult Parameter Settings by Entity Instance
+ 49. Port Connectivity Checks: "controlUnit:CU|mux4to1:mux0"
  50. Port Connectivity Checks: "dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|divider64:result_mul_base_mod_modulo"
  51. Port Connectivity Checks: "dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|divider64:base_squared_mod_modulo"
  52. Post-Synthesis Netlist Statistics for Top Partition
@@ -85,16 +85,16 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun Nov 13 23:08:41 2022       ;
+; Analysis & Synthesis Status        ; Successful - Tue Nov 15 15:36:38 2022       ;
 ; Quartus Prime Version              ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
 ; Revision Name                      ; rsa_rfid                                    ;
 ; Top-level Entity Name              ; rsa_rfid                                    ;
 ; Family                             ; MAX 10                                      ;
 ; Total logic elements               ; 3,065                                       ;
-;     Total combinational functions  ; 2,278                                       ;
-;     Dedicated logic registers      ; 1,670                                       ;
-; Total registers                    ; 1670                                        ;
-; Total pins                         ; 133                                         ;
+;     Total combinational functions  ; 2,244                                       ;
+;     Dedicated logic registers      ; 1,674                                       ;
+; Total registers                    ; 1674                                        ;
+; Total pins                         ; 132                                         ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 312                                         ;
 ; Embedded Multiplier 9-bit elements ; 12                                          ;
@@ -195,84 +195,85 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 20          ;
-; Maximum allowed            ; 12          ;
+; Number detected on machine ; 16          ;
+; Maximum allowed            ; 16          ;
 ;                            ;             ;
 ; Average used               ; 1.01        ;
-; Maximum used               ; 12          ;
+; Maximum used               ; 16          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
 ;     Processor 2            ;   0.1%      ;
 ;     Processor 3            ;   0.1%      ;
 ;     Processor 4            ;   0.1%      ;
-;     Processor 5            ;   0.1%      ;
+;     Processor 5            ;   0.0%      ;
 ;     Processor 6            ;   0.0%      ;
-;     Processor 7            ;   0.0%      ;
-;     Processor 8            ;   0.0%      ;
-;     Processors 9-12        ;   0.0%      ;
+;     Processors 7-16        ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                 ;
-+----------------------------------+-----------------+-----------------------------------+-------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                         ; File Name with Absolute Path                                                        ; Library ;
-+----------------------------------+-----------------+-----------------------------------+-------------------------------------------------------------------------------------+---------+
-; rsa_rfid.v                       ; yes             ; User Verilog HDL File             ; C:/Users/Abdallah/Desktop/RSA/FPGA_RSA_UHF_RFID/rsa_rfid/rsa_rfid.v                 ;         ;
-; mux2to1.v                        ; yes             ; User Verilog HDL File             ; C:/Users/Abdallah/Desktop/RSA/FPGA_RSA_UHF_RFID/rsa_rfid/mux2to1.v                  ;         ;
-; datapath.v                       ; yes             ; Auto-Found Verilog HDL File       ; C:/Users/Abdallah/Desktop/RSA/FPGA_RSA_UHF_RFID/rsa_rfid/datapath.v                 ;         ;
-; staticvalue.v                    ; yes             ; Auto-Found Verilog HDL File       ; C:/Users/Abdallah/Desktop/RSA/FPGA_RSA_UHF_RFID/rsa_rfid/staticvalue.v              ;         ;
-; encrypt_decrypt.v                ; yes             ; Auto-Found Verilog HDL File       ; C:/Users/Abdallah/Desktop/RSA/FPGA_RSA_UHF_RFID/rsa_rfid/encrypt_decrypt.v          ;         ;
-; divider64.v                      ; yes             ; Auto-Found Wizard-Generated File  ; C:/Users/Abdallah/Desktop/RSA/FPGA_RSA_UHF_RFID/rsa_rfid/divider64.v                ;         ;
-; lpm_divide.tdf                   ; yes             ; Megafunction                      ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/lpm_divide.tdf               ;         ;
-; abs_divider.inc                  ; yes             ; Megafunction                      ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/abs_divider.inc              ;         ;
-; sign_div_unsign.inc              ; yes             ; Megafunction                      ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/sign_div_unsign.inc          ;         ;
-; aglobal180.inc                   ; yes             ; Megafunction                      ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/aglobal180.inc               ;         ;
-; db/lpm_divide_cou.tdf            ; yes             ; Auto-Generated Megafunction       ; C:/Users/Abdallah/Desktop/RSA/FPGA_RSA_UHF_RFID/rsa_rfid/db/lpm_divide_cou.tdf      ;         ;
-; db/sign_div_unsign_8ai.tdf       ; yes             ; Auto-Generated Megafunction       ; C:/Users/Abdallah/Desktop/RSA/FPGA_RSA_UHF_RFID/rsa_rfid/db/sign_div_unsign_8ai.tdf ;         ;
-; db/alt_u_div_r7f.tdf             ; yes             ; Auto-Generated Megafunction       ; C:/Users/Abdallah/Desktop/RSA/FPGA_RSA_UHF_RFID/rsa_rfid/db/alt_u_div_r7f.tdf       ;         ;
-; db/add_sub_t3c.tdf               ; yes             ; Auto-Generated Megafunction       ; C:/Users/Abdallah/Desktop/RSA/FPGA_RSA_UHF_RFID/rsa_rfid/db/add_sub_t3c.tdf         ;         ;
-; db/add_sub_u3c.tdf               ; yes             ; Auto-Generated Megafunction       ; C:/Users/Abdallah/Desktop/RSA/FPGA_RSA_UHF_RFID/rsa_rfid/db/add_sub_u3c.tdf         ;         ;
-; controlunit.v                    ; yes             ; Auto-Found Verilog HDL File       ; C:/Users/Abdallah/Desktop/RSA/FPGA_RSA_UHF_RFID/rsa_rfid/controlunit.v              ;         ;
-; altshift_taps.tdf                ; yes             ; Megafunction                      ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/altshift_taps.tdf            ;         ;
-; altdpram.inc                     ; yes             ; Megafunction                      ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/altdpram.inc                 ;         ;
-; lpm_counter.inc                  ; yes             ; Megafunction                      ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/lpm_counter.inc              ;         ;
-; lpm_compare.inc                  ; yes             ; Megafunction                      ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/lpm_compare.inc              ;         ;
-; lpm_constant.inc                 ; yes             ; Megafunction                      ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/lpm_constant.inc             ;         ;
-; db/shift_taps_c3o.tdf            ; yes             ; Auto-Generated Megafunction       ; C:/Users/Abdallah/Desktop/RSA/FPGA_RSA_UHF_RFID/rsa_rfid/db/shift_taps_c3o.tdf      ;         ;
-; db/altsyncram_to71.tdf           ; yes             ; Auto-Generated Megafunction       ; C:/Users/Abdallah/Desktop/RSA/FPGA_RSA_UHF_RFID/rsa_rfid/db/altsyncram_to71.tdf     ;         ;
-; db/cntr_i5f.tdf                  ; yes             ; Auto-Generated Megafunction       ; C:/Users/Abdallah/Desktop/RSA/FPGA_RSA_UHF_RFID/rsa_rfid/db/cntr_i5f.tdf            ;         ;
-; db/shift_taps_d3o.tdf            ; yes             ; Auto-Generated Megafunction       ; C:/Users/Abdallah/Desktop/RSA/FPGA_RSA_UHF_RFID/rsa_rfid/db/shift_taps_d3o.tdf      ;         ;
-; db/altsyncram_vo71.tdf           ; yes             ; Auto-Generated Megafunction       ; C:/Users/Abdallah/Desktop/RSA/FPGA_RSA_UHF_RFID/rsa_rfid/db/altsyncram_vo71.tdf     ;         ;
-; db/cntr_h5f.tdf                  ; yes             ; Auto-Generated Megafunction       ; C:/Users/Abdallah/Desktop/RSA/FPGA_RSA_UHF_RFID/rsa_rfid/db/cntr_h5f.tdf            ;         ;
-; db/cmpr_grb.tdf                  ; yes             ; Auto-Generated Megafunction       ; C:/Users/Abdallah/Desktop/RSA/FPGA_RSA_UHF_RFID/rsa_rfid/db/cmpr_grb.tdf            ;         ;
-; db/shift_taps_e3o.tdf            ; yes             ; Auto-Generated Megafunction       ; C:/Users/Abdallah/Desktop/RSA/FPGA_RSA_UHF_RFID/rsa_rfid/db/shift_taps_e3o.tdf      ;         ;
-; db/altsyncram_no71.tdf           ; yes             ; Auto-Generated Megafunction       ; C:/Users/Abdallah/Desktop/RSA/FPGA_RSA_UHF_RFID/rsa_rfid/db/altsyncram_no71.tdf     ;         ;
-; db/cntr_g5f.tdf                  ; yes             ; Auto-Generated Megafunction       ; C:/Users/Abdallah/Desktop/RSA/FPGA_RSA_UHF_RFID/rsa_rfid/db/cntr_g5f.tdf            ;         ;
-; db/shift_taps_f3o.tdf            ; yes             ; Auto-Generated Megafunction       ; C:/Users/Abdallah/Desktop/RSA/FPGA_RSA_UHF_RFID/rsa_rfid/db/shift_taps_f3o.tdf      ;         ;
-; db/altsyncram_po71.tdf           ; yes             ; Auto-Generated Megafunction       ; C:/Users/Abdallah/Desktop/RSA/FPGA_RSA_UHF_RFID/rsa_rfid/db/altsyncram_po71.tdf     ;         ;
-; db/cntr_f5f.tdf                  ; yes             ; Auto-Generated Megafunction       ; C:/Users/Abdallah/Desktop/RSA/FPGA_RSA_UHF_RFID/rsa_rfid/db/cntr_f5f.tdf            ;         ;
-; db/shift_taps_g3o.tdf            ; yes             ; Auto-Generated Megafunction       ; C:/Users/Abdallah/Desktop/RSA/FPGA_RSA_UHF_RFID/rsa_rfid/db/shift_taps_g3o.tdf      ;         ;
-; db/altsyncram_ko71.tdf           ; yes             ; Auto-Generated Megafunction       ; C:/Users/Abdallah/Desktop/RSA/FPGA_RSA_UHF_RFID/rsa_rfid/db/altsyncram_ko71.tdf     ;         ;
-; db/cntr_d5f.tdf                  ; yes             ; Auto-Generated Megafunction       ; C:/Users/Abdallah/Desktop/RSA/FPGA_RSA_UHF_RFID/rsa_rfid/db/cntr_d5f.tdf            ;         ;
-; db/shift_taps_h3o.tdf            ; yes             ; Auto-Generated Megafunction       ; C:/Users/Abdallah/Desktop/RSA/FPGA_RSA_UHF_RFID/rsa_rfid/db/shift_taps_h3o.tdf      ;         ;
-; db/altsyncram_io71.tdf           ; yes             ; Auto-Generated Megafunction       ; C:/Users/Abdallah/Desktop/RSA/FPGA_RSA_UHF_RFID/rsa_rfid/db/altsyncram_io71.tdf     ;         ;
-; db/cntr_c5f.tdf                  ; yes             ; Auto-Generated Megafunction       ; C:/Users/Abdallah/Desktop/RSA/FPGA_RSA_UHF_RFID/rsa_rfid/db/cntr_c5f.tdf            ;         ;
-; db/shift_taps_03o.tdf            ; yes             ; Auto-Generated Megafunction       ; C:/Users/Abdallah/Desktop/RSA/FPGA_RSA_UHF_RFID/rsa_rfid/db/shift_taps_03o.tdf      ;         ;
-; db/altsyncram_vl71.tdf           ; yes             ; Auto-Generated Megafunction       ; C:/Users/Abdallah/Desktop/RSA/FPGA_RSA_UHF_RFID/rsa_rfid/db/altsyncram_vl71.tdf     ;         ;
-; db/cntr_24f.tdf                  ; yes             ; Auto-Generated Megafunction       ; C:/Users/Abdallah/Desktop/RSA/FPGA_RSA_UHF_RFID/rsa_rfid/db/cntr_24f.tdf            ;         ;
-; db/shift_taps_s1o.tdf            ; yes             ; Auto-Generated Megafunction       ; C:/Users/Abdallah/Desktop/RSA/FPGA_RSA_UHF_RFID/rsa_rfid/db/shift_taps_s1o.tdf      ;         ;
-; db/altsyncram_ql71.tdf           ; yes             ; Auto-Generated Megafunction       ; C:/Users/Abdallah/Desktop/RSA/FPGA_RSA_UHF_RFID/rsa_rfid/db/altsyncram_ql71.tdf     ;         ;
-; db/cntr_04f.tdf                  ; yes             ; Auto-Generated Megafunction       ; C:/Users/Abdallah/Desktop/RSA/FPGA_RSA_UHF_RFID/rsa_rfid/db/cntr_04f.tdf            ;         ;
-; db/cmpr_frb.tdf                  ; yes             ; Auto-Generated Megafunction       ; C:/Users/Abdallah/Desktop/RSA/FPGA_RSA_UHF_RFID/rsa_rfid/db/cmpr_frb.tdf            ;         ;
-; lpm_mult.tdf                     ; yes             ; Megafunction                      ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/lpm_mult.tdf                 ;         ;
-; lpm_add_sub.inc                  ; yes             ; Megafunction                      ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/lpm_add_sub.inc              ;         ;
-; multcore.inc                     ; yes             ; Megafunction                      ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/multcore.inc                 ;         ;
-; bypassff.inc                     ; yes             ; Megafunction                      ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/bypassff.inc                 ;         ;
-; altshift.inc                     ; yes             ; Megafunction                      ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/altshift.inc                 ;         ;
-; db/mult_uns.tdf                  ; yes             ; Auto-Generated Megafunction       ; C:/Users/Abdallah/Desktop/RSA/FPGA_RSA_UHF_RFID/rsa_rfid/db/mult_uns.tdf            ;         ;
-+----------------------------------+-----------------+-----------------------------------+-------------------------------------------------------------------------------------+---------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                    ;
++----------------------------------+-----------------+-----------------------------------+----------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                         ; File Name with Absolute Path                                                           ; Library ;
++----------------------------------+-----------------+-----------------------------------+----------------------------------------------------------------------------------------+---------+
+; rsa_rfid.v                       ; yes             ; User Verilog HDL File             ; C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/rsa_rfid.v                 ;         ;
+; mux2to1.v                        ; yes             ; User Verilog HDL File             ; C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/mux2to1.v                  ;         ;
+; datapath.v                       ; yes             ; Auto-Found Verilog HDL File       ; C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/datapath.v                 ;         ;
+; staticvalue.v                    ; yes             ; Auto-Found Verilog HDL File       ; C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/staticvalue.v              ;         ;
+; encrypt_decrypt.v                ; yes             ; Auto-Found Verilog HDL File       ; C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/encrypt_decrypt.v          ;         ;
+; divider64.v                      ; yes             ; Auto-Found Wizard-Generated File  ; C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/divider64.v                ;         ;
+; lpm_divide.tdf                   ; yes             ; Megafunction                      ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/lpm_divide.tdf                  ;         ;
+; abs_divider.inc                  ; yes             ; Megafunction                      ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/abs_divider.inc                 ;         ;
+; sign_div_unsign.inc              ; yes             ; Megafunction                      ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/sign_div_unsign.inc             ;         ;
+; aglobal180.inc                   ; yes             ; Megafunction                      ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/aglobal180.inc                  ;         ;
+; db/lpm_divide_cou.tdf            ; yes             ; Auto-Generated Megafunction       ; C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/db/lpm_divide_cou.tdf      ;         ;
+; db/sign_div_unsign_8ai.tdf       ; yes             ; Auto-Generated Megafunction       ; C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/db/sign_div_unsign_8ai.tdf ;         ;
+; db/alt_u_div_r7f.tdf             ; yes             ; Auto-Generated Megafunction       ; C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/db/alt_u_div_r7f.tdf       ;         ;
+; db/add_sub_t3c.tdf               ; yes             ; Auto-Generated Megafunction       ; C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/db/add_sub_t3c.tdf         ;         ;
+; db/add_sub_u3c.tdf               ; yes             ; Auto-Generated Megafunction       ; C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/db/add_sub_u3c.tdf         ;         ;
+; controlunit.v                    ; yes             ; Auto-Found Verilog HDL File       ; C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/controlunit.v              ;         ;
+; counter.v                        ; yes             ; Auto-Found Verilog HDL File       ; C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/counter.v                  ;         ;
+; rom.v                            ; yes             ; Auto-Found Verilog HDL File       ; C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/rom.v                      ;         ;
+; mux4to1.v                        ; yes             ; Auto-Found Verilog HDL File       ; C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/mux4to1.v                  ;         ;
+; altshift_taps.tdf                ; yes             ; Megafunction                      ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/altshift_taps.tdf               ;         ;
+; altdpram.inc                     ; yes             ; Megafunction                      ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/altdpram.inc                    ;         ;
+; lpm_counter.inc                  ; yes             ; Megafunction                      ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/lpm_counter.inc                 ;         ;
+; lpm_compare.inc                  ; yes             ; Megafunction                      ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/lpm_compare.inc                 ;         ;
+; lpm_constant.inc                 ; yes             ; Megafunction                      ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/lpm_constant.inc                ;         ;
+; db/shift_taps_c3o.tdf            ; yes             ; Auto-Generated Megafunction       ; C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/db/shift_taps_c3o.tdf      ;         ;
+; db/altsyncram_to71.tdf           ; yes             ; Auto-Generated Megafunction       ; C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/db/altsyncram_to71.tdf     ;         ;
+; db/cntr_i5f.tdf                  ; yes             ; Auto-Generated Megafunction       ; C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/db/cntr_i5f.tdf            ;         ;
+; db/shift_taps_d3o.tdf            ; yes             ; Auto-Generated Megafunction       ; C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/db/shift_taps_d3o.tdf      ;         ;
+; db/altsyncram_vo71.tdf           ; yes             ; Auto-Generated Megafunction       ; C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/db/altsyncram_vo71.tdf     ;         ;
+; db/cntr_h5f.tdf                  ; yes             ; Auto-Generated Megafunction       ; C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/db/cntr_h5f.tdf            ;         ;
+; db/cmpr_grb.tdf                  ; yes             ; Auto-Generated Megafunction       ; C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/db/cmpr_grb.tdf            ;         ;
+; db/shift_taps_e3o.tdf            ; yes             ; Auto-Generated Megafunction       ; C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/db/shift_taps_e3o.tdf      ;         ;
+; db/altsyncram_no71.tdf           ; yes             ; Auto-Generated Megafunction       ; C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/db/altsyncram_no71.tdf     ;         ;
+; db/cntr_g5f.tdf                  ; yes             ; Auto-Generated Megafunction       ; C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/db/cntr_g5f.tdf            ;         ;
+; db/shift_taps_f3o.tdf            ; yes             ; Auto-Generated Megafunction       ; C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/db/shift_taps_f3o.tdf      ;         ;
+; db/altsyncram_po71.tdf           ; yes             ; Auto-Generated Megafunction       ; C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/db/altsyncram_po71.tdf     ;         ;
+; db/cntr_f5f.tdf                  ; yes             ; Auto-Generated Megafunction       ; C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/db/cntr_f5f.tdf            ;         ;
+; db/shift_taps_g3o.tdf            ; yes             ; Auto-Generated Megafunction       ; C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/db/shift_taps_g3o.tdf      ;         ;
+; db/altsyncram_ko71.tdf           ; yes             ; Auto-Generated Megafunction       ; C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/db/altsyncram_ko71.tdf     ;         ;
+; db/cntr_d5f.tdf                  ; yes             ; Auto-Generated Megafunction       ; C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/db/cntr_d5f.tdf            ;         ;
+; db/shift_taps_h3o.tdf            ; yes             ; Auto-Generated Megafunction       ; C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/db/shift_taps_h3o.tdf      ;         ;
+; db/altsyncram_io71.tdf           ; yes             ; Auto-Generated Megafunction       ; C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/db/altsyncram_io71.tdf     ;         ;
+; db/cntr_c5f.tdf                  ; yes             ; Auto-Generated Megafunction       ; C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/db/cntr_c5f.tdf            ;         ;
+; db/shift_taps_03o.tdf            ; yes             ; Auto-Generated Megafunction       ; C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/db/shift_taps_03o.tdf      ;         ;
+; db/altsyncram_vl71.tdf           ; yes             ; Auto-Generated Megafunction       ; C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/db/altsyncram_vl71.tdf     ;         ;
+; db/cntr_24f.tdf                  ; yes             ; Auto-Generated Megafunction       ; C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/db/cntr_24f.tdf            ;         ;
+; db/shift_taps_s1o.tdf            ; yes             ; Auto-Generated Megafunction       ; C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/db/shift_taps_s1o.tdf      ;         ;
+; db/altsyncram_ql71.tdf           ; yes             ; Auto-Generated Megafunction       ; C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/db/altsyncram_ql71.tdf     ;         ;
+; db/cntr_04f.tdf                  ; yes             ; Auto-Generated Megafunction       ; C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/db/cntr_04f.tdf            ;         ;
+; db/cmpr_frb.tdf                  ; yes             ; Auto-Generated Megafunction       ; C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/db/cmpr_frb.tdf            ;         ;
+; lpm_mult.tdf                     ; yes             ; Megafunction                      ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/lpm_mult.tdf                    ;         ;
+; lpm_add_sub.inc                  ; yes             ; Megafunction                      ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/lpm_add_sub.inc                 ;         ;
+; multcore.inc                     ; yes             ; Megafunction                      ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/multcore.inc                    ;         ;
+; bypassff.inc                     ; yes             ; Megafunction                      ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/bypassff.inc                    ;         ;
+; altshift.inc                     ; yes             ; Megafunction                      ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/altshift.inc                    ;         ;
+; db/mult_uns.tdf                  ; yes             ; Auto-Generated Megafunction       ; C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/db/mult_uns.tdf            ;         ;
++----------------------------------+-----------------+-----------------------------------+----------------------------------------------------------------------------------------+---------+
 
 
 +---------------------------------------------------------+
@@ -282,29 +283,29 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+-----------+
 ; Estimated Total logic elements              ; 3,065     ;
 ;                                             ;           ;
-; Total combinational functions               ; 2278      ;
+; Total combinational functions               ; 2244      ;
 ; Logic element usage by number of LUT inputs ;           ;
-;     -- 4 input functions                    ; 389       ;
-;     -- 3 input functions                    ; 1663      ;
+;     -- 4 input functions                    ; 353       ;
+;     -- 3 input functions                    ; 1665      ;
 ;     -- <=2 input functions                  ; 226       ;
 ;                                             ;           ;
 ; Logic elements by mode                      ;           ;
-;     -- normal mode                          ; 1144      ;
+;     -- normal mode                          ; 1110      ;
 ;     -- arithmetic mode                      ; 1134      ;
 ;                                             ;           ;
-; Total registers                             ; 1670      ;
-;     -- Dedicated logic registers            ; 1670      ;
+; Total registers                             ; 1674      ;
+;     -- Dedicated logic registers            ; 1674      ;
 ;     -- I/O registers                        ; 0         ;
 ;                                             ;           ;
-; I/O pins                                    ; 133       ;
+; I/O pins                                    ; 132       ;
 ; Total memory bits                           ; 312       ;
 ;                                             ;           ;
 ; Embedded Multiplier 9-bit elements          ; 12        ;
 ;                                             ;           ;
 ; Maximum fan-out node                        ; clk~input ;
-; Maximum fan-out                             ; 1698      ;
-; Total fan-out                               ; 11680     ;
-; Average fan-out                             ; 2.75      ;
+; Maximum fan-out                             ; 1702      ;
+; Total fan-out                               ; 11484     ;
+; Average fan-out                             ; 2.72      ;
 +---------------------------------------------+-----------+
 
 
@@ -313,21 +314,24 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
 ; Compilation Hierarchy Node                                  ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                                                                                                                                                                                                                                                                                                   ; Entity Name         ; Library Name ;
 +-------------------------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
-; |rsa_rfid                                                   ; 2278 (1)            ; 1670 (0)                  ; 312         ; 0          ; 12           ; 0       ; 6         ; 133  ; 0            ; 0          ; |rsa_rfid                                                                                                                                                                                                                                                                                                             ; rsa_rfid            ; work         ;
-;    |controlUnit:CU|                                         ; 5 (5)               ; 3 (3)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |rsa_rfid|controlUnit:CU                                                                                                                                                                                                                                                                                              ; controlUnit         ; work         ;
-;    |dataPath:DP|                                            ; 2272 (0)            ; 1667 (0)                  ; 312         ; 0          ; 12           ; 0       ; 6         ; 0    ; 0            ; 0          ; |rsa_rfid|dataPath:DP                                                                                                                                                                                                                                                                                                 ; dataPath            ; work         ;
-;       |encrypt_decrypt:encrypt_decrypt_state_machine|       ; 2208 (122)          ; 1667 (136)                ; 312         ; 0          ; 12           ; 0       ; 6         ; 0    ; 0            ; 0          ; |rsa_rfid|dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine                                                                                                                                                                                                                                                   ; encrypt_decrypt     ; work         ;
-;          |divider64:base_squared_mod_modulo|                ; 1020 (0)            ; 743 (0)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |rsa_rfid|dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|divider64:base_squared_mod_modulo                                                                                                                                                                                                                 ; divider64           ; work         ;
-;             |lpm_divide:LPM_DIVIDE_component|               ; 1020 (0)            ; 743 (0)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |rsa_rfid|dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|divider64:base_squared_mod_modulo|lpm_divide:LPM_DIVIDE_component                                                                                                                                                                                 ; lpm_divide          ; work         ;
-;                |lpm_divide_cou:auto_generated|              ; 1020 (0)            ; 743 (0)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |rsa_rfid|dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|divider64:base_squared_mod_modulo|lpm_divide:LPM_DIVIDE_component|lpm_divide_cou:auto_generated                                                                                                                                                   ; lpm_divide_cou      ; work         ;
-;                   |sign_div_unsign_8ai:divider|             ; 1020 (0)            ; 743 (0)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |rsa_rfid|dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|divider64:base_squared_mod_modulo|lpm_divide:LPM_DIVIDE_component|lpm_divide_cou:auto_generated|sign_div_unsign_8ai:divider                                                                                                                       ; sign_div_unsign_8ai ; work         ;
-;                      |alt_u_div_r7f:divider|                ; 1020 (1018)         ; 743 (743)                 ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |rsa_rfid|dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|divider64:base_squared_mod_modulo|lpm_divide:LPM_DIVIDE_component|lpm_divide_cou:auto_generated|sign_div_unsign_8ai:divider|alt_u_div_r7f:divider                                                                                                 ; alt_u_div_r7f       ; work         ;
+; |rsa_rfid                                                   ; 2244 (1)            ; 1674 (0)                  ; 312         ; 0          ; 12           ; 0       ; 6         ; 132  ; 0            ; 0          ; |rsa_rfid                                                                                                                                                                                                                                                                                                             ; rsa_rfid            ; work         ;
+;    |controlUnit:CU|                                         ; 6 (0)               ; 7 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |rsa_rfid|controlUnit:CU                                                                                                                                                                                                                                                                                              ; controlUnit         ; work         ;
+;       |ROM:rom0|                                            ; 2 (2)               ; 5 (5)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |rsa_rfid|controlUnit:CU|ROM:rom0                                                                                                                                                                                                                                                                                     ; ROM                 ; work         ;
+;       |counter:counter0|                                    ; 3 (3)               ; 2 (2)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |rsa_rfid|controlUnit:CU|counter:counter0                                                                                                                                                                                                                                                                             ; counter             ; work         ;
+;       |mux4to1:mux0|                                        ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |rsa_rfid|controlUnit:CU|mux4to1:mux0                                                                                                                                                                                                                                                                                 ; mux4to1             ; work         ;
+;    |dataPath:DP|                                            ; 2237 (0)            ; 1667 (0)                  ; 312         ; 0          ; 12           ; 0       ; 6         ; 0    ; 0            ; 0          ; |rsa_rfid|dataPath:DP                                                                                                                                                                                                                                                                                                 ; dataPath            ; work         ;
+;       |encrypt_decrypt:encrypt_decrypt_state_machine|       ; 2205 (121)          ; 1667 (136)                ; 312         ; 0          ; 12           ; 0       ; 6         ; 0    ; 0            ; 0          ; |rsa_rfid|dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine                                                                                                                                                                                                                                                   ; encrypt_decrypt     ; work         ;
+;          |divider64:base_squared_mod_modulo|                ; 1016 (0)            ; 743 (0)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |rsa_rfid|dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|divider64:base_squared_mod_modulo                                                                                                                                                                                                                 ; divider64           ; work         ;
+;             |lpm_divide:LPM_DIVIDE_component|               ; 1016 (0)            ; 743 (0)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |rsa_rfid|dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|divider64:base_squared_mod_modulo|lpm_divide:LPM_DIVIDE_component                                                                                                                                                                                 ; lpm_divide          ; work         ;
+;                |lpm_divide_cou:auto_generated|              ; 1016 (0)            ; 743 (0)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |rsa_rfid|dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|divider64:base_squared_mod_modulo|lpm_divide:LPM_DIVIDE_component|lpm_divide_cou:auto_generated                                                                                                                                                   ; lpm_divide_cou      ; work         ;
+;                   |sign_div_unsign_8ai:divider|             ; 1016 (0)            ; 743 (0)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |rsa_rfid|dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|divider64:base_squared_mod_modulo|lpm_divide:LPM_DIVIDE_component|lpm_divide_cou:auto_generated|sign_div_unsign_8ai:divider                                                                                                                       ; sign_div_unsign_8ai ; work         ;
+;                      |alt_u_div_r7f:divider|                ; 1016 (1014)         ; 743 (743)                 ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |rsa_rfid|dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|divider64:base_squared_mod_modulo|lpm_divide:LPM_DIVIDE_component|lpm_divide_cou:auto_generated|sign_div_unsign_8ai:divider|alt_u_div_r7f:divider                                                                                                 ; alt_u_div_r7f       ; work         ;
 ;                         |add_sub_u3c:add_sub_1|             ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |rsa_rfid|dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|divider64:base_squared_mod_modulo|lpm_divide:LPM_DIVIDE_component|lpm_divide_cou:auto_generated|sign_div_unsign_8ai:divider|alt_u_div_r7f:divider|add_sub_u3c:add_sub_1                                                                           ; add_sub_u3c         ; work         ;
-;          |divider64:result_mul_base_mod_modulo|             ; 1010 (0)            ; 788 (0)                   ; 312         ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |rsa_rfid|dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|divider64:result_mul_base_mod_modulo                                                                                                                                                                                                              ; divider64           ; work         ;
-;             |lpm_divide:LPM_DIVIDE_component|               ; 1010 (0)            ; 788 (0)                   ; 312         ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |rsa_rfid|dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|divider64:result_mul_base_mod_modulo|lpm_divide:LPM_DIVIDE_component                                                                                                                                                                              ; lpm_divide          ; work         ;
-;                |lpm_divide_cou:auto_generated|              ; 1010 (0)            ; 788 (0)                   ; 312         ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |rsa_rfid|dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|divider64:result_mul_base_mod_modulo|lpm_divide:LPM_DIVIDE_component|lpm_divide_cou:auto_generated                                                                                                                                                ; lpm_divide_cou      ; work         ;
-;                   |sign_div_unsign_8ai:divider|             ; 1010 (0)            ; 788 (0)                   ; 312         ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |rsa_rfid|dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|divider64:result_mul_base_mod_modulo|lpm_divide:LPM_DIVIDE_component|lpm_divide_cou:auto_generated|sign_div_unsign_8ai:divider                                                                                                                    ; sign_div_unsign_8ai ; work         ;
-;                      |alt_u_div_r7f:divider|                ; 1010 (943)          ; 788 (758)                 ; 312         ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |rsa_rfid|dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|divider64:result_mul_base_mod_modulo|lpm_divide:LPM_DIVIDE_component|lpm_divide_cou:auto_generated|sign_div_unsign_8ai:divider|alt_u_div_r7f:divider                                                                                              ; alt_u_div_r7f       ; work         ;
+;          |divider64:result_mul_base_mod_modulo|             ; 1012 (0)            ; 788 (0)                   ; 312         ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |rsa_rfid|dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|divider64:result_mul_base_mod_modulo                                                                                                                                                                                                              ; divider64           ; work         ;
+;             |lpm_divide:LPM_DIVIDE_component|               ; 1012 (0)            ; 788 (0)                   ; 312         ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |rsa_rfid|dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|divider64:result_mul_base_mod_modulo|lpm_divide:LPM_DIVIDE_component                                                                                                                                                                              ; lpm_divide          ; work         ;
+;                |lpm_divide_cou:auto_generated|              ; 1012 (0)            ; 788 (0)                   ; 312         ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |rsa_rfid|dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|divider64:result_mul_base_mod_modulo|lpm_divide:LPM_DIVIDE_component|lpm_divide_cou:auto_generated                                                                                                                                                ; lpm_divide_cou      ; work         ;
+;                   |sign_div_unsign_8ai:divider|             ; 1012 (0)            ; 788 (0)                   ; 312         ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |rsa_rfid|dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|divider64:result_mul_base_mod_modulo|lpm_divide:LPM_DIVIDE_component|lpm_divide_cou:auto_generated|sign_div_unsign_8ai:divider                                                                                                                    ; sign_div_unsign_8ai ; work         ;
+;                      |alt_u_div_r7f:divider|                ; 1012 (945)          ; 788 (758)                 ; 312         ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |rsa_rfid|dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|divider64:result_mul_base_mod_modulo|lpm_divide:LPM_DIVIDE_component|lpm_divide_cou:auto_generated|sign_div_unsign_8ai:divider|alt_u_div_r7f:divider                                                                                              ; alt_u_div_r7f       ; work         ;
 ;                         |add_sub_u3c:add_sub_1|             ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |rsa_rfid|dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|divider64:result_mul_base_mod_modulo|lpm_divide:LPM_DIVIDE_component|lpm_divide_cou:auto_generated|sign_div_unsign_8ai:divider|alt_u_div_r7f:divider|add_sub_u3c:add_sub_1                                                                        ; add_sub_u3c         ; work         ;
 ;                         |altshift_taps:DFFNumerator_rtl_0|  ; 4 (0)               ; 4 (0)                     ; 32          ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |rsa_rfid|dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|divider64:result_mul_base_mod_modulo|lpm_divide:LPM_DIVIDE_component|lpm_divide_cou:auto_generated|sign_div_unsign_8ai:divider|alt_u_div_r7f:divider|altshift_taps:DFFNumerator_rtl_0                                                             ; altshift_taps       ; work         ;
 ;                            |shift_taps_c3o:auto_generated|  ; 4 (0)               ; 4 (0)                     ; 32          ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |rsa_rfid|dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|divider64:result_mul_base_mod_modulo|lpm_divide:LPM_DIVIDE_component|lpm_divide_cou:auto_generated|sign_div_unsign_8ai:divider|alt_u_div_r7f:divider|altshift_taps:DFFNumerator_rtl_0|shift_taps_c3o:auto_generated                               ; shift_taps_c3o      ; work         ;
@@ -370,7 +374,6 @@ refer to the applicable agreement for further details.
 ;             |mult_uns:auto_generated|                       ; 28 (28)             ; 0 (0)                     ; 0           ; 0          ; 6            ; 0       ; 3         ; 0    ; 0            ; 0          ; |rsa_rfid|dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|lpm_mult:Mult0|mult_uns:auto_generated                                                                                                                                                                                                            ; mult_uns            ; work         ;
 ;          |lpm_mult:Mult1|                                   ; 28 (0)              ; 0 (0)                     ; 0           ; 0          ; 6            ; 0       ; 3         ; 0    ; 0            ; 0          ; |rsa_rfid|dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|lpm_mult:Mult1                                                                                                                                                                                                                                    ; lpm_mult            ; work         ;
 ;             |mult_uns:auto_generated|                       ; 28 (28)             ; 0 (0)                     ; 0           ; 0          ; 6            ; 0       ; 3         ; 0    ; 0            ; 0          ; |rsa_rfid|dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|lpm_mult:Mult1|mult_uns:auto_generated                                                                                                                                                                                                            ; mult_uns            ; work         ;
-;       |mux2to1:loadModMux|                                  ; 32 (32)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |rsa_rfid|dataPath:DP|mux2to1:loadModMux                                                                                                                                                                                                                                                                              ; mux2to1             ; work         ;
 ;       |mux2to1:loadOutMux|                                  ; 32 (32)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |rsa_rfid|dataPath:DP|mux2to1:loadOutMux                                                                                                                                                                                                                                                                              ; mux2to1             ; work         ;
 +-------------------------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
@@ -411,18 +414,6 @@ Note: number of Embedded Multiplier Blocks used is only available after a succes
 
 
 Encoding Type:  One-Hot
-+------------------------------------------------+
-; State Machine - |rsa_rfid|controlUnit:CU|state ;
-+----------+----------+----------+---------------+
-; Name     ; state.S0 ; state.S2 ; state.S1      ;
-+----------+----------+----------+---------------+
-; state.S0 ; 0        ; 0        ; 0             ;
-; state.S1 ; 1        ; 0        ; 1             ;
-; state.S2 ; 1        ; 1        ; 0             ;
-+----------+----------+----------+---------------+
-
-
-Encoding Type:  One-Hot
 +-------------------------------------------------------------------------------------------+
 ; State Machine - |rsa_rfid|dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|state ;
 +----------------+------------+----------------+--------------------------------------------+
@@ -439,6 +430,7 @@ Encoding Type:  One-Hot
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Register name                                                                                                                                                                                                                                                                                    ; Reason for Removal                                                                                                                                                                                                                             ;
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; controlUnit:CU|ROM:rom0|NST[0]                                                                                                                                                                                                                                                                   ; Stuck at GND due to stuck port data_in                                                                                                                                                                                                         ;
 ; dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|divider64:base_squared_mod_modulo|lpm_divide:LPM_DIVIDE_component|lpm_divide_cou:auto_generated|sign_div_unsign_8ai:divider|alt_u_div_r7f:divider|DFFDenominator[31]                                                                   ; Merged with dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|divider64:result_mul_base_mod_modulo|lpm_divide:LPM_DIVIDE_component|lpm_divide_cou:auto_generated|sign_div_unsign_8ai:divider|alt_u_div_r7f:divider|DFFDenominator[31]  ;
 ; dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|divider64:base_squared_mod_modulo|lpm_divide:LPM_DIVIDE_component|lpm_divide_cou:auto_generated|sign_div_unsign_8ai:divider|alt_u_div_r7f:divider|DFFDenominator[30]                                                                   ; Merged with dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|divider64:result_mul_base_mod_modulo|lpm_divide:LPM_DIVIDE_component|lpm_divide_cou:auto_generated|sign_div_unsign_8ai:divider|alt_u_div_r7f:divider|DFFDenominator[30]  ;
 ; dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|divider64:base_squared_mod_modulo|lpm_divide:LPM_DIVIDE_component|lpm_divide_cou:auto_generated|sign_div_unsign_8ai:divider|alt_u_div_r7f:divider|DFFDenominator[29]                                                                   ; Merged with dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|divider64:result_mul_base_mod_modulo|lpm_divide:LPM_DIVIDE_component|lpm_divide_cou:auto_generated|sign_div_unsign_8ai:divider|alt_u_div_r7f:divider|DFFDenominator[29]  ;
@@ -1048,7 +1040,7 @@ Encoding Type:  One-Hot
 ; dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|divider64:base_squared_mod_modulo|lpm_divide:LPM_DIVIDE_component|lpm_divide_cou:auto_generated|sign_div_unsign_8ai:divider|alt_u_div_r7f:divider|DFFDenominator[577]                                                                  ; Merged with dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|divider64:result_mul_base_mod_modulo|lpm_divide:LPM_DIVIDE_component|lpm_divide_cou:auto_generated|sign_div_unsign_8ai:divider|alt_u_div_r7f:divider|DFFDenominator[577] ;
 ; dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|divider64:base_squared_mod_modulo|lpm_divide:LPM_DIVIDE_component|lpm_divide_cou:auto_generated|sign_div_unsign_8ai:divider|alt_u_div_r7f:divider|DFFDenominator[576]                                                                  ; Merged with dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|divider64:result_mul_base_mod_modulo|lpm_divide:LPM_DIVIDE_component|lpm_divide_cou:auto_generated|sign_div_unsign_8ai:divider|alt_u_div_r7f:divider|DFFDenominator[576] ;
 ; dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|divider64:base_squared_mod_modulo|lpm_divide:LPM_DIVIDE_component|lpm_divide_cou:auto_generated|sign_div_unsign_8ai:divider|alt_u_div_r7f:divider|DFFNumerator[1,33,65,97,129,161,193,225,257,289,321,353,385,417,449,481,513,545,577] ; Stuck at GND due to stuck port data_in                                                                                                                                                                                                         ;
-; Total Number of Removed Registers = 627                                                                                                                                                                                                                                                          ;                                                                                                                                                                                                                                                ;
+; Total Number of Removed Registers = 628                                                                                                                                                                                                                                                          ;                                                                                                                                                                                                                                                ;
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
@@ -1083,10 +1075,10 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 1670  ;
+; Total registers                              ; 1674  ;
 ; Number of registers using Synchronous Clear  ; 1     ;
-; Number of registers using Synchronous Load   ; 432   ;
-; Number of registers using Asynchronous Clear ; 3     ;
+; Number of registers using Synchronous Load   ; 401   ;
+; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 132   ;
 ; Number of registers using Preset             ; 0     ;
@@ -1129,7 +1121,7 @@ Encoding Type:  One-Hot
 ; dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|divider64:result_mul_base_mod_modulo|lpm_divide:LPM_DIVIDE_component|lpm_divide_cou:auto_generated|sign_div_unsign_8ai:divider|alt_u_div_r7f:divider|DFFDenominator[579] ; 4       ;
 ; dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|divider64:result_mul_base_mod_modulo|lpm_divide:LPM_DIVIDE_component|lpm_divide_cou:auto_generated|sign_div_unsign_8ai:divider|alt_u_div_r7f:divider|DFFDenominator[578] ; 4       ;
 ; dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|divider64:result_mul_base_mod_modulo|lpm_divide:LPM_DIVIDE_component|lpm_divide_cou:auto_generated|sign_div_unsign_8ai:divider|alt_u_div_r7f:divider|DFFDenominator[577] ; 4       ;
-; dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|divider64:result_mul_base_mod_modulo|lpm_divide:LPM_DIVIDE_component|lpm_divide_cou:auto_generated|sign_div_unsign_8ai:divider|alt_u_div_r7f:divider|DFFDenominator[607] ; 11      ;
+; dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|divider64:result_mul_base_mod_modulo|lpm_divide:LPM_DIVIDE_component|lpm_divide_cou:auto_generated|sign_div_unsign_8ai:divider|alt_u_div_r7f:divider|DFFDenominator[607] ; 9       ;
 ; dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|divider64:base_squared_mod_modulo|lpm_divide:LPM_DIVIDE_component|lpm_divide_cou:auto_generated|sign_div_unsign_8ai:divider|alt_u_div_r7f:divider|DFFDenominator[544]    ; 5       ;
 ; dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|divider64:base_squared_mod_modulo|lpm_divide:LPM_DIVIDE_component|lpm_divide_cou:auto_generated|sign_div_unsign_8ai:divider|alt_u_div_r7f:divider|DFFDenominator[572]    ; 5       ;
 ; dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|divider64:base_squared_mod_modulo|lpm_divide:LPM_DIVIDE_component|lpm_divide_cou:auto_generated|sign_div_unsign_8ai:divider|alt_u_div_r7f:divider|DFFDenominator[571]    ; 5       ;
@@ -1231,11 +1223,11 @@ Encoding Type:  One-Hot
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                    ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------------------------+
-; 4:1                ; 31 bits   ; 62 LEs        ; 62 LEs               ; 0 LEs                  ; Yes        ; |rsa_rfid|dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|exponent_reg[10]          ;
-; 6:1                ; 2 bits    ; 8 LEs         ; 2 LEs                ; 6 LEs                  ; Yes        ; |rsa_rfid|dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|divide_latency_counter[4] ;
+; 3:1                ; 31 bits   ; 62 LEs        ; 31 LEs               ; 31 LEs                 ; Yes        ; |rsa_rfid|dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|exponent_reg[13]          ;
+; 6:1                ; 2 bits    ; 8 LEs         ; 2 LEs                ; 6 LEs                  ; Yes        ; |rsa_rfid|dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|divide_latency_counter[2] ;
 ; 6:1                ; 3 bits    ; 12 LEs        ; 3 LEs                ; 9 LEs                  ; Yes        ; |rsa_rfid|dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|divide_latency_counter[0] ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |rsa_rfid|dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|result_reg[24]            ;
-; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; Yes        ; |rsa_rfid|dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|base_reg[23]              ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |rsa_rfid|dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|result_reg[11]            ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |rsa_rfid|dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|base_reg[22]              ;
 ; 5:1                ; 2 bits    ; 6 LEs         ; 4 LEs                ; 2 LEs                  ; No         ; |rsa_rfid|dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|state                     ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------------------------+
 
@@ -2999,6 +2991,16 @@ Note: In order to hide this table in the UI and the text report file, please set
 +---------------------------------------+--------------------------------------------------------------------------+
 
 
++---------------------------------------------------------+
+; Port Connectivity Checks: "controlUnit:CU|mux4to1:mux0" ;
++------+-------+----------+-------------------------------+
+; Port ; Type  ; Severity ; Details                       ;
++------+-------+----------+-------------------------------+
+; c    ; Input ; Info     ; Stuck at GND                  ;
+; d    ; Input ; Info     ; Stuck at VCC                  ;
++------+-------+----------+-------------------------------+
+
+
 +----------------------------------------------------------------------------------------------------------------------------+
 ; Port Connectivity Checks: "dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|divider64:result_mul_base_mod_modulo" ;
 +----------+--------+----------+---------------------------------------------------------------------------------------------+
@@ -3022,30 +3024,29 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 133                         ;
-; cycloneiii_ff         ; 1670                        ;
-;     CLR               ; 3                           ;
-;     ENA               ; 95                          ;
-;     ENA SLD           ; 37                          ;
+; boundary_port         ; 132                         ;
+; cycloneiii_ff         ; 1674                        ;
+;     ENA               ; 127                         ;
+;     ENA SLD           ; 5                           ;
 ;     SCLR              ; 1                           ;
-;     SLD               ; 395                         ;
-;     plain             ; 1139                        ;
-; cycloneiii_lcell_comb ; 2278                        ;
+;     SLD               ; 396                         ;
+;     plain             ; 1145                        ;
+; cycloneiii_lcell_comb ; 2244                        ;
 ;     arith             ; 1134                        ;
 ;         2 data inputs ; 33                          ;
 ;         3 data inputs ; 1101                        ;
-;     normal            ; 1144                        ;
+;     normal            ; 1110                        ;
 ;         0 data inputs ; 67                          ;
 ;         1 data inputs ; 35                          ;
 ;         2 data inputs ; 91                          ;
-;         3 data inputs ; 562                         ;
-;         4 data inputs ; 389                         ;
+;         3 data inputs ; 564                         ;
+;         4 data inputs ; 353                         ;
 ; cycloneiii_mac_mult   ; 6                           ;
 ; cycloneiii_mac_out    ; 6                           ;
 ; cycloneiii_ram_block  ; 28                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 11.00                       ;
-; Average LUT depth     ; 5.46                        ;
+; Average LUT depth     ; 5.54                        ;
 +-----------------------+-----------------------------+
 
 
@@ -3054,7 +3055,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:03     ;
+; Top            ; 00:00:06     ;
 +----------------+--------------+
 
 
@@ -3064,33 +3065,33 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
-    Info: Processing started: Sun Nov 13 23:08:31 2022
+    Info: Processing started: Tue Nov 15 15:36:17 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off rsa_rfid -c rsa_rfid
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
+Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file de10_lite_golden_top.v
-    Info (12023): Found entity 1: DE10_LITE_Golden_Top File: C:/Users/Abdallah/Desktop/RSA/FPGA_RSA_UHF_RFID/rsa_rfid/DE10_LITE_Golden_Top.v Line: 29
+    Info (12023): Found entity 1: DE10_LITE_Golden_Top File: C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/DE10_LITE_Golden_Top.v Line: 29
 Info (12021): Found 1 design units, including 1 entities, in source file rsa_rfid.v
-    Info (12023): Found entity 1: rsa_rfid File: C:/Users/Abdallah/Desktop/RSA/FPGA_RSA_UHF_RFID/rsa_rfid/rsa_rfid.v Line: 1
+    Info (12023): Found entity 1: rsa_rfid File: C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/rsa_rfid.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file mux2to1.v
-    Info (12023): Found entity 1: mux2to1 File: C:/Users/Abdallah/Desktop/RSA/FPGA_RSA_UHF_RFID/rsa_rfid/mux2to1.v Line: 1
+    Info (12023): Found entity 1: mux2to1 File: C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/mux2to1.v Line: 1
 Info (12127): Elaborating entity "rsa_rfid" for the top level hierarchy
 Warning (12125): Using design file datapath.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
-    Info (12023): Found entity 1: dataPath File: C:/Users/Abdallah/Desktop/RSA/FPGA_RSA_UHF_RFID/rsa_rfid/datapath.v Line: 1
-Info (12128): Elaborating entity "dataPath" for hierarchy "dataPath:DP" File: C:/Users/Abdallah/Desktop/RSA/FPGA_RSA_UHF_RFID/rsa_rfid/rsa_rfid.v Line: 22
+    Info (12023): Found entity 1: dataPath File: C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/datapath.v Line: 1
+Info (12128): Elaborating entity "dataPath" for hierarchy "dataPath:DP" File: C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/rsa_rfid.v Line: 21
 Warning (12125): Using design file staticvalue.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
-    Info (12023): Found entity 1: staticValue File: C:/Users/Abdallah/Desktop/RSA/FPGA_RSA_UHF_RFID/rsa_rfid/staticvalue.v Line: 1
-Info (12128): Elaborating entity "staticValue" for hierarchy "dataPath:DP|staticValue:outDefValue" File: C:/Users/Abdallah/Desktop/RSA/FPGA_RSA_UHF_RFID/rsa_rfid/datapath.v Line: 24
-Info (12128): Elaborating entity "mux2to1" for hierarchy "dataPath:DP|mux2to1:loadInpMux" File: C:/Users/Abdallah/Desktop/RSA/FPGA_RSA_UHF_RFID/rsa_rfid/datapath.v Line: 26
+    Info (12023): Found entity 1: staticValue File: C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/staticvalue.v Line: 1
+Info (12128): Elaborating entity "staticValue" for hierarchy "dataPath:DP|staticValue:outDefValue" File: C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/datapath.v Line: 23
+Info (12128): Elaborating entity "mux2to1" for hierarchy "dataPath:DP|mux2to1:loadInpMux" File: C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/datapath.v Line: 25
 Warning (12125): Using design file encrypt_decrypt.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
-    Info (12023): Found entity 1: encrypt_decrypt File: C:/Users/Abdallah/Desktop/RSA/FPGA_RSA_UHF_RFID/rsa_rfid/encrypt_decrypt.v Line: 3
-Info (12128): Elaborating entity "encrypt_decrypt" for hierarchy "dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine" File: C:/Users/Abdallah/Desktop/RSA/FPGA_RSA_UHF_RFID/rsa_rfid/datapath.v Line: 40
+    Info (12023): Found entity 1: encrypt_decrypt File: C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/encrypt_decrypt.v Line: 3
+Info (12128): Elaborating entity "encrypt_decrypt" for hierarchy "dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine" File: C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/datapath.v Line: 39
 Warning (12125): Using design file divider64.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
-    Info (12023): Found entity 1: divider64 File: C:/Users/Abdallah/Desktop/RSA/FPGA_RSA_UHF_RFID/rsa_rfid/divider64.v Line: 39
-Info (12128): Elaborating entity "divider64" for hierarchy "dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|divider64:base_squared_mod_modulo" File: C:/Users/Abdallah/Desktop/RSA/FPGA_RSA_UHF_RFID/rsa_rfid/encrypt_decrypt.v Line: 43
-Info (12128): Elaborating entity "lpm_divide" for hierarchy "dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|divider64:base_squared_mod_modulo|lpm_divide:LPM_DIVIDE_component" File: C:/Users/Abdallah/Desktop/RSA/FPGA_RSA_UHF_RFID/rsa_rfid/divider64.v Line: 64
-Info (12130): Elaborated megafunction instantiation "dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|divider64:base_squared_mod_modulo|lpm_divide:LPM_DIVIDE_component" File: C:/Users/Abdallah/Desktop/RSA/FPGA_RSA_UHF_RFID/rsa_rfid/divider64.v Line: 64
-Info (12133): Instantiated megafunction "dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|divider64:base_squared_mod_modulo|lpm_divide:LPM_DIVIDE_component" with the following parameter: File: C:/Users/Abdallah/Desktop/RSA/FPGA_RSA_UHF_RFID/rsa_rfid/divider64.v Line: 64
+    Info (12023): Found entity 1: divider64 File: C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/divider64.v Line: 39
+Info (12128): Elaborating entity "divider64" for hierarchy "dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|divider64:base_squared_mod_modulo" File: C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/encrypt_decrypt.v Line: 43
+Info (12128): Elaborating entity "lpm_divide" for hierarchy "dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|divider64:base_squared_mod_modulo|lpm_divide:LPM_DIVIDE_component" File: C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/divider64.v Line: 64
+Info (12130): Elaborated megafunction instantiation "dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|divider64:base_squared_mod_modulo|lpm_divide:LPM_DIVIDE_component" File: C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/divider64.v Line: 64
+Info (12133): Instantiated megafunction "dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|divider64:base_squared_mod_modulo|lpm_divide:LPM_DIVIDE_component" with the following parameter: File: C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/divider64.v Line: 64
     Info (12134): Parameter "lpm_drepresentation" = "UNSIGNED"
     Info (12134): Parameter "lpm_hint" = "MAXIMIZE_SPEED=6,LPM_REMAINDERPOSITIVE=TRUE"
     Info (12134): Parameter "lpm_nrepresentation" = "UNSIGNED"
@@ -3099,23 +3100,33 @@ Info (12133): Instantiated megafunction "dataPath:DP|encrypt_decrypt:encrypt_dec
     Info (12134): Parameter "lpm_widthd" = "32"
     Info (12134): Parameter "lpm_widthn" = "32"
 Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_cou.tdf
-    Info (12023): Found entity 1: lpm_divide_cou File: C:/Users/Abdallah/Desktop/RSA/FPGA_RSA_UHF_RFID/rsa_rfid/db/lpm_divide_cou.tdf Line: 24
+    Info (12023): Found entity 1: lpm_divide_cou File: C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/db/lpm_divide_cou.tdf Line: 24
 Info (12128): Elaborating entity "lpm_divide_cou" for hierarchy "dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|divider64:base_squared_mod_modulo|lpm_divide:LPM_DIVIDE_component|lpm_divide_cou:auto_generated" File: c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/lpm_divide.tdf Line: 147
 Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_8ai.tdf
-    Info (12023): Found entity 1: sign_div_unsign_8ai File: C:/Users/Abdallah/Desktop/RSA/FPGA_RSA_UHF_RFID/rsa_rfid/db/sign_div_unsign_8ai.tdf Line: 24
-Info (12128): Elaborating entity "sign_div_unsign_8ai" for hierarchy "dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|divider64:base_squared_mod_modulo|lpm_divide:LPM_DIVIDE_component|lpm_divide_cou:auto_generated|sign_div_unsign_8ai:divider" File: C:/Users/Abdallah/Desktop/RSA/FPGA_RSA_UHF_RFID/rsa_rfid/db/lpm_divide_cou.tdf Line: 35
+    Info (12023): Found entity 1: sign_div_unsign_8ai File: C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/db/sign_div_unsign_8ai.tdf Line: 24
+Info (12128): Elaborating entity "sign_div_unsign_8ai" for hierarchy "dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|divider64:base_squared_mod_modulo|lpm_divide:LPM_DIVIDE_component|lpm_divide_cou:auto_generated|sign_div_unsign_8ai:divider" File: C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/db/lpm_divide_cou.tdf Line: 35
 Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_r7f.tdf
-    Info (12023): Found entity 1: alt_u_div_r7f File: C:/Users/Abdallah/Desktop/RSA/FPGA_RSA_UHF_RFID/rsa_rfid/db/alt_u_div_r7f.tdf Line: 44
-Info (12128): Elaborating entity "alt_u_div_r7f" for hierarchy "dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|divider64:base_squared_mod_modulo|lpm_divide:LPM_DIVIDE_component|lpm_divide_cou:auto_generated|sign_div_unsign_8ai:divider|alt_u_div_r7f:divider" File: C:/Users/Abdallah/Desktop/RSA/FPGA_RSA_UHF_RFID/rsa_rfid/db/sign_div_unsign_8ai.tdf Line: 33
+    Info (12023): Found entity 1: alt_u_div_r7f File: C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/db/alt_u_div_r7f.tdf Line: 44
+Info (12128): Elaborating entity "alt_u_div_r7f" for hierarchy "dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|divider64:base_squared_mod_modulo|lpm_divide:LPM_DIVIDE_component|lpm_divide_cou:auto_generated|sign_div_unsign_8ai:divider|alt_u_div_r7f:divider" File: C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/db/sign_div_unsign_8ai.tdf Line: 33
 Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_t3c.tdf
-    Info (12023): Found entity 1: add_sub_t3c File: C:/Users/Abdallah/Desktop/RSA/FPGA_RSA_UHF_RFID/rsa_rfid/db/add_sub_t3c.tdf Line: 22
-Info (12128): Elaborating entity "add_sub_t3c" for hierarchy "dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|divider64:base_squared_mod_modulo|lpm_divide:LPM_DIVIDE_component|lpm_divide_cou:auto_generated|sign_div_unsign_8ai:divider|alt_u_div_r7f:divider|add_sub_t3c:add_sub_0" File: C:/Users/Abdallah/Desktop/RSA/FPGA_RSA_UHF_RFID/rsa_rfid/db/alt_u_div_r7f.tdf Line: 60
+    Info (12023): Found entity 1: add_sub_t3c File: C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/db/add_sub_t3c.tdf Line: 22
+Info (12128): Elaborating entity "add_sub_t3c" for hierarchy "dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|divider64:base_squared_mod_modulo|lpm_divide:LPM_DIVIDE_component|lpm_divide_cou:auto_generated|sign_div_unsign_8ai:divider|alt_u_div_r7f:divider|add_sub_t3c:add_sub_0" File: C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/db/alt_u_div_r7f.tdf Line: 60
 Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_u3c.tdf
-    Info (12023): Found entity 1: add_sub_u3c File: C:/Users/Abdallah/Desktop/RSA/FPGA_RSA_UHF_RFID/rsa_rfid/db/add_sub_u3c.tdf Line: 22
-Info (12128): Elaborating entity "add_sub_u3c" for hierarchy "dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|divider64:base_squared_mod_modulo|lpm_divide:LPM_DIVIDE_component|lpm_divide_cou:auto_generated|sign_div_unsign_8ai:divider|alt_u_div_r7f:divider|add_sub_u3c:add_sub_1" File: C:/Users/Abdallah/Desktop/RSA/FPGA_RSA_UHF_RFID/rsa_rfid/db/alt_u_div_r7f.tdf Line: 61
+    Info (12023): Found entity 1: add_sub_u3c File: C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/db/add_sub_u3c.tdf Line: 22
+Info (12128): Elaborating entity "add_sub_u3c" for hierarchy "dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|divider64:base_squared_mod_modulo|lpm_divide:LPM_DIVIDE_component|lpm_divide_cou:auto_generated|sign_div_unsign_8ai:divider|alt_u_div_r7f:divider|add_sub_u3c:add_sub_1" File: C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/db/alt_u_div_r7f.tdf Line: 61
 Warning (12125): Using design file controlunit.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
-    Info (12023): Found entity 1: controlUnit File: C:/Users/Abdallah/Desktop/RSA/FPGA_RSA_UHF_RFID/rsa_rfid/controlunit.v Line: 2
-Info (12128): Elaborating entity "controlUnit" for hierarchy "controlUnit:CU" File: C:/Users/Abdallah/Desktop/RSA/FPGA_RSA_UHF_RFID/rsa_rfid/rsa_rfid.v Line: 23
+    Info (12023): Found entity 1: controlUnit File: C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/controlunit.v Line: 2
+Info (12128): Elaborating entity "controlUnit" for hierarchy "controlUnit:CU" File: C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/rsa_rfid.v Line: 22
+Warning (12125): Using design file counter.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: counter File: C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/counter.v Line: 1
+Info (12128): Elaborating entity "counter" for hierarchy "controlUnit:CU|counter:counter0" File: C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/controlunit.v Line: 14
+Warning (10230): Verilog HDL assignment warning at counter.v(17): truncated value with size 32 to match size of target (2) File: C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/counter.v Line: 17
+Warning (12125): Using design file rom.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: ROM File: C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/rom.v Line: 1
+Info (12128): Elaborating entity "ROM" for hierarchy "controlUnit:CU|ROM:rom0" File: C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/controlunit.v Line: 15
+Warning (12125): Using design file mux4to1.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: mux4to1 File: C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/mux4to1.v Line: 1
+Info (12128): Elaborating entity "mux4to1" for hierarchy "controlUnit:CU|mux4to1:mux0" File: C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/controlunit.v Line: 16
 Info (19000): Inferred 8 megafunctions from design logic
     Info (276034): Inferred altshift_taps megafunction from the following design logic: "dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|divider64:result_mul_base_mod_modulo|lpm_divide:LPM_DIVIDE_component|lpm_divide_cou:auto_generated|sign_div_unsign_8ai:divider|alt_u_div_r7f:divider|DFFNumerator_rtl_0"
         Info (286033): Parameter NUMBER_OF_TAPS set to 1
@@ -3150,102 +3161,102 @@ Info (19000): Inferred 8 megafunctions from design logic
         Info (286033): Parameter TAP_DISTANCE set to 8
         Info (286033): Parameter WIDTH set to 4
 Info (278001): Inferred 2 megafunctions from design logic
-    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|Mult0" File: C:/Users/Abdallah/Desktop/RSA/FPGA_RSA_UHF_RFID/rsa_rfid/encrypt_decrypt.v Line: 29
-    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|Mult1" File: C:/Users/Abdallah/Desktop/RSA/FPGA_RSA_UHF_RFID/rsa_rfid/encrypt_decrypt.v Line: 31
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|Mult0" File: C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/encrypt_decrypt.v Line: 29
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|Mult1" File: C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/encrypt_decrypt.v Line: 31
 Info (12130): Elaborated megafunction instantiation "dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|divider64:result_mul_base_mod_modulo|lpm_divide:LPM_DIVIDE_component|lpm_divide_cou:auto_generated|sign_div_unsign_8ai:divider|alt_u_div_r7f:divider|altshift_taps:DFFNumerator_rtl_0"
 Info (12133): Instantiated megafunction "dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|divider64:result_mul_base_mod_modulo|lpm_divide:LPM_DIVIDE_component|lpm_divide_cou:auto_generated|sign_div_unsign_8ai:divider|alt_u_div_r7f:divider|altshift_taps:DFFNumerator_rtl_0" with the following parameter:
     Info (12134): Parameter "NUMBER_OF_TAPS" = "1"
     Info (12134): Parameter "TAP_DISTANCE" = "18"
     Info (12134): Parameter "WIDTH" = "2"
 Info (12021): Found 1 design units, including 1 entities, in source file db/shift_taps_c3o.tdf
-    Info (12023): Found entity 1: shift_taps_c3o File: C:/Users/Abdallah/Desktop/RSA/FPGA_RSA_UHF_RFID/rsa_rfid/db/shift_taps_c3o.tdf Line: 26
+    Info (12023): Found entity 1: shift_taps_c3o File: C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/db/shift_taps_c3o.tdf Line: 26
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_to71.tdf
-    Info (12023): Found entity 1: altsyncram_to71 File: C:/Users/Abdallah/Desktop/RSA/FPGA_RSA_UHF_RFID/rsa_rfid/db/altsyncram_to71.tdf Line: 27
+    Info (12023): Found entity 1: altsyncram_to71 File: C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/db/altsyncram_to71.tdf Line: 27
 Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_i5f.tdf
-    Info (12023): Found entity 1: cntr_i5f File: C:/Users/Abdallah/Desktop/RSA/FPGA_RSA_UHF_RFID/rsa_rfid/db/cntr_i5f.tdf Line: 25
+    Info (12023): Found entity 1: cntr_i5f File: C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/db/cntr_i5f.tdf Line: 25
 Info (12130): Elaborated megafunction instantiation "dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|divider64:result_mul_base_mod_modulo|lpm_divide:LPM_DIVIDE_component|lpm_divide_cou:auto_generated|sign_div_unsign_8ai:divider|alt_u_div_r7f:divider|altshift_taps:DFFNumerator_rtl_1"
 Info (12133): Instantiated megafunction "dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|divider64:result_mul_base_mod_modulo|lpm_divide:LPM_DIVIDE_component|lpm_divide_cou:auto_generated|sign_div_unsign_8ai:divider|alt_u_div_r7f:divider|altshift_taps:DFFNumerator_rtl_1" with the following parameter:
     Info (12134): Parameter "NUMBER_OF_TAPS" = "1"
     Info (12134): Parameter "TAP_DISTANCE" = "17"
     Info (12134): Parameter "WIDTH" = "4"
 Info (12021): Found 1 design units, including 1 entities, in source file db/shift_taps_d3o.tdf
-    Info (12023): Found entity 1: shift_taps_d3o File: C:/Users/Abdallah/Desktop/RSA/FPGA_RSA_UHF_RFID/rsa_rfid/db/shift_taps_d3o.tdf Line: 26
+    Info (12023): Found entity 1: shift_taps_d3o File: C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/db/shift_taps_d3o.tdf Line: 26
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_vo71.tdf
-    Info (12023): Found entity 1: altsyncram_vo71 File: C:/Users/Abdallah/Desktop/RSA/FPGA_RSA_UHF_RFID/rsa_rfid/db/altsyncram_vo71.tdf Line: 27
+    Info (12023): Found entity 1: altsyncram_vo71 File: C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/db/altsyncram_vo71.tdf Line: 27
 Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_h5f.tdf
-    Info (12023): Found entity 1: cntr_h5f File: C:/Users/Abdallah/Desktop/RSA/FPGA_RSA_UHF_RFID/rsa_rfid/db/cntr_h5f.tdf Line: 27
+    Info (12023): Found entity 1: cntr_h5f File: C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/db/cntr_h5f.tdf Line: 27
 Info (12021): Found 1 design units, including 1 entities, in source file db/cmpr_grb.tdf
-    Info (12023): Found entity 1: cmpr_grb File: C:/Users/Abdallah/Desktop/RSA/FPGA_RSA_UHF_RFID/rsa_rfid/db/cmpr_grb.tdf Line: 22
+    Info (12023): Found entity 1: cmpr_grb File: C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/db/cmpr_grb.tdf Line: 22
 Info (12130): Elaborated megafunction instantiation "dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|divider64:result_mul_base_mod_modulo|lpm_divide:LPM_DIVIDE_component|lpm_divide_cou:auto_generated|sign_div_unsign_8ai:divider|alt_u_div_r7f:divider|altshift_taps:DFFNumerator_rtl_2"
 Info (12133): Instantiated megafunction "dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|divider64:result_mul_base_mod_modulo|lpm_divide:LPM_DIVIDE_component|lpm_divide_cou:auto_generated|sign_div_unsign_8ai:divider|alt_u_div_r7f:divider|altshift_taps:DFFNumerator_rtl_2" with the following parameter:
     Info (12134): Parameter "NUMBER_OF_TAPS" = "1"
     Info (12134): Parameter "TAP_DISTANCE" = "16"
     Info (12134): Parameter "WIDTH" = "2"
 Info (12021): Found 1 design units, including 1 entities, in source file db/shift_taps_e3o.tdf
-    Info (12023): Found entity 1: shift_taps_e3o File: C:/Users/Abdallah/Desktop/RSA/FPGA_RSA_UHF_RFID/rsa_rfid/db/shift_taps_e3o.tdf Line: 26
+    Info (12023): Found entity 1: shift_taps_e3o File: C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/db/shift_taps_e3o.tdf Line: 26
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_no71.tdf
-    Info (12023): Found entity 1: altsyncram_no71 File: C:/Users/Abdallah/Desktop/RSA/FPGA_RSA_UHF_RFID/rsa_rfid/db/altsyncram_no71.tdf Line: 27
+    Info (12023): Found entity 1: altsyncram_no71 File: C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/db/altsyncram_no71.tdf Line: 27
 Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_g5f.tdf
-    Info (12023): Found entity 1: cntr_g5f File: C:/Users/Abdallah/Desktop/RSA/FPGA_RSA_UHF_RFID/rsa_rfid/db/cntr_g5f.tdf Line: 27
+    Info (12023): Found entity 1: cntr_g5f File: C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/db/cntr_g5f.tdf Line: 27
 Info (12130): Elaborated megafunction instantiation "dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|divider64:result_mul_base_mod_modulo|lpm_divide:LPM_DIVIDE_component|lpm_divide_cou:auto_generated|sign_div_unsign_8ai:divider|alt_u_div_r7f:divider|altshift_taps:DFFNumerator_rtl_3"
 Info (12133): Instantiated megafunction "dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|divider64:result_mul_base_mod_modulo|lpm_divide:LPM_DIVIDE_component|lpm_divide_cou:auto_generated|sign_div_unsign_8ai:divider|alt_u_div_r7f:divider|altshift_taps:DFFNumerator_rtl_3" with the following parameter:
     Info (12134): Parameter "NUMBER_OF_TAPS" = "1"
     Info (12134): Parameter "TAP_DISTANCE" = "15"
     Info (12134): Parameter "WIDTH" = "4"
 Info (12021): Found 1 design units, including 1 entities, in source file db/shift_taps_f3o.tdf
-    Info (12023): Found entity 1: shift_taps_f3o File: C:/Users/Abdallah/Desktop/RSA/FPGA_RSA_UHF_RFID/rsa_rfid/db/shift_taps_f3o.tdf Line: 26
+    Info (12023): Found entity 1: shift_taps_f3o File: C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/db/shift_taps_f3o.tdf Line: 26
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_po71.tdf
-    Info (12023): Found entity 1: altsyncram_po71 File: C:/Users/Abdallah/Desktop/RSA/FPGA_RSA_UHF_RFID/rsa_rfid/db/altsyncram_po71.tdf Line: 27
+    Info (12023): Found entity 1: altsyncram_po71 File: C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/db/altsyncram_po71.tdf Line: 27
 Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_f5f.tdf
-    Info (12023): Found entity 1: cntr_f5f File: C:/Users/Abdallah/Desktop/RSA/FPGA_RSA_UHF_RFID/rsa_rfid/db/cntr_f5f.tdf Line: 27
+    Info (12023): Found entity 1: cntr_f5f File: C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/db/cntr_f5f.tdf Line: 27
 Info (12130): Elaborated megafunction instantiation "dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|divider64:result_mul_base_mod_modulo|lpm_divide:LPM_DIVIDE_component|lpm_divide_cou:auto_generated|sign_div_unsign_8ai:divider|alt_u_div_r7f:divider|altshift_taps:DFFNumerator_rtl_4"
 Info (12133): Instantiated megafunction "dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|divider64:result_mul_base_mod_modulo|lpm_divide:LPM_DIVIDE_component|lpm_divide_cou:auto_generated|sign_div_unsign_8ai:divider|alt_u_div_r7f:divider|altshift_taps:DFFNumerator_rtl_4" with the following parameter:
     Info (12134): Parameter "NUMBER_OF_TAPS" = "1"
     Info (12134): Parameter "TAP_DISTANCE" = "13"
     Info (12134): Parameter "WIDTH" = "4"
 Info (12021): Found 1 design units, including 1 entities, in source file db/shift_taps_g3o.tdf
-    Info (12023): Found entity 1: shift_taps_g3o File: C:/Users/Abdallah/Desktop/RSA/FPGA_RSA_UHF_RFID/rsa_rfid/db/shift_taps_g3o.tdf Line: 26
+    Info (12023): Found entity 1: shift_taps_g3o File: C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/db/shift_taps_g3o.tdf Line: 26
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_ko71.tdf
-    Info (12023): Found entity 1: altsyncram_ko71 File: C:/Users/Abdallah/Desktop/RSA/FPGA_RSA_UHF_RFID/rsa_rfid/db/altsyncram_ko71.tdf Line: 27
+    Info (12023): Found entity 1: altsyncram_ko71 File: C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/db/altsyncram_ko71.tdf Line: 27
 Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_d5f.tdf
-    Info (12023): Found entity 1: cntr_d5f File: C:/Users/Abdallah/Desktop/RSA/FPGA_RSA_UHF_RFID/rsa_rfid/db/cntr_d5f.tdf Line: 27
+    Info (12023): Found entity 1: cntr_d5f File: C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/db/cntr_d5f.tdf Line: 27
 Info (12130): Elaborated megafunction instantiation "dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|divider64:result_mul_base_mod_modulo|lpm_divide:LPM_DIVIDE_component|lpm_divide_cou:auto_generated|sign_div_unsign_8ai:divider|alt_u_div_r7f:divider|altshift_taps:DFFNumerator_rtl_5"
 Info (12133): Instantiated megafunction "dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|divider64:result_mul_base_mod_modulo|lpm_divide:LPM_DIVIDE_component|lpm_divide_cou:auto_generated|sign_div_unsign_8ai:divider|alt_u_div_r7f:divider|altshift_taps:DFFNumerator_rtl_5" with the following parameter:
     Info (12134): Parameter "NUMBER_OF_TAPS" = "1"
     Info (12134): Parameter "TAP_DISTANCE" = "12"
     Info (12134): Parameter "WIDTH" = "4"
 Info (12021): Found 1 design units, including 1 entities, in source file db/shift_taps_h3o.tdf
-    Info (12023): Found entity 1: shift_taps_h3o File: C:/Users/Abdallah/Desktop/RSA/FPGA_RSA_UHF_RFID/rsa_rfid/db/shift_taps_h3o.tdf Line: 26
+    Info (12023): Found entity 1: shift_taps_h3o File: C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/db/shift_taps_h3o.tdf Line: 26
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_io71.tdf
-    Info (12023): Found entity 1: altsyncram_io71 File: C:/Users/Abdallah/Desktop/RSA/FPGA_RSA_UHF_RFID/rsa_rfid/db/altsyncram_io71.tdf Line: 27
+    Info (12023): Found entity 1: altsyncram_io71 File: C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/db/altsyncram_io71.tdf Line: 27
 Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_c5f.tdf
-    Info (12023): Found entity 1: cntr_c5f File: C:/Users/Abdallah/Desktop/RSA/FPGA_RSA_UHF_RFID/rsa_rfid/db/cntr_c5f.tdf Line: 27
+    Info (12023): Found entity 1: cntr_c5f File: C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/db/cntr_c5f.tdf Line: 27
 Info (12130): Elaborated megafunction instantiation "dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|divider64:result_mul_base_mod_modulo|lpm_divide:LPM_DIVIDE_component|lpm_divide_cou:auto_generated|sign_div_unsign_8ai:divider|alt_u_div_r7f:divider|altshift_taps:DFFNumerator_rtl_6"
 Info (12133): Instantiated megafunction "dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|divider64:result_mul_base_mod_modulo|lpm_divide:LPM_DIVIDE_component|lpm_divide_cou:auto_generated|sign_div_unsign_8ai:divider|alt_u_div_r7f:divider|altshift_taps:DFFNumerator_rtl_6" with the following parameter:
     Info (12134): Parameter "NUMBER_OF_TAPS" = "1"
     Info (12134): Parameter "TAP_DISTANCE" = "10"
     Info (12134): Parameter "WIDTH" = "4"
 Info (12021): Found 1 design units, including 1 entities, in source file db/shift_taps_03o.tdf
-    Info (12023): Found entity 1: shift_taps_03o File: C:/Users/Abdallah/Desktop/RSA/FPGA_RSA_UHF_RFID/rsa_rfid/db/shift_taps_03o.tdf Line: 26
+    Info (12023): Found entity 1: shift_taps_03o File: C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/db/shift_taps_03o.tdf Line: 26
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_vl71.tdf
-    Info (12023): Found entity 1: altsyncram_vl71 File: C:/Users/Abdallah/Desktop/RSA/FPGA_RSA_UHF_RFID/rsa_rfid/db/altsyncram_vl71.tdf Line: 27
+    Info (12023): Found entity 1: altsyncram_vl71 File: C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/db/altsyncram_vl71.tdf Line: 27
 Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_24f.tdf
-    Info (12023): Found entity 1: cntr_24f File: C:/Users/Abdallah/Desktop/RSA/FPGA_RSA_UHF_RFID/rsa_rfid/db/cntr_24f.tdf Line: 25
+    Info (12023): Found entity 1: cntr_24f File: C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/db/cntr_24f.tdf Line: 25
 Info (12130): Elaborated megafunction instantiation "dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|divider64:result_mul_base_mod_modulo|lpm_divide:LPM_DIVIDE_component|lpm_divide_cou:auto_generated|sign_div_unsign_8ai:divider|alt_u_div_r7f:divider|altshift_taps:DFFNumerator_rtl_7"
 Info (12133): Instantiated megafunction "dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|divider64:result_mul_base_mod_modulo|lpm_divide:LPM_DIVIDE_component|lpm_divide_cou:auto_generated|sign_div_unsign_8ai:divider|alt_u_div_r7f:divider|altshift_taps:DFFNumerator_rtl_7" with the following parameter:
     Info (12134): Parameter "NUMBER_OF_TAPS" = "1"
     Info (12134): Parameter "TAP_DISTANCE" = "8"
     Info (12134): Parameter "WIDTH" = "4"
 Info (12021): Found 1 design units, including 1 entities, in source file db/shift_taps_s1o.tdf
-    Info (12023): Found entity 1: shift_taps_s1o File: C:/Users/Abdallah/Desktop/RSA/FPGA_RSA_UHF_RFID/rsa_rfid/db/shift_taps_s1o.tdf Line: 26
+    Info (12023): Found entity 1: shift_taps_s1o File: C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/db/shift_taps_s1o.tdf Line: 26
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_ql71.tdf
-    Info (12023): Found entity 1: altsyncram_ql71 File: C:/Users/Abdallah/Desktop/RSA/FPGA_RSA_UHF_RFID/rsa_rfid/db/altsyncram_ql71.tdf Line: 27
+    Info (12023): Found entity 1: altsyncram_ql71 File: C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/db/altsyncram_ql71.tdf Line: 27
 Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_04f.tdf
-    Info (12023): Found entity 1: cntr_04f File: C:/Users/Abdallah/Desktop/RSA/FPGA_RSA_UHF_RFID/rsa_rfid/db/cntr_04f.tdf Line: 24
+    Info (12023): Found entity 1: cntr_04f File: C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/db/cntr_04f.tdf Line: 24
 Info (12021): Found 1 design units, including 1 entities, in source file db/cmpr_frb.tdf
-    Info (12023): Found entity 1: cmpr_frb File: C:/Users/Abdallah/Desktop/RSA/FPGA_RSA_UHF_RFID/rsa_rfid/db/cmpr_frb.tdf Line: 22
-Info (12130): Elaborated megafunction instantiation "dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|lpm_mult:Mult0" File: C:/Users/Abdallah/Desktop/RSA/FPGA_RSA_UHF_RFID/rsa_rfid/encrypt_decrypt.v Line: 29
-Info (12133): Instantiated megafunction "dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|lpm_mult:Mult0" with the following parameter: File: C:/Users/Abdallah/Desktop/RSA/FPGA_RSA_UHF_RFID/rsa_rfid/encrypt_decrypt.v Line: 29
+    Info (12023): Found entity 1: cmpr_frb File: C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/db/cmpr_frb.tdf Line: 22
+Info (12130): Elaborated megafunction instantiation "dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|lpm_mult:Mult0" File: C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/encrypt_decrypt.v Line: 29
+Info (12133): Instantiated megafunction "dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|lpm_mult:Mult0" with the following parameter: File: C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/encrypt_decrypt.v Line: 29
     Info (12134): Parameter "LPM_WIDTHA" = "32"
     Info (12134): Parameter "LPM_WIDTHB" = "32"
     Info (12134): Parameter "LPM_WIDTHP" = "64"
@@ -3256,9 +3267,9 @@ Info (12133): Instantiated megafunction "dataPath:DP|encrypt_decrypt:encrypt_dec
     Info (12134): Parameter "INPUT_B_IS_CONSTANT" = "NO"
     Info (12134): Parameter "MAXIMIZE_SPEED" = "5"
 Info (12021): Found 1 design units, including 1 entities, in source file db/mult_uns.tdf
-    Info (12023): Found entity 1: mult_uns File: C:/Users/Abdallah/Desktop/RSA/FPGA_RSA_UHF_RFID/rsa_rfid/db/mult_uns.tdf Line: 30
-Info (12130): Elaborated megafunction instantiation "dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|lpm_mult:Mult1" File: C:/Users/Abdallah/Desktop/RSA/FPGA_RSA_UHF_RFID/rsa_rfid/encrypt_decrypt.v Line: 31
-Info (12133): Instantiated megafunction "dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|lpm_mult:Mult1" with the following parameter: File: C:/Users/Abdallah/Desktop/RSA/FPGA_RSA_UHF_RFID/rsa_rfid/encrypt_decrypt.v Line: 31
+    Info (12023): Found entity 1: mult_uns File: C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/db/mult_uns.tdf Line: 30
+Info (12130): Elaborated megafunction instantiation "dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|lpm_mult:Mult1" File: C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/encrypt_decrypt.v Line: 31
+Info (12133): Instantiated megafunction "dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|lpm_mult:Mult1" with the following parameter: File: C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/encrypt_decrypt.v Line: 31
     Info (12134): Parameter "LPM_WIDTHA" = "32"
     Info (12134): Parameter "LPM_WIDTHB" = "32"
     Info (12134): Parameter "LPM_WIDTHP" = "64"
@@ -3270,25 +3281,25 @@ Info (12133): Instantiated megafunction "dataPath:DP|encrypt_decrypt:encrypt_dec
     Info (12134): Parameter "MAXIMIZE_SPEED" = "5"
 Warning (14284): Synthesized away the following node(s):
     Warning (14285): Synthesized away the following DSP element node(s):
-        Warning (14320): Synthesized away node "dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|lpm_mult:Mult1|mult_uns:auto_generated|mac_mult7" File: C:/Users/Abdallah/Desktop/RSA/FPGA_RSA_UHF_RFID/rsa_rfid/db/mult_uns.tdf Line: 66
-        Warning (14320): Synthesized away node "dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|lpm_mult:Mult1|mult_uns:auto_generated|mac_out8" File: C:/Users/Abdallah/Desktop/RSA/FPGA_RSA_UHF_RFID/rsa_rfid/db/mult_uns.tdf Line: 90
-        Warning (14320): Synthesized away node "dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|lpm_mult:Mult0|mult_uns:auto_generated|mac_mult7" File: C:/Users/Abdallah/Desktop/RSA/FPGA_RSA_UHF_RFID/rsa_rfid/db/mult_uns.tdf Line: 66
-        Warning (14320): Synthesized away node "dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|lpm_mult:Mult0|mult_uns:auto_generated|mac_out8" File: C:/Users/Abdallah/Desktop/RSA/FPGA_RSA_UHF_RFID/rsa_rfid/db/mult_uns.tdf Line: 90
+        Warning (14320): Synthesized away node "dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|lpm_mult:Mult1|mult_uns:auto_generated|mac_mult7" File: C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/db/mult_uns.tdf Line: 66
+        Warning (14320): Synthesized away node "dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|lpm_mult:Mult1|mult_uns:auto_generated|mac_out8" File: C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/db/mult_uns.tdf Line: 90
+        Warning (14320): Synthesized away node "dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|lpm_mult:Mult0|mult_uns:auto_generated|mac_mult7" File: C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/db/mult_uns.tdf Line: 66
+        Warning (14320): Synthesized away node "dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|lpm_mult:Mult0|mult_uns:auto_generated|mac_out8" File: C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/db/mult_uns.tdf Line: 90
 Info (13014): Ignored 142 buffer(s)
     Info (13019): Ignored 142 SOFT buffer(s)
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Info (21057): Implemented 3633 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 100 input pins
+    Info (21058): Implemented 99 input pins
     Info (21059): Implemented 33 output pins
-    Info (21061): Implemented 3460 logic cells
+    Info (21061): Implemented 3461 logic cells
     Info (21064): Implemented 28 RAM segments
     Info (21062): Implemented 12 DSP elements
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 12 warnings
-    Info: Peak virtual memory: 4874 megabytes
-    Info: Processing ended: Sun Nov 13 23:08:41 2022
-    Info: Elapsed time: 00:00:10
-    Info: Total CPU time (on all processors): 00:00:17
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 16 warnings
+    Info: Peak virtual memory: 4891 megabytes
+    Info: Processing ended: Tue Nov 15 15:36:38 2022
+    Info: Elapsed time: 00:00:21
+    Info: Total CPU time (on all processors): 00:00:18
 
 

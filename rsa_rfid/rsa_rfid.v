@@ -13,14 +13,13 @@ module rsa_rfid
 	
 	// Controller I/O
 	input wire go,       // enablers
-	output wire done,     // flags
-	input wire divide       // enablers
+	output wire done     // flags
 	);
 	
 	wire load, running, over;
 	
-	dataPath DP(clk, reset, input_text, key, mod, output_text, load, running, over, divide);
-	controlUnit CU(clk, reset, go, done, load, running, over);
+	dataPath DP(clk, reset, input_text, key, mod, output_text, load, running, over);
+	controlUnit CU(clk, reset, go, load, running, done, over);
 
 
 endmodule 

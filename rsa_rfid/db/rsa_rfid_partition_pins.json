@@ -136,19 +136,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "divide",
-					"strict" : false
-				},
-				{
 					"name" : "clk",
-					"strict" : false
-				},
-				{
-					"name" : "reset",
-					"strict" : false
-				},
-				{
-					"name" : "go",
 					"strict" : false
 				},
 				{
@@ -277,6 +265,14 @@
 				},
 				{
 					"name" : "key[31]",
+					"strict" : false
+				},
+				{
+					"name" : "go",
+					"strict" : false
+				},
+				{
+					"name" : "reset",
 					"strict" : false
 				},
 				{

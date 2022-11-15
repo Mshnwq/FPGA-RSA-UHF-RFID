@@ -1,10 +1,4 @@
 
-State Machine - |rsa_rfid|controlUnit:CU|state
-Name state.S0 state.S2 state.S1 
-state.S0 0 0 0 
-state.S1 1 0 1 
-state.S2 1 1 0 
-
 State Machine - |rsa_rfid|dataPath:DP|encrypt_decrypt:encrypt_decrypt_state_machine|state
 Name state.HOLD state.DIVIDING state.UPDATE 
 state.DIVIDING 0 0 0 

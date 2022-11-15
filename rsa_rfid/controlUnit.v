@@ -1,77 +1,17 @@
 `timescale 1 ps / 1 ps
 module controlUnit
-	(
+		(
 	input clk, reset, go,
-	output reg done, load, running,
+	output load , running, done,
 	input over
 	);
 	
-	// Defining States
-	localparam S0 = 2'b00; // idle
-	localparam S1 = 2'b01; // running
-	localparam S2 = 2'b10; // done
+	wire [1:0] address;
+	wire countLoad;
+	wire [1:0] NSTw;
+	wire [1:0] TESTw;
 	
-	// initializing state toggle
-	reg [1:0] state = S0; 
-	reg [1:0] nextState;
-	
-	always @(posedge clk, posedge reset)
-		if (reset)
-			state <= S0; //Synchronous reset
-		else
-			state <= nextState;
-		
-		
-	// outputs of each state	
-	always @(*) 
-	begin
-		// initialized variables
-		done    = 0;
-		load    = 0;
-		running = 0; 
-		nextState = state;
-		
-		case(state)
-			S0:
-				begin
-				
-					if(~go) 
-					begin 
-						nextState = S0;
-					end
-					
-					else
-					begin
-						load      = 1;
-						running   = 1; 
-						nextState = S1;
-					end
-					
-				end
-			S1:
-				begin
-					
-					if(~over) 
-					begin
-						running = 1;					
-						nextState  = S1;
-					end
-					
-					else
-					begin
-						done      = 1;
-						nextState = S2;
-					end
-					
-				end
-			S2: 
-				begin
-				
-					done      = 1;
-					nextState = S0;
-					
-				end
-		endcase
-	end
-	 
-endmodule 
+	counter counter0(clk, reset, ~countLoad, NSTw, address);
+	ROM rom0(address, clk, TESTw, NSTw, load, running, done);
+   mux4to1 mux0(~go, ~over, 1'b0, 1'b1, TESTw, countLoad); 
+endmodule
