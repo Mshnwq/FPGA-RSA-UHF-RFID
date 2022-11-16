@@ -16,45 +16,6 @@ class GenMode_MainWindow(object):
         MainWindow.resize(WINDOW_WIDTH, WINDOW_HEIGHT)
         self.centralwidget = QWidget(MainWindow)
 
-        self.title_txt = QLabel(self.centralwidget)
-        self.title_txt.setGeometry(QRect(int(WINDOW_WIDTH/1.8), 2, 300, 40))
-        font.setPointSize(12)
-        font.setBold(True)
-        font.setWeight(40)
-        self.title_txt.setFont(font)
-
-        self.FPGA_btn = QPushButton(self.centralwidget)
-        # self.FPGA_btn.setStyleSheet("font-weight: bold")
-        self.FPGA_btn.setGeometry(QRect(int(WINDOW_WIDTH/1.225), 6, BUTTON_WIDTH, BUTTON_HEIGHT))
-        self.FPGA_btn.setStyleSheet("QPushButton" 
-                                    "{"
-                                        "background-color: rgb(0, 0, 250);"
-                                        "border-style: outset;"
-                                        "border-width: 2px;"
-                                        "border-radius: 10px;"
-                                        "border-color: black;"
-                                        "font: bold 14px;"
-                                        "color: white;"
-                                        "padding: 1px;"
-                                    "}"
-                                    "QPushButton::pressed" 
-                                    "{"
-                                        "background-color: rgb(0, 0, 150);"
-                                        "border-style: inset;"
-                                    "}"
-                                    )
-        # self.FPGA_btn.setStyleSheet(
-            # "background-color: rgb(0, 0, 250);\nborder-style: outset;\nborder-width: 2px;\nborder-radius: 10px;\nborder-color: rgb(0, 0, 154);\nfont: bold 14px;;\npadding: 1px;")
-        self.FPGA_statusBox = QGroupBox(self.centralwidget)
-        self.FPGA_statusBox.setStyleSheet("color: rgb(0, 0, 250);\nfont-weight: bold;")
-        self.FPGA_statusBox.setGeometry(QRect(int(WINDOW_WIDTH)-BUTTON_WIDTH-6, 6, BUTTON_WIDTH, BUTTON_HEIGHT))
-        font.setPointSize(8)
-        font.setBold(False)
-        font.setWeight(8)
-        self.FPGA_statusBox.setFont(font)
-        self.FPGA_statusText = QLabel(self.FPGA_statusBox)
-        self.FPGA_statusText.setGeometry(QRect(12, 5, BUTTON_WIDTH, BUTTON_HEIGHT))
-
         keyGenBox_Xaxis = int(WINDOW_WIDTH/24)
         keyGenBox_Yaxis = int(WINDOW_HEIGHT/24)
 
@@ -236,18 +197,10 @@ class GenMode_MainWindow(object):
 
        
         MainWindow.setCentralWidget(self.centralwidget)
-        # self.menubar = QMenuBar(MainWindow)
-        # self.menubar.setGeometry(QRect(0, 0, 1147, 26))
-        # self.menubar.setObjectName("menubar")
-        # MainWindow.setMenuBar(self.menubar)
-        # self.statusbar = QStatusBar(MainWindow)
-        # self.statusbar.setObjectName("statusbar")
-        # MainWindow.setStatusBar(self.statusbar)
 
         # translate text into components
         _translate = QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "Generate Mode"))
-        self.title_txt.setText(_translate("MainWindow", "Establish FPGA UART Connection"))
         self.keyGen_groupBox.setTitle(_translate("MainWindow", "Generation"))
         self.bit64_btn.setText(_translate("MainWindow", "64 bit"))
         self.bit32_btn.setText(_translate("MainWindow", "32 bit"))
@@ -259,17 +212,11 @@ class GenMode_MainWindow(object):
         self.D_label.setText(_translate("MainWindow", "D:"))
         self.D_label_box.setText(_translate("MainWindow", "---"))
         self.Private_label.setText(_translate("MainWindow", "Private Key Pair {E,N}"))
-        # self.Private_box.setText(_translate("MainWindow", "---"))
         self.Public_label.setText(_translate("MainWindow", "Public Key Pair {D,N}"))
-        # self.Public_box.setText(_translate("MainWindow", "---"))
         self.message_groupBox.setTitle(_translate("MainWindow", "Enter a message"))
         self.plaintext_label.setText(_translate("MainWindow", "PlainText"))
         self.ciphertext_label.setText(_translate("MainWindow", "CipherText"))
-        # self.ciphertext_box.setText(_translate("MainWindow", "-----"))
         self.logs_label.setText(_translate("MainWindow", "Logs"))
-        self.FPGA_btn.setText(_translate("MainWindow", "Connect"))
-        self.FPGA_statusBox.setTitle(_translate("MainWindow", "     Status"))
-        self.FPGA_statusText.setText(_translate("MainWindow", "-------------"))
         self.genKeys_btn.setText(_translate("MainWindow", "Generate Keys"))
         self.genKeys_statusBox.setTitle(_translate("MainWindow", "     Status"))
         self.genKeys_statusText.setText(_translate("MainWindow", "-------------"))
@@ -295,99 +242,182 @@ class GenMode_MainWindow(object):
         
 class AttMode_MainWindow(object):
     def setupUi(self, MainWindow):
-    
+        
         WINDOW_WIDTH = 1200
         WINDOW_HEIGHT = 800
         BUTTON_WIDTH = 100
-        BUTTON_HEIGHT = 40
+        BUTTON_HEIGHT = 36
+        font = QFont()
     
         # create components
         MainWindow.resize(WINDOW_WIDTH, WINDOW_HEIGHT)
         self.centralwidget = QWidget(MainWindow)
 
-        self.title_txt = QLabel(self.centralwidget)
-        self.title_txt.setGeometry(QRect(int(WINDOW_WIDTH/10), int(WINDOW_HEIGHT/6), 400, 40))
-        font = QFont()
-        font.setPointSize(16)
+        fetchBox_Xaxis = int(WINDOW_WIDTH/24)
+        fetchBox_Yaxis = int(WINDOW_HEIGHT/24)
+
+        self.fetch_groupBox = QGroupBox(self.centralwidget)
+        self.fetch_groupBox.setGeometry(QRect(fetchBox_Xaxis, fetchBox_Yaxis, 
+                                int(WINDOW_WIDTH/4), int(WINDOW_HEIGHT/2)+36))
+        self.fetch_groupBox.setAutoFillBackground(False)
+        self.fetch_groupBox.setStyleSheet("font-weight: bold")
+        font.setPointSize(12)
         font.setBold(True)
         font.setWeight(40)
-        self.title_txt.setFont(font)
+        self.fetch_groupBox.setFont(font)
+        
+        self.fetch_btn = QPushButton(self.fetch_groupBox)
+        self.fetch_btn.setGeometry(QRect(36, int(36*1.5), BUTTON_WIDTH+6, BUTTON_HEIGHT))
+        self.fetch_statusBox = QGroupBox(self.fetch_groupBox)
+        self.fetch_statusBox.setGeometry(QRect(int(36*4.8), int(36*1.5), BUTTON_WIDTH, BUTTON_HEIGHT))
+        font.setPointSize(8)
+        font.setBold(False)
+        font.setWeight(8)
+        self.fetch_statusBox.setFont(font)
+        self.fetch_statusText = QLabel(self.fetch_statusBox)
+        self.fetch_statusText.setGeometry(QRect(12, 5, BUTTON_WIDTH, BUTTON_HEIGHT))
+        
+        self.readKey_btn = QPushButton(self.fetch_groupBox)
+        self.readKey_btn.setStyleSheet("font-weight: bold")
+        self.readKey_btn.setGeometry(QRect(36, int(36*3), BUTTON_WIDTH+6, BUTTON_HEIGHT))
+        self.readKey_statusBox = QGroupBox(self.fetch_groupBox)
+        self.readKey_statusBox.setStyleSheet("font-weight: bold")
+        self.readKey_statusBox.setGeometry(QRect(int(36*4.8), int(36*3), BUTTON_WIDTH, BUTTON_HEIGHT))
+        font.setPointSize(8)
+        font.setBold(False)
+        font.setWeight(8)
+        self.readKey_statusBox.setFont(font)
+        self.readKey_statusText = QLabel(self.readKey_statusBox)
+        self.readKey_statusText.setGeometry(QRect(12, 5, BUTTON_WIDTH, BUTTON_HEIGHT))
 
-        self.GenMode_btn = QPushButton(self.centralwidget)
-        self.GenMode_btn.setGeometry(QRect(int(WINDOW_WIDTH/8), int(WINDOW_HEIGHT/2), BUTTON_WIDTH, BUTTON_HEIGHT))
-        self.AttMode_btn = QPushButton(self.centralwidget)
-        self.AttMode_btn.setGeometry(QRect(int(WINDOW_WIDTH*5/8), int(WINDOW_HEIGHT/2), BUTTON_WIDTH, BUTTON_HEIGHT))
+        self.Public_label = QLabel(self.fetch_groupBox)
+        self.Public_label.setGeometry(QRect(36, int(36*5), BUTTON_WIDTH+36, BUTTON_HEIGHT))
+        self.Public_groupBox = QGroupBox(self.fetch_groupBox)
+        self.Public_groupBox.setGeometry(QRect(36, int(36*6), int(36*6.5), (36*5)+4))
+        self.Public_box = QLabel(self.Public_groupBox)
+        self.Public_box.setGeometry(QRect(6, 2, int(36*8), 36*5))
+        font.setPointSize(10)
+        font.setBold(False)
+        font.setWeight(10)
+        self.Public_box.setFont(font)
+        self.Public_label.setFont(font)
 
-        MainWindow.setCentralWidget(self.centralwidget)
 
-        QMetaObject.connectSlotsByName(MainWindow)
-
-        self.centralwidget = QWidget(MainWindow)
-        self.centralwidget.setObjectName("centralwidget")
-        self.label = QLabel(self.centralwidget)
-        self.label.setGeometry(QRect(30, 30, 451, 71))
-        font = QFont()
-        font.setPointSize(20)
+        self.message_groupBox = QGroupBox(self.centralwidget)
+        self.message_groupBox.setGeometry(QRect(int(2*WINDOW_WIDTH/24)+int(WINDOW_WIDTH/4), 
+                                                int(WINDOW_HEIGHT/24), 
+                                                WINDOW_WIDTH-(int(3*WINDOW_WIDTH/24)+ int(WINDOW_WIDTH/4)), 
+                                                int(WINDOW_HEIGHT/2)+36))
+        self.message_groupBox.setAutoFillBackground(False)
+        self.message_groupBox.setStyleSheet("font-weight: bold")
+        font.setPointSize(12)
         font.setBold(True)
-        font.setWeight(75)
-        self.label.setFont(font)
-        self.label.setObjectName("label")
-        self.textEdit_2 = QTextEdit(self.centralwidget)
-        self.textEdit_2.setGeometry(QRect(30, 330, 421, 181))
-        self.textEdit_2.setObjectName("textEdit_2")
-        self.pushButton_6 = QPushButton(self.centralwidget)
-        self.pushButton_6.setGeometry(QRect(460, 330, 93, 28))
-        self.pushButton_6.setObjectName("pushButton_6")
-        self.pushButton_8 = QPushButton(self.centralwidget)
-        self.pushButton_8.setGeometry(QRect(400, 330, 93, 28))
-        self.pushButton_8.setObjectName("pushButton_6")
-        self.label_32 = QLabel(self.centralwidget)
-        self.label_32.setGeometry(QRect(30, 310, 131, 16))
-        font = QFont()
+        font.setWeight(40)
+        self.message_groupBox.setFont(font)
+
+        self.ciphertext_label = QLabel(self.message_groupBox)
+        self.ciphertext_label.setGeometry(QRect(40*3, 40, 
+        WINDOW_WIDTH-(int(3*WINDOW_WIDTH/24)+ int(WINDOW_WIDTH/4)) - 40*2, 40))
+        font.setPointSize(13)
         font.setBold(True)
-        font.setWeight(75)
-        self.label_32.setFont(font)
-        self.label_32.setObjectName("label_32")
-        self.groupBox = QGroupBox(self.centralwidget)
-        self.groupBox.setGeometry(QRect(30, 110, 421, 191))
-        self.groupBox.setAutoFillBackground(False)
-        self.groupBox.setStyleSheet("font-weight: bold")
-        self.groupBox.setObjectName("groupBox")
-        self.label_2 = QLabel(self.groupBox)
-        self.label_2.setGeometry(QRect(20, 30, 91, 16))
-        self.label_2.setObjectName("label_2")
+        font.setWeight(40)
+        self.ciphertext_label.setFont(font)
+        self.ciphertext_box = QGroupBox(self.message_groupBox)
+        self.ciphertext_box.setGeometry(QRect(40, 40*2, 
+        WINDOW_WIDTH-(int(3*WINDOW_WIDTH/24)+ int(WINDOW_WIDTH/4)) - 40*2, 40*4))
+        self.ciphertext_text = QLabel(self.message_groupBox)
+        self.ciphertext_text.setGeometry(QRect(40, 40*2, 
+        WINDOW_WIDTH-(int(3*WINDOW_WIDTH/24)+ int(WINDOW_WIDTH/4)) - 40*2, 40))
+
+        self.plaintext_label = QLabel(self.message_groupBox)
+        self.plaintext_label.setGeometry(QRect(40*3, int(40*7.5), 
+        WINDOW_WIDTH-(int(3*WINDOW_WIDTH/24)+ int(WINDOW_WIDTH/4)) - 40*2, 40))
+        font.setPointSize(13)
+        font.setBold(True)
+        font.setWeight(40)
+        self.plaintext_label.setFont(font)
+        self.plaintext_box = QGroupBox(self.message_groupBox)
+        self.plaintext_box.setGeometry(QRect(40, int(40*8.5), 
+        WINDOW_WIDTH-(int(3*WINDOW_WIDTH/24)+ int(WINDOW_WIDTH/4)) - 40*2, 40*2))
+        self.plaintext_text = QLabel(self.plaintext_box)
+        self.plaintext_text.setGeometry(QRect(12, -45, BUTTON_WIDTH*6, BUTTON_HEIGHT*4))
+        font.setPointSize(10)
+        font.setBold(False)
+        font.setWeight(10)
+        self.plaintext_text.setFont(font)
+
+        self.decryptMsg_btn = QPushButton(self.message_groupBox)
+        self.decryptMsg_btn.setStyleSheet("font-weight: bold")
+        self.decryptMsg_btn.setGeometry(QRect(40*6, int(40*6.5), BUTTON_WIDTH+20, BUTTON_HEIGHT))
+        self.decryptMsg_statusBox = QGroupBox(self.message_groupBox)
+        self.decryptMsg_statusBox.setStyleSheet("font-weight: bold")
+        self.decryptMsg_statusBox.setGeometry(QRect(40*10, int(40*6.5), BUTTON_WIDTH, BUTTON_HEIGHT))
+        font.setPointSize(8)
+        font.setBold(False)
+        font.setWeight(8)
+        self.decryptMsg_statusBox.setFont(font)
+        self.decryptMsg_statusText = QLabel(self.decryptMsg_statusBox)
+        self.decryptMsg_statusText.setGeometry(QRect(12, 5, BUTTON_WIDTH, BUTTON_HEIGHT))
+        
+
+        self.logs_box = QTextEdit(self.centralwidget)
+        self.logs_box.setGeometry(QRect(fetchBox_Xaxis + BUTTON_WIDTH + 36, 
+                                          int(2.5*WINDOW_HEIGHT/24)+int(WINDOW_HEIGHT/2), 
+                                          WINDOW_WIDTH-(fetchBox_Xaxis + BUTTON_WIDTH + 4)*2, 
+                                          int(WINDOW_HEIGHT/2)-int(3.5*WINDOW_HEIGHT/24)))
+
+        self.logs_label = QLabel(self.centralwidget)
+        self.logs_label.setGeometry(QRect(fetchBox_Xaxis+10*6,       
+                                          int(2.5*WINDOW_HEIGHT/24)+int(WINDOW_HEIGHT/2), 
+                                          BUTTON_WIDTH, BUTTON_HEIGHT))
+        font.setPointSize(14)
+        font.setBold(True)
+        font.setWeight(60)
+        self.logs_label.setFont(font)
+
+        self.clearLogs_btn = QPushButton(self.centralwidget)
+        self.clearLogs_btn.setStyleSheet("font-weight: bold")
+        self.clearLogs_btn.setGeometry(QRect(int(fetchBox_Xaxis*1.5), 11+ int(WINDOW_HEIGHT)-40*2, 
+                                            BUTTON_WIDTH, BUTTON_HEIGHT))
+
+
+
        
         MainWindow.setCentralWidget(self.centralwidget)
-        self.menubar = QMenuBar(MainWindow)
-        self.menubar.setGeometry(QRect(0, 0, 1147, 26))
-        self.menubar.setObjectName("menubar")
-        MainWindow.setMenuBar(self.menubar)
-        self.statusbar = QStatusBar(MainWindow)
-        self.statusbar.setObjectName("statusbar")
-        MainWindow.setStatusBar(self.statusbar)
 
         # translate text into components
         _translate = QCoreApplication.translate
-        MainWindow.setWindowTitle(_translate("MainWindow", "Attempt Mode"))
-        self.label.setText(_translate("MainWindow", "RSA Attempt"))
-        self.textEdit_2.setHtml(_translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+        MainWindow.setWindowTitle(_translate("MainWindow", "Generate Mode"))
+        self.fetch_groupBox.setTitle(_translate("MainWindow", "Fetch Data"))
+        self.Public_label.setText(_translate("MainWindow", "Public Key Read"))
+        self.message_groupBox.setTitle(_translate("MainWindow", "The Message"))
+        self.ciphertext_label.setText(_translate("MainWindow", "CipherText"))
+        self.plaintext_label.setText(_translate("MainWindow", "PlainText"))
+        self.logs_label.setText(_translate("MainWindow", "Logs"))
+        self.fetch_btn.setText(_translate("MainWindow", "Fetch"))
+        self.fetch_statusBox.setTitle(_translate("MainWindow", "     Status"))
+        self.fetch_statusText.setText(_translate("MainWindow", "-------------"))
+        self.readKey_btn.setText(_translate("MainWindow", "Read Key"))
+        self.readKey_statusBox.setTitle(_translate("MainWindow", "     Status"))
+        self.readKey_statusText.setText(_translate("MainWindow", "-------------"))
+        self.decryptMsg_btn.setText(_translate("MainWindow", "Decrypt Message"))
+        self.decryptMsg_statusBox.setTitle(_translate("MainWindow", "     Status"))
+        self.decryptMsg_statusText.setText(_translate("MainWindow", "-------------"))
+        self.clearLogs_btn.setText(_translate("MainWindow", "Clear"))
+
+        self.logs_box.setHtml(_translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:\'MS Shell Dlg 2\'; font-size:7.8pt; font-weight:400; font-style:normal;\">\n"
 "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p></body></html>"))
-        self.label_32.setText(_translate("MainWindow", "Logs"))
-        self.groupBox.setTitle(_translate("MainWindow", "Generator"))
-        self.label_2.setText(_translate("MainWindow", "Key"))
-        self.pushButton_6.setText(_translate("MainWindow", "Read"))
-        self.pushButton_8.setText(_translate("MainWindow", "d"))
 
         QMetaObject.connectSlotsByName(MainWindow)
 
 class Choice_Window(object):
     def setupUi(self, ChoiceWindow):
        
-        WINDOW_WIDTH = 400
-        WINDOW_HEIGHT = 200
+        WINDOW_WIDTH = 500
+        WINDOW_HEIGHT = 250
         BUTTON_WIDTH = 100
         BUTTON_HEIGHT = 50
     
@@ -395,25 +425,112 @@ class Choice_Window(object):
         ChoiceWindow.resize(WINDOW_WIDTH, WINDOW_HEIGHT)
         self.centralwidget = QWidget(ChoiceWindow)
 
-        self.title_txt = QLabel(self.centralwidget)
-        self.title_txt.setGeometry(QRect(int(WINDOW_WIDTH/10), int(WINDOW_HEIGHT/6), 400, 40))
         font = QFont()
+        
+        self.FPGA_btn = QPushButton(self.centralwidget)
+        self.FPGA_btn.setGeometry(QRect(int((WINDOW_WIDTH/5)), int(WINDOW_HEIGHT/4), 
+                                            BUTTON_WIDTH, BUTTON_HEIGHT))
+        self.FPGA_btn.setStyleSheet("QPushButton" 
+                                    "{"
+                                        "background-color: rgb(0, 0, 250);"
+                                        "border-style: outset;"
+                                        "border-width: 2px;"
+                                        "border-radius: 10px;"
+                                        "border-color: black;"
+                                        "font: bold 14px;"
+                                        "color: white;"
+                                        "padding: 1px;"
+                                    "}"
+                                    "QPushButton::pressed" 
+                                    "{"
+                                        "background-color: rgb(0, 0, 150);"
+                                        "border-style: inset;"
+                                    "}"
+                                    )
+        self.FPGA_statusBox = QGroupBox(self.centralwidget)
+        self.FPGA_statusBox.setStyleSheet("color: rgb(0, 0, 250);\nfont-weight: bold;")
+        self.FPGA_statusBox.setGeometry(QRect(int((WINDOW_WIDTH*3/5)), int(WINDOW_HEIGHT/4), 
+                                            BUTTON_WIDTH, BUTTON_HEIGHT))
+        font.setPointSize(8)
+        font.setBold(False)
+        font.setWeight(8)
+        self.FPGA_statusBox.setFont(font)
+        self.FPGA_statusText = QLabel(self.FPGA_statusBox)
+        self.FPGA_statusText.setGeometry(QRect(12, 5, BUTTON_WIDTH, BUTTON_HEIGHT))
+
+        self.title_txt = QLabel(self.centralwidget)
+        self.title_txt.setGeometry(QRect(int(WINDOW_WIDTH/10), int(WINDOW_HEIGHT/2), 400, 40))
         font.setPointSize(16)
         font.setBold(True)
         font.setWeight(40)
         self.title_txt.setFont(font)
 
+        self.FPGA_txt = QLabel(self.centralwidget)
+        self.FPGA_txt.setGeometry(QRect(int(WINDOW_WIDTH/10), int(WINDOW_HEIGHT/24), 400, 40))
+        font.setPointSize(16)
+        font.setBold(True)
+        font.setWeight(40)
+        self.FPGA_txt.setFont(font)
+
         self.GenMode_btn = QPushButton(self.centralwidget)
-        self.GenMode_btn.setGeometry(QRect(int(WINDOW_WIDTH/8), int(WINDOW_HEIGHT/2), BUTTON_WIDTH, BUTTON_HEIGHT))
+        self.GenMode_btn.setGeometry(QRect(int(WINDOW_WIDTH/16), WINDOW_HEIGHT-int(WINDOW_HEIGHT/4), BUTTON_WIDTH*2, BUTTON_HEIGHT))
+        self.GenMode_btn.setStyleSheet("QPushButton" 
+                                    "{"
+                                        "background-color: rgb(0, 250, 0);"
+                                        "border-style: outset;"
+                                        "border-width: 2px;"
+                                        "border-radius: 10px;"
+                                        "border-color: black;"
+                                        "font: bold 14px;"
+                                        "color: white;"
+                                        "padding: 1px;"
+                                    "}"
+                                    "QPushButton::pressed" 
+                                    "{"
+                                        "background-color: rgb(0, 150, 0);"
+                                        "border-style: inset;"
+                                    "}"
+                                    "QPushButton::disabled" 
+                                    "{"
+                                        "background-color: rgb(0, 50, 0);"
+                                        "border-style: inset;"
+                                    "}"
+                                    )
         self.AttMode_btn = QPushButton(self.centralwidget)
-        self.AttMode_btn.setGeometry(QRect(int(WINDOW_WIDTH*5/8), int(WINDOW_HEIGHT/2), BUTTON_WIDTH, BUTTON_HEIGHT))
+        self.AttMode_btn.setGeometry(QRect(int(WINDOW_WIDTH*8.7/16), WINDOW_HEIGHT-int(WINDOW_HEIGHT/4), BUTTON_WIDTH*2, BUTTON_HEIGHT))
+        self.AttMode_btn.setStyleSheet("QPushButton" 
+                                    "{"
+                                        "background-color: rgb(250, 0, 0);"
+                                        "border-style: outset;"
+                                        "border-width: 2px;"
+                                        "border-radius: 10px;"
+                                        "border-color: black;"
+                                        "font: bold 14px;"
+                                        "color: white;"
+                                        "padding: 1px;"
+                                    "}"
+                                    "QPushButton::pressed" 
+                                    "{"
+                                        "background-color: rgb(150, 0, 0);"
+                                        "border-style: inset;"
+                                    "}"
+                                    "QPushButton::disabled" 
+                                    "{"
+                                        "background-color: rgb(50, 0, 0);"
+                                        "border-style: inset;"
+                                    "}"
+                                    )
 
         ChoiceWindow.setCentralWidget(self.centralwidget)
 
         # translate text into components
         _translate = QCoreApplication.translate
         ChoiceWindow.setWindowTitle(_translate("ChoiceWindow", "RSA Encryption/Descryption"))
-        self.title_txt.setText(_translate("ChoiceWindow", "Choose an Operation Mode"))
+        self.title_txt.setText(_translate("ChoiceWindow", "     Choose an Operation Mode"))
+        self.FPGA_txt.setText(_translate("ChoiceWindow", "Establish FPGA UART Connection"))
+        self.FPGA_btn.setText(_translate("ChoiceWindow", "Connect"))
+        self.FPGA_statusBox.setTitle(_translate("ChoiceWindow", "     Status"))
+        self.FPGA_statusText.setText(_translate("ChoiceWindow", "-------------"))
         self.GenMode_btn.setText(_translate("ChoiceWindow", "Generate Mode"))
         self.AttMode_btn.setText(_translate("ChoiceWindow", "Attempt Mode"))
 

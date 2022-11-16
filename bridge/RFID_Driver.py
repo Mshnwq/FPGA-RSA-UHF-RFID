@@ -23,15 +23,16 @@ class RFID:
     # init method or constructor
     def __init__(self):
 
-        ################################################################# Uncomment when you use the writer
+        ################################################################ Uncomment when you use the writer
         # self.__setup_dll()
         # self.openPort()
         # print("opened COM ", self.fOpenComIndex.value)
         # self.setDeviceSettings() # use when needed
         # self.getDeviceInfo() # use when needed
         # self.closePort() # use when needed
-        ################################################################# Uncomment when you use the writer
+        ################################################################ Uncomment when you use the writer
         print("constructed RFID")
+        self.__key__ = 0
         
 ########### DEVICE INITIALIZATION METHODS ############
 
@@ -354,7 +355,7 @@ class RFID:
 
 ##### GUI METHODS #####
     def writeKey(self, desiredDataToWrite, window):
-        return 0
+        return 1
         dataToWrite = bytes(desiredDataToWrite) # convert to bytes
         window.logs_box.append("writing key...")
         writtenComplete = False
@@ -398,7 +399,7 @@ class RFID:
     # return 0 when failed to read the tag
     # return 1 when successfully read tag
     # return 2 when surpassed amount of tags {to pop a window}
-
+        return 1
         # print("Reading tag...")
         window.logs_box.append("Reading tag...")
         readComplete = False
@@ -432,16 +433,16 @@ class RFID:
                         return 0 # fail once attempt 5 is reached
                     continue
 
-        # window.logs_box.append("******************")
-        # window.logs_box.append("******************")
-        # window.logs_box.append("     Tag Read     ")
-        # window.logs_box.append("******************")
-        # window.logs_box.append("******************")
-        print("******************")
-        print("******************")
-        print("     Tag Read     ")
-        print("******************")
-        print("******************")
+        window.logs_box.append("******************")
+        window.logs_box.append("******************")
+        window.logs_box.append("     Tag Read     ")
+        window.logs_box.append("******************")
+        window.logs_box.append("******************")
+        # print("******************")
+        # print("******************")
+        # print("     Tag Read     ")
+        # print("******************")
+        # print("******************")
         
         # IATA number is data[0:4]
         #       index is data[5]   is means if it is a master or slave tag, encoded within is number of bags or bag number.
@@ -452,29 +453,29 @@ class RFID:
 
         # Decode tag info
         print(tagRead)
-        self.__key__  = int.from_bytes(tagRead[0:len(tagRead)-1], 'big')
+        self.__key__  = int.from_bytes(tagRead[0:len(tagRead)], 'big')
         print(self.__key__)
         
-        if (bin(tagRead[5])[2:].zfill(8)[0] == '1'):
-            self.isMaster = True
-        else:
-            self.isMaster = False
+        # if (bin(tagRead[5])[2:].zfill(8)[0] == '1'):
+        #     self.isMaster = True
+        # else:
+        #     self.isMaster = False
 
-        # decoding the signed byte "index"
-        if ((self.isMaster and (tagRead[5] != 128))):
-            self.index = ((tagRead[5]*-1) & 0xff)
-        elif (tagRead[5] == 128):
-            self.index = 0
-        else:
-            self.index = tagRead[5]
+        # # decoding the signed byte "index"
+        # if ((self.isMaster and (tagRead[5] != 128))):
+        #     self.index = ((tagRead[5]*-1) & 0xff)
+        # elif (tagRead[5] == 128):
+        #     self.index = 0
+        # else:
+        #     self.index = tagRead[5]
 
-        self.Airline = [k for k, v in self.airlineDict.items() if v == tagRead[6].to_bytes(1,'big')][0]
+        # self.Airline = [k for k, v in self.airlineDict.items() if v == tagRead[6].to_bytes(1,'big')][0]
 
-        keyIntVal = int.from_bytes(tagRead[7:11], 'big')
-        self.keyID  = str(keyIntVal).rjust(12,'0') #TODO 10 digits
+        # keyIntVal = int.from_bytes(tagRead[7:11], 'big')
+        # self.keyID  = str(keyIntVal).rjust(12,'0') #TODO 10 digits
         
-        self.CheckSum    = tagRead[11] #?
-        self.GroupID     = int.from_bytes(tagRead[12:15], 'big')
+        # self.CheckSum    = tagRead[11] #?
+        # self.GroupID     = int.from_bytes(tagRead[12:15], 'big')
 
         # print info
         # print("self.IATAnumber: ", self.IATAnumber )
