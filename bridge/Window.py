@@ -387,7 +387,7 @@ class AttMode_MainWindow(object):
 
         # translate text into components
         _translate = QCoreApplication.translate
-        MainWindow.setWindowTitle(_translate("MainWindow", "Generate Mode"))
+        MainWindow.setWindowTitle(_translate("MainWindow", "Attempt Mode"))
         self.fetch_groupBox.setTitle(_translate("MainWindow", "Fetch Data"))
         self.Public_label.setText(_translate("MainWindow", "Public Key Read"))
         self.message_groupBox.setTitle(_translate("MainWindow", "The Message"))
@@ -525,7 +525,7 @@ class Choice_Window(object):
 
         # translate text into components
         _translate = QCoreApplication.translate
-        ChoiceWindow.setWindowTitle(_translate("ChoiceWindow", "RSA Encryption/Descryption"))
+        ChoiceWindow.setWindowTitle(_translate("ChoiceWindow", "RSA Encryption/Decryption"))
         self.title_txt.setText(_translate("ChoiceWindow", "     Choose an Operation Mode"))
         self.FPGA_txt.setText(_translate("ChoiceWindow", "Establish FPGA UART Connection"))
         self.FPGA_btn.setText(_translate("ChoiceWindow", "Connect"))

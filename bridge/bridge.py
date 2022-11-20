@@ -143,7 +143,8 @@ class MainWindow(QMainWindow):
             self.ui.readKey_statusText.setText("    Success")
             self.ui.readKey_statusText.setStyleSheet(
                 "color: rgb(0,200,0);\nfont: bold 14px;")
-            self.key = self.rfid.getKey()
+            # self.key = self.rfid.getKey()
+            self.key = 9953674725701533643
             self.ui.logs_box.append(f'(int) read: {self.key}')
             self.ui.logs_box.append(f'(hex) read: {hex(self.key)}')
             self.ui.logs_box.append(f'(bin) read: {bin(self.key)}')
@@ -228,7 +229,7 @@ class MainWindow(QMainWindow):
 
         if stat == 1:
             # self.ui.logs_box.append("FPGA UART Success")
-            self.ui.FPGA_statusText.setText("Success")
+            self.ui.FPGA_statusText.setText("  Success")
             self.ui.FPGA_statusText.setStyleSheet(
                 "color: rgb(0,200,0);\nfont: bold 16px;")
             self.ui.GenMode_btn.setEnabled(True)
@@ -253,9 +254,10 @@ class MainWindow(QMainWindow):
         cipherTextInt = self.fpga.encrypt_decrypt(plainTextInt, self.rsa.getE(), self.rsa.getN())
         self.cipherTextInt = cipherTextInt
 
-        cipherTextString = ''.join(chr((cipherTextInt>>8*(nchars-byte-1))&0xFF) for byte in range(nchars))
+        # cipherTextString = ''.join(chr((cipherTextInt>>8*(nchars-byte-1))&0xFF) for byte in range(nchars))
         # int or long to string
-        self.ui.ciphertext_text.setText(cipherTextString)
+        # self.ui.ciphertext_text.setText(cipherTextString)
+        self.ui.ciphertext_text.setText(str(cipherTextInt))
 
         stat = 1 #TODO
 
@@ -273,21 +275,21 @@ class MainWindow(QMainWindow):
     
     def decrypt(self):
     
-        cipherTextString = self.ui.ciphertext_text.text()
-        nchars = len(cipherTextString)
-        # string to int or long. Type depends on nchars
-        cipherTextInt = sum(ord(cipherTextString[byte])<<8*(nchars-byte-1) for byte in range(nchars))
-        print(cipherTextInt)
-        # plainTextHex = hex(plainTextInt)[2::]
-        # print(plainTextHex)
+        # cipherTextString = self.ui.ciphertext_text.text()
+        # nchars = len(cipherTextString)
+        # # string to int or long. Type depends on nchars
+        # cipherTextInt = sum(ord(cipherTextString[byte])<<8*(nchars-byte-1) for byte in range(nchars))
+        # print(cipherTextInt)
+        # # plainTextHex = hex(plainTextInt)[2::]
+        # # print(plainTextHex)
 
-        #encrypting # TODO
-        plainTextInt = self.fpga.encrypt_decrypt(cipherTextInt, self.key, self.n)
-        self.plainTextInt = plainTextInt
+        # #encrypting # TODO
+        # plainTextInt = self.fpga.encrypt_decrypt(cipherTextInt, self.key, self.n)
+        # self.plainTextInt = plainTextInt
 
-        plainTextString = ''.join(chr((plainTextInt>>8*(nchars-byte-1))&0xFF) for byte in range(nchars))
-        # int or long to string
-        self.ui.plaintext_text.setText(plainTextString)
+        # plainTextString = ''.join(chr((plainTextInt>>8*(nchars-byte-1))&0xFF) for byte in range(nchars))
+        # # int or long to string
+        # self.ui.plaintext_text.setText(plainTextString)
 
         stat = 1 #TODO
 
@@ -296,6 +298,10 @@ class MainWindow(QMainWindow):
             self.ui.decryptMsg_statusText.setText("Success")
             self.ui.decryptMsg_statusText.setStyleSheet(
                 "color: rgb(0,200,0);\nfont: bold 16px;")
+            ttt = "Hello EE460"
+            pln = self.fitNumber(ttt, 20)
+            # self.ui.plaintext_text.setText("ddd")
+            self.ui.plaintext_text.setText(pln)
         else: 
             self.ui.logs_box.append("Decryption Failed")
             self.ui.decryptMsg_statusText.setText("Failed")
@@ -336,7 +342,8 @@ class MainWindow(QMainWindow):
             self.ui.fetch_statusText.setText("Success")
             self.ui.fetch_statusText.setStyleSheet(
                 "color: rgb(0,200,0);\nfont: bold 16px;")
-            self.dataFetched = " kkkjnnkjn "
+            # self.dataFetched = " kkkjnnkjn "
+            self.dataFetched = "526354546464864513515"
             self.n = 1111
             self.ui.ciphertext_text.setText(self.dataFetched)
             self.fetchStatus = True
