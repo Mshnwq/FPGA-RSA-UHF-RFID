@@ -26,7 +26,13 @@ class FPGA:
     def encrypt_decrypt(self, text, exponant, modulus):
         # text = (text**exponant)%modulus
         #TODO
-        return 526354546464864513515
+        if text == 0:
+            return 0
+        self.out = text
+        return 1
+    
+    def getOut(self):
+        return str(self.out)
 
 if __name__ == "__main__":
     # simple text script

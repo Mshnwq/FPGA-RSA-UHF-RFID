@@ -4,11 +4,12 @@ from PyQt5.QtGui import *
 from PyQt5.QtWidgets import *
 from key_gen import RSA
 from RFID_Driver import RFID
-from fpga_driver import FPGA
-# from firebase_admin import *
+from FPGA_Driver import FPGA
+from firebase_admin import *
+from firebase_admin import db
 import json
-
 import sys
+import os
 
 class MainWindow(QMainWindow):
       
@@ -36,8 +37,20 @@ class MainWindow(QMainWindow):
         self.ui.GenMode_btn.setEnabled(False)
         self.ui.AttMode_btn.setEnabled(False)
 
+        absolutepath = os.path.abspath(__file__)
+        fileDirectory = os.path.dirname(absolutepath)
+
+        # connect to cloud
+        cred = credentials.Certificate(fileDirectory + '\\fpga-rfid-rsa-firebase-adminsdk-w7ve4-66256d1a41.json')
+        defualt_app = initialize_app(cred, 
+            {
+            "databaseURL" : "https://fpga-rfid-rsa-default-rtdb.firebaseio.com/"
+            }
+        )
+
     def generateMode(self):
 
+        # construct the window
         self.ui = GenMode_MainWindow()
         self.ui.setupUi(self)
         
@@ -64,6 +77,7 @@ class MainWindow(QMainWindow):
 
     def attemptMode(self):
 
+        # construct the window
         self.ui = AttMode_MainWindow()
         self.ui.setupUi(self)
 
@@ -96,6 +110,7 @@ class MainWindow(QMainWindow):
             return 64
         
     def generateKeys(self):
+        # Sorry for no comments
         bitSize = self.checkBtns()
         self.publicKey, self.privateKey = self.rsa.generateKey(
             bitSize, window=self.ui)
@@ -122,7 +137,6 @@ class MainWindow(QMainWindow):
         self.ui.genKeys_statusText.setText("Keys Generated")
         self.ui.genKeys_statusText.setStyleSheet(
             "color: rgb(0,200,0);\nfont: bold 10px;")
-        # Sorry for no comments and ugly code
 
     # helper method for fitting number into a box
     def fitNumber(self, num, width):
@@ -140,11 +154,10 @@ class MainWindow(QMainWindow):
         stat = self.rfid.readKey( window=self.ui)
         if (stat == 1):
             self.ui.logs_box.append("Read Key Success")
-            self.ui.readKey_statusText.setText("    Success")
+            self.ui.readKey_statusText.setText("   Success")
             self.ui.readKey_statusText.setStyleSheet(
                 "color: rgb(0,200,0);\nfont: bold 14px;")
-            # self.key = self.rfid.getKey()
-            self.key = 9953674725701533643
+            self.key = self.rfid.getKey()
             self.ui.logs_box.append(f'(int) read: {self.key}')
             self.ui.logs_box.append(f'(hex) read: {hex(self.key)}')
             self.ui.logs_box.append(f'(bin) read: {bin(self.key)}')
@@ -251,21 +264,22 @@ class MainWindow(QMainWindow):
         # print(plainTextHex)
 
         #encrypting # TODO
-        cipherTextInt = self.fpga.encrypt_decrypt(plainTextInt, self.rsa.getE(), self.rsa.getN())
-        self.cipherTextInt = cipherTextInt
+        stat = self.fpga.encrypt_decrypt(plainTextInt, self.rsa.getE(), self.rsa.getN())
+        # self.cipherTextInt = cipherTextInt
 
         # cipherTextString = ''.join(chr((cipherTextInt>>8*(nchars-byte-1))&0xFF) for byte in range(nchars))
         # int or long to string
         # self.ui.ciphertext_text.setText(cipherTextString)
-        self.ui.ciphertext_text.setText(str(cipherTextInt))
-
-        stat = 1 #TODO
+        # self.ui.ciphertext_text.setText(str(cipherTextInt))
 
         if stat == 1:
             self.ui.logs_box.append("Encryption Success")
             self.ui.encryptMsg_statusText.setText("Success")
             self.ui.encryptMsg_statusText.setStyleSheet(
                 "color: rgb(0,200,0);\nfont: bold 16px;")
+            out = self.fpga.getOut() 
+            pln = self.fitNumber(out, 20)
+            self.ui.ciphertext_text.setText(pln)
             self.ui.uploadData_btn.setEnabled(True)
         else: 
             self.ui.logs_box.append("Encryption Failed")
@@ -277,30 +291,28 @@ class MainWindow(QMainWindow):
     
         # cipherTextString = self.ui.ciphertext_text.text()
         # nchars = len(cipherTextString)
-        # # string to int or long. Type depends on nchars
+        # string to int or long. Type depends on nchars
         # cipherTextInt = sum(ord(cipherTextString[byte])<<8*(nchars-byte-1) for byte in range(nchars))
+        cipherTextInt = int(self.ui.ciphertext_text.text())
         # print(cipherTextInt)
         # # plainTextHex = hex(plainTextInt)[2::]
         # # print(plainTextHex)
 
-        # #encrypting # TODO
-        # plainTextInt = self.fpga.encrypt_decrypt(cipherTextInt, self.key, self.n)
+        # decrypting # TODO
+        stat = self.fpga.encrypt_decrypt(cipherTextInt, self.key, self.n)
         # self.plainTextInt = plainTextInt
 
         # plainTextString = ''.join(chr((plainTextInt>>8*(nchars-byte-1))&0xFF) for byte in range(nchars))
         # # int or long to string
         # self.ui.plaintext_text.setText(plainTextString)
 
-        stat = 1 #TODO
-
         if stat == 1:
             self.ui.logs_box.append("Decryption Success")
             self.ui.decryptMsg_statusText.setText("Success")
             self.ui.decryptMsg_statusText.setStyleSheet(
                 "color: rgb(0,200,0);\nfont: bold 16px;")
-            ttt = "Hello EE460"
-            pln = self.fitNumber(ttt, 20)
-            # self.ui.plaintext_text.setText("ddd")
+            out = self.fpga.getOut() 
+            pln = self.fitNumber(out, 50)
             self.ui.plaintext_text.setText(pln)
         else: 
             self.ui.logs_box.append("Decryption Failed")
@@ -309,87 +321,51 @@ class MainWindow(QMainWindow):
                 "color: rgb(250,0,0);\nfont: bold 16px;;")
 
     def fetchData(self):
-        #TODO
-        # cred = credentials.Certificate('halaqah-150f3-firebase-adminsdk-re0wk-3d667829eb.json')
-        # db_app = firebase_admin.initialize_app(cred, {
-        # "databaseURL": "https://halaqah-150f3.firebaseio.com",
-        # "storageBucket": "halaqah-150f3.appspot.com"
-        # })
-    
-        # Storage = storage.bucket()
-        # pair = {}
-        # pair["cipherTextInt"] = self.cipherTextInt
-        # pair["Modulus"] = self.rsa.getN()
-
-        # from firebase_admin import db
-        # #TODO
-        # from firebase_admin import credentials
-        # from firebase_admin import initialize_app
         
-        # cred = credentials.Certificate('fpga-rfid-rsa-firebase-adminsdk-w7ve4-66256d1a41.json')
-        # defualt_app = initialize_app(cred, 
-        # {
-        # "databaseURL" : "https://fpga-rfid-rsa-default-rtdb.firebaseio.com/"
-        # }
-        # )
-        # ref = db.reference("/")
-        # ref.get()
+        try:
+            get_app()
+            ref = db.reference("/storage/")
+            json_dict = ref.get()
+            stat = 1
+        except:
+            stat = 0   
 
-        stat = 1
+        self.dataFetched = []
+        # self.dataFetched = ['{\n    "Modulus": "3842753039",\n    "Cipher": 10012\n}', '{\n    "Modulus": "2978427307",\n    "Cipher": 10012\n}'
+        #                    ,'{\n    "Modulus": "3842753039",\n    "Cipher": 10012\n}', '{\n    "Modulus": "2978427307",\n    "Cipher": 10012\n}'
+        #                    ,'{\n    "Modulus": "3842753039",\n    "Cipher": 10012\n}', '{\n    "Modulus": "2978427307",\n    "Cipher": 10012\n}'
+        #                    ,'{\n    "Modulus": "3842753039",\n    "Cipher": 10012\n}', '{\n    "Modulus": "2978427307",\n    "Cipher": 10012\n}'
+        #                    ,'{\n    "Modulus": "3842753039",\n    "Cipher": 10012\n}', '{\n    "Modulus": "2927307",\n    "Cipher": 112\n}']
+
+        for i in json_dict.keys():
+            self.dataFetched.append(json_dict[i])
 
         if stat == 1:
-            self.ui.logs_box.append("Fetch Success")
-            self.ui.fetch_statusText.setText("Success")
-            self.ui.fetch_statusText.setStyleSheet(
-                "color: rgb(0,200,0);\nfont: bold 16px;")
-            # self.dataFetched = " kkkjnnkjn "
-            self.dataFetched = "526354546464864513515"
-            self.n = 1111
-            self.ui.ciphertext_text.setText(self.dataFetched)
-            self.fetchStatus = True
-            self.ui.decryptMsg_btn.setEnabled(
-                self.readStatus and self.fetchStatus)
+            self.chosenFetched = None
+            self.showFetched(self.dataFetched)
+
         else: 
             self.ui.logs_box.append("Fetch Failed")
             self.ui.fetch_statusText.setText("Failed")
             self.ui.fetch_statusText.setStyleSheet(
                 "color: rgb(250,0,0);\nfont: bold 16px;;")
 
-        
-        
     def sendData(self):
-        #TODO
-        # from firebase_admin import credentials
-        # from firebase_admin import initialize_app
-        
-        # cred = credentials.Certificate('fpga-rfid-rsa-firebase-adminsdk-w7ve4-66256d1a41.json')
-        # defualt_app = initialize_app(cred, 
-        # {
-        # "databaseURL" : "https://fpga-rfid-rsa-default-rtdb.firebaseio.com/"
-        # }
-        # )
-        # # defualt_app = firebase_admin.initialize_app(cred, {
-        # # "databaseURL": "https://halaqah-150f3.firebaseio.com",
-        # # "storageBucket": "halaqah-150f3.appspot.com"
-        # # })
-        # #FPGA-RFID-RSA
-        # # # try:
-        # # Storage.child(path).download("test.wav")
-        # pair = {}
-        # pair["cipherTextInt"] = self.cipherTextInt
-        # pair["Modulus"] = self.rsa.getN()
 
-        # json_object = json.dumps(pair, indent = 4) 
+        pair = {}
+        pair["Modulus"] = self.rsa.getN()
+        pair["Cipher"] = 10012
 
-        # print(json_object)
+        json_object = json.dumps(pair, indent = 4) 
 
-        # from firebase_admin import db
+        try:
+            get_app()
+            ref = db.reference("/storage/")
+            ref.push(json_object)
+            stat = 1
+        except:
+            stat = 0
 
-        # ref = db.reference("/")
-        # ref.set(json_object)
-
-        # stat = self.fpga.fOpenComIndex
-        stat = 1
 
         if stat == 1:
             self.ui.logs_box.append("Upload Success")
@@ -402,7 +378,68 @@ class MainWindow(QMainWindow):
             self.ui.uploadData_statusText.setStyleSheet(
                 "color: rgb(250,0,0);\nfont: bold 16px;;")
 
+    # display a new window containing the fetched info from DB
+    def showFetched(self, fetched):
+        #construct it
+        self.fetchedWindow = QMainWindow()
+        self.fetchedUI = fetchedData_Window()
+        self.fetchedUI.setupUi(self.fetchedWindow)
 
+        # Add rows
+        for data0 in fetched:
+            #format it to be able to convert to dict
+            data1 = data0.replace("\n","")
+            data2 = data1.replace(":"," :")
+            data3 = data2.replace("    ","")
+
+            data_dict = json.loads(data3)
+            self.fetchedUI.addRow(data_dict)
+
+        # Buttons    
+        self.fetchedUI.OK_btn.clicked.connect(self.checkChosen)
+        self.fetchedUI.Cancel_btn.clicked.connect(lambda: self.checkChosen(isCancel=True))
+
+        # display it
+        self.fetchedWindow.show()
+
+    def checkChosen(self, isCancel):
+
+        if isCancel:
+            self.fetchedWindow.close()
+            return
+        
+        # loop through to find chosen row contents
+        collectChosen = {}
+        for obj in self.fetchedUI.scrollArea.children():
+            if (obj.objectName() == 'qt_scrollarea_viewport'):
+                rows = obj.children()[0].children()
+                for i in range(1, len(rows)):
+                    if rows[i].objectName().startswith("chosen#"):
+                        if rows[i].isChecked():
+                            arr = rows[i].objectName().split("#")
+                            index = int(arr[len(arr)-1])
+                            collectChosen["Modulus"] = rows[i-2].text()
+                            collectChosen["Cipher"] = rows[i-1].text()
+   
+        # display the chosen
+        self.chosenFetched = collectChosen
+        if (self.chosenFetched != {}):
+
+            self.N = self.chosenFetched["N"]
+            self.cipherText = self.chosenFetched["Cipher"]
+
+            self.ui.ciphertext_text.setText(self.cipherText)
+    
+            self.ui.logs_box.append("Fetch Success")
+            self.ui.fetch_statusText.setText("  Success")
+            self.ui.fetch_statusText.setStyleSheet(
+                "color: rgb(0,200,0);\nfont: bold 14px;")
+            
+            self.fetchStatus = True
+            self.ui.decryptMsg_btn.setEnabled(
+                self.readStatus and self.fetchStatus)
+
+        self.fetchedWindow.close()
 
 
 if __name__ == '__main__':

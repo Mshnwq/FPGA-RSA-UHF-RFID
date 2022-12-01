@@ -27,10 +27,10 @@ class RFID:
         # self.__setup_dll()
         # self.openPort()
         # print("opened COM ", self.fOpenComIndex.value)
+        ################################################################ Uncomment when you use the writer
         # self.setDeviceSettings() # use when needed
         # self.getDeviceInfo() # use when needed
         # self.closePort() # use when needed
-        ################################################################ Uncomment when you use the writer
         print("constructed RFID")
         self.__key__ = 0
         
@@ -168,7 +168,7 @@ class RFID:
 
     def detectNumberOfTags(self, num):
     # Checks wheather number of tags in front of read are of desired
-    # return 0 when fiiled to reach amount of tags by iteration completion 
+    # return 0 when failed to reach amount of tags by iteration completion 
     # return 1 when successfully amount of tags
     # return 2 when surpassed amount of tags {to pop a window}
         uniqueTags = []
@@ -370,7 +370,6 @@ class RFID:
             if stat == 0: # tags != numOfTags
                 # window.logs_box.append("incorrect amount of tags in front of reader")
                 window.logs_box.append(f"Place {numOfTags} tag infront of reader")
-                # print('attemptFilter', attemptFilter)
                 attemptFilter -= 1
                 if attemptFilter == 0:
                     return 0 # fail once attemptFilter 0 is reached
@@ -400,7 +399,6 @@ class RFID:
     # return 1 when successfully read tag
     # return 2 when surpassed amount of tags {to pop a window}
         return 1
-        # print("Reading tag...")
         window.logs_box.append("Reading tag...")
         readComplete = False
         numOfTags = 1
@@ -414,14 +412,12 @@ class RFID:
                 return 2 # window pop
             if stat == 0: # tags != numOfTags
                 window.logs_box.append(f"Place {numOfTags} tag infront of reader")
-                # print(f"Place {numOfTags} tag infront of reader")
                 attemptFilter -= 1
                 if attemptFilter == 0:
                     return 0 # fail once attemptFilter 0 is reached
                 continue
             else:
                 window.logs_box.append("attempt #" + str(attempt))
-                # print("attempt #" + str(attempt))
                 # attempt to read on tag
                 tagRead = self.readInvetory()
                 # check wheather data has been read correctly or not
@@ -438,71 +434,12 @@ class RFID:
         window.logs_box.append("     Tag Read     ")
         window.logs_box.append("******************")
         window.logs_box.append("******************")
-        # print("******************")
-        # print("******************")
-        # print("     Tag Read     ")
-        # print("******************")
-        # print("******************")
-        
-        # IATA number is data[0:4]
-        #       index is data[5]   is means if it is a master or slave tag, encoded within is number of bags or bag number.
-        #     Airline is data[6]
-        #      key ID is data[7:10]
-        #    CheckSum is data[11]
-        #    Group ID is data[12:15]
-
+    
         # Decode tag info
         print(tagRead)
         self.__key__  = int.from_bytes(tagRead[0:len(tagRead)], 'big')
         print(self.__key__)
         
-        # if (bin(tagRead[5])[2:].zfill(8)[0] == '1'):
-        #     self.isMaster = True
-        # else:
-        #     self.isMaster = False
-
-        # # decoding the signed byte "index"
-        # if ((self.isMaster and (tagRead[5] != 128))):
-        #     self.index = ((tagRead[5]*-1) & 0xff)
-        # elif (tagRead[5] == 128):
-        #     self.index = 0
-        # else:
-        #     self.index = tagRead[5]
-
-        # self.Airline = [k for k, v in self.airlineDict.items() if v == tagRead[6].to_bytes(1,'big')][0]
-
-        # keyIntVal = int.from_bytes(tagRead[7:11], 'big')
-        # self.keyID  = str(keyIntVal).rjust(12,'0') #TODO 10 digits
-        
-        # self.CheckSum    = tagRead[11] #?
-        # self.GroupID     = int.from_bytes(tagRead[12:15], 'big')
-
-        # print info
-        # print("self.IATAnumber: ", self.IATAnumber )
-        # print("self.isMaster: ", self.isMaster)
-        # print("self.index    : ", self.index)
-        # print("self.Airline: ", self.Airline)
-        # print("self.keyID: ", self.keyID)
-        # print("self.CheckSum: ", self.CheckSum)
-        # print("self.GroupID: ", self.GroupID)
-
-        # save the other info to cache
-        # try:
-        #     with open(self.fileDirectory + '\\data\\' + str(self.keyID) + "-data.txt", 'w') as file:
-        #         file.write("\nisMaster: " + str(self.isMaster))
-        #         file.write("\nIATAnumber: "+ str(self.IATAnumber))
-        #         file.write("\nindex    :" + str(self.index))
-        #         file.write("\nAirline: " +   str(self.Airline))
-        #         file.write("\nkeyID: " +  str(self.keyID))
-        #         file.write("\nCheckSum: "+  str(self.CheckSum))
-        #         file.write("\nGroupID: "+  str(self.GroupID))
-        #         file.close()
-        # except:
-        #     print(sys.exc_info())
-        #     with open(self.fileDirectory + '\\data\\' + str(self.keyID) + "-data.txt", 'w') as file:
-        #         file.write("error")
-        #         file.close()
-
         return 1
 
     def getKey(self):
