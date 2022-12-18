@@ -24,9 +24,9 @@ class RFID:
     def __init__(self):
 
         ################################################################ Uncomment when you use the writer
-        # self.__setup_dll()
-        # self.openPort()
-        # print("opened COM ", self.fOpenComIndex.value)
+        self.__setup_dll()
+        self.openPort()
+        print("opened COM ", self.fOpenComIndex.value)
         ################################################################ Uncomment when you use the writer
         # self.setDeviceSettings() # use when needed
         # self.getDeviceInfo() # use when needed
@@ -355,7 +355,7 @@ class RFID:
 
 ##### GUI METHODS #####
     def writeKey(self, desiredDataToWrite, window):
-        return 1
+        # return 1
         dataToWrite = bytes(desiredDataToWrite) # convert to bytes
         window.logs_box.append("writing key...")
         writtenComplete = False
@@ -398,7 +398,7 @@ class RFID:
     # return 0 when failed to read the tag
     # return 1 when successfully read tag
     # return 2 when surpassed amount of tags {to pop a window}
-        return 1
+        # return 1
         window.logs_box.append("Reading tag...")
         readComplete = False
         numOfTags = 1
