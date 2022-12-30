@@ -1,3 +1,4 @@
+#!/usr/bin/python
 from Window import *
 from PyQt5.QtCore import *
 from PyQt5.QtGui import *
@@ -10,7 +11,7 @@ from firebase_admin import db
 import json
 import sys
 import os
-import pyserial
+import platform
 
 class MainWindow(QMainWindow):
       
@@ -37,17 +38,27 @@ class MainWindow(QMainWindow):
         # disable buttons
         self.ui.GenMode_btn.setEnabled(False)
         self.ui.AttMode_btn.setEnabled(False)
-
+        
         absolutepath = os.path.abspath(__file__)
         fileDirectory = os.path.dirname(absolutepath)
-
-        # connect to cloud
-        cred = credentials.Certificate(fileDirectory + '\\fpga-rfid-rsa-firebase-adminsdk-w7ve4-66256d1a41.json')
-        defualt_app = initialize_app(cred, 
-            {
-            "databaseURL" : "https://fpga-rfid-rsa-default-rtdb.firebaseio.com/"
-            }
-        )
+        if platform.system() == 'Windows':
+            # connect to cloud
+            cred = credentials.Certificate(fileDirectory + '\\fpga-rfid-rsa-firebase-adminsdk-w7ve4-66256d1a41.json')
+            defualt_app = initialize_app(cred, 
+                {
+                "databaseURL" : "https://fpga-rfid-rsa-default-rtdb.firebaseio.com/"
+                }
+            )
+        elif platform.system() == 'Linux':
+                # connect to cloud
+            cred = credentials.Certificate(fileDirectory + '/fpga-rfid-rsa-firebase-adminsdk-w7ve4-66256d1a41.json')
+            defualt_app = initialize_app(cred, 
+                {
+                "databaseURL" : "https://fpga-rfid-rsa-default-rtdb.firebaseio.com/"
+                }
+            )
+        else:
+            exit(f"{platform.system()} OS is not supported")
 
     def generateMode(self):
 

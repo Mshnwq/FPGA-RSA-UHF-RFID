@@ -24,9 +24,9 @@ class RFID:
     def __init__(self):
 
         ################################################################ Uncomment when you use the writer
-        self.__setup_dll()
-        self.openPort()
-        print("opened COM ", self.fOpenComIndex.value)
+        # self.__setup_dll()
+        # self.openPort()
+        # print("opened COM ", self.fOpenComIndex.value)
         ################################################################ Uncomment when you use the writer
         # self.setDeviceSettings() # use when needed
         # self.getDeviceInfo() # use when needed
@@ -47,6 +47,17 @@ class RFID:
                 # fileDirectory + '\\lib\\64 bit\\ZK_RFID105.dll')
                 # Path 32 bit
                 # fileDirectory + '\\lib\\32 bit\\UHFReader09.dll')
+        elif platform.system() == 'Linux':
+            absolutepath = os.path.abspath(__file__)
+            self.fileDirectory = os.path.dirname(absolutepath)
+            self.Objdll = ctypes.windll.LoadLibrary(
+                # Path 64 bit
+                self.fileDirectory + '\\lib\\64 bit\\UHFReader09.dll')
+                # fileDirectory + '\\lib\\64 bit\\ZK_RFID105.dll')
+                # Path 32 bit
+                # fileDirectory + '\\lib\\32 bit\\UHFReader09.dll')
+        else:
+            exit(f"Device does not support {platform.system()} OS")
 
 
     def openPort(self, port = 0):
