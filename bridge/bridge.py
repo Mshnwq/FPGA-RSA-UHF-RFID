@@ -10,6 +10,7 @@ from firebase_admin import db
 import json
 import sys
 import os
+import pyserial
 
 class MainWindow(QMainWindow):
       
@@ -425,7 +426,7 @@ class MainWindow(QMainWindow):
         self.chosenFetched = collectChosen
         if (self.chosenFetched != {}):
 
-            self.N = self.chosenFetched["N"]
+            self.N = self.chosenFetched["Modulus"]
             self.cipherText = self.chosenFetched["Cipher"]
 
             self.ui.ciphertext_text.setText(self.cipherText)
