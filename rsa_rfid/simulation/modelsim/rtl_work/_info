@@ -7,159 +7,204 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dC:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/simulation/modelsim
-vcontrolUnit
-Z1 !s110 1668515449
+Z0 dC:/Users/Perux/Documents/KAU/5th year/Trimester 1/EE460/project/FPGA_RSA_UHF_RFID/rsa_rfid/simulation/modelsim
+vbaud_timer
+Z1 !s110 1676827506
 !i10b 1
-!s100 RY^O5i[P5XI3279GzLzL<1
-IXfgMWSKWFENTZVVz>Mok`2
+!s100 OczZZEd]1d0zDdPUo9>jU3
+I1=`gF^WNdjHRDlCS_:HLA0
 Z2 VDg1SIo80bB@j0V0VzS_@n1
 R0
-w1668514800
-8C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/controlunit.v
-FC:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/controlunit.v
-L0 2
+w1676477645
+8C:/Users/Perux/Documents/KAU/5th year/Trimester 1/EE460/project/FPGA_RSA_UHF_RFID/rsa_rfid/baud_timer.v
+FC:/Users/Perux/Documents/KAU/5th year/Trimester 1/EE460/project/FPGA_RSA_UHF_RFID/rsa_rfid/baud_timer.v
+L0 1
 Z3 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z4 !s108 1668515449.000000
-!s107 C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/controlunit.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid|C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/controlunit.v|
+Z4 !s108 1676827506.000000
+!s107 C:/Users/Perux/Documents/KAU/5th year/Trimester 1/EE460/project/FPGA_RSA_UHF_RFID/rsa_rfid/baud_timer.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Perux/Documents/KAU/5th year/Trimester 1/EE460/project/FPGA_RSA_UHF_RFID/rsa_rfid|C:/Users/Perux/Documents/KAU/5th year/Trimester 1/EE460/project/FPGA_RSA_UHF_RFID/rsa_rfid/baud_timer.v|
 !i113 1
 Z5 o-vlog01compat -work work
-Z6 !s92 -vlog01compat -work work +incdir+C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid
+Z6 !s92 -vlog01compat -work work {+incdir+C:/Users/Perux/Documents/KAU/5th year/Trimester 1/EE460/project/FPGA_RSA_UHF_RFID/rsa_rfid}
 Z7 tCvgOpt 0
-ncontrol@unit
-vcounter
-R1
+vbytes_to_words_opt
+Z8 !s110 1676827504
 !i10b 1
-!s100 [NeJj2L`Te[KfeTZLJlln0
-ISQaXP<BaUH16icT:A4TK92
+!s100 zimH1@8Xf0K7J^_UHBNej2
+I4]ACQ^KkXQkAh7F]fK_G:1
 R2
 R0
-w1668514806
-8C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/counter.v
-FC:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/counter.v
+w1676782595
+8C:/Users/Perux/Documents/KAU/5th year/Trimester 1/EE460/project/FPGA_RSA_UHF_RFID/rsa_rfid/bytes_to_words_opt.v
+FC:/Users/Perux/Documents/KAU/5th year/Trimester 1/EE460/project/FPGA_RSA_UHF_RFID/rsa_rfid/bytes_to_words_opt.v
 L0 1
 R3
 r1
 !s85 0
 31
-R4
-!s107 C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/counter.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid|C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/counter.v|
+Z9 !s108 1676827504.000000
+!s107 C:/Users/Perux/Documents/KAU/5th year/Trimester 1/EE460/project/FPGA_RSA_UHF_RFID/rsa_rfid/bytes_to_words_opt.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Perux/Documents/KAU/5th year/Trimester 1/EE460/project/FPGA_RSA_UHF_RFID/rsa_rfid|C:/Users/Perux/Documents/KAU/5th year/Trimester 1/EE460/project/FPGA_RSA_UHF_RFID/rsa_rfid/bytes_to_words_opt.v|
+!i113 1
+R5
+R6
+R7
+vcontrolUnit
+Z10 !s110 1676827505
+!i10b 1
+!s100 m2Ril?OJ@:I:^J4NbDKoK1
+IPf6Wj6KP?Y_Q0Gn=;0N^]1
+R2
+R0
+w1676787435
+8C:/Users/Perux/Documents/KAU/5th year/Trimester 1/EE460/project/FPGA_RSA_UHF_RFID/rsa_rfid/controlunit.v
+FC:/Users/Perux/Documents/KAU/5th year/Trimester 1/EE460/project/FPGA_RSA_UHF_RFID/rsa_rfid/controlunit.v
+L0 2
+R3
+r1
+!s85 0
+31
+Z11 !s108 1676827505.000000
+!s107 C:/Users/Perux/Documents/KAU/5th year/Trimester 1/EE460/project/FPGA_RSA_UHF_RFID/rsa_rfid/controlunit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Perux/Documents/KAU/5th year/Trimester 1/EE460/project/FPGA_RSA_UHF_RFID/rsa_rfid|C:/Users/Perux/Documents/KAU/5th year/Trimester 1/EE460/project/FPGA_RSA_UHF_RFID/rsa_rfid/controlunit.v|
+!i113 1
+R5
+R6
+R7
+ncontrol@unit
+vcounter
+R10
+!i10b 1
+!s100 =H_0VM`VX>i:7k=]BIY[I0
+IekB0BC^kPbN;K`g2bVJfA2
+R2
+R0
+w1676786958
+8C:/Users/Perux/Documents/KAU/5th year/Trimester 1/EE460/project/FPGA_RSA_UHF_RFID/rsa_rfid/counter.v
+FC:/Users/Perux/Documents/KAU/5th year/Trimester 1/EE460/project/FPGA_RSA_UHF_RFID/rsa_rfid/counter.v
+L0 1
+R3
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/Perux/Documents/KAU/5th year/Trimester 1/EE460/project/FPGA_RSA_UHF_RFID/rsa_rfid/counter.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Perux/Documents/KAU/5th year/Trimester 1/EE460/project/FPGA_RSA_UHF_RFID/rsa_rfid|C:/Users/Perux/Documents/KAU/5th year/Trimester 1/EE460/project/FPGA_RSA_UHF_RFID/rsa_rfid/counter.v|
 !i113 1
 R5
 R6
 R7
 vdataPath
-R1
+R10
 !i10b 1
-!s100 Ae69X`ZZ@]NQ_g0[EzEOh1
-IhVn1=>:G_UKlPXEEN6ZMI2
+!s100 0FO6H`zYbP?n@Sd@mB[@J1
+IjCmd>EN:^<WXGUN^mIcol0
 R2
 R0
-w1668510330
-8C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/datapath.v
-FC:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/datapath.v
+w1676800568
+8C:/Users/Perux/Documents/KAU/5th year/Trimester 1/EE460/project/FPGA_RSA_UHF_RFID/rsa_rfid/datapath.v
+FC:/Users/Perux/Documents/KAU/5th year/Trimester 1/EE460/project/FPGA_RSA_UHF_RFID/rsa_rfid/datapath.v
 L0 1
 R3
 r1
 !s85 0
 31
-Z8 !s108 1668515448.000000
-!s107 C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/datapath.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid|C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/datapath.v|
+R11
+!s107 C:/Users/Perux/Documents/KAU/5th year/Trimester 1/EE460/project/FPGA_RSA_UHF_RFID/rsa_rfid/datapath.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Perux/Documents/KAU/5th year/Trimester 1/EE460/project/FPGA_RSA_UHF_RFID/rsa_rfid|C:/Users/Perux/Documents/KAU/5th year/Trimester 1/EE460/project/FPGA_RSA_UHF_RFID/rsa_rfid/datapath.v|
 !i113 1
 R5
 R6
 R7
 ndata@path
 vdivider64
-R1
+R10
 !i10b 1
 !s100 _jRhV?GmIWMU[z1COmLUo3
-I0cM;H;dnMASEXZ92B`cZG1
+ICa2B81nB4=kIkeVc_AX]X3
 R2
 R0
-Z9 w1668508512
-8C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/divider64.v
-FC:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/divider64.v
-L0 39
+Z12 w1676456204
+8C:/Users/Perux/Documents/KAU/5th year/Trimester 1/EE460/project/FPGA_RSA_UHF_RFID/rsa_rfid/divider64.v
+FC:/Users/Perux/Documents/KAU/5th year/Trimester 1/EE460/project/FPGA_RSA_UHF_RFID/rsa_rfid/divider64.v
+Z13 L0 39
 R3
 r1
 !s85 0
 31
-R4
-!s107 C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/divider64.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid|C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/divider64.v|
+R11
+!s107 C:/Users/Perux/Documents/KAU/5th year/Trimester 1/EE460/project/FPGA_RSA_UHF_RFID/rsa_rfid/divider64.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Perux/Documents/KAU/5th year/Trimester 1/EE460/project/FPGA_RSA_UHF_RFID/rsa_rfid|C:/Users/Perux/Documents/KAU/5th year/Trimester 1/EE460/project/FPGA_RSA_UHF_RFID/rsa_rfid/divider64.v|
 !i113 1
 R5
 R6
 R7
 vencrypt_decrypt
-R1
+R10
 !i10b 1
-!s100 m?oFmE9><k;DXMB:?UdJ82
-IR?;LLZTL=1PeJNIYjKRD^0
+!s100 E@XO0Dl`o6OEQLK=T6MCS3
+I8?B4S[<H7i=Yj>L<WSc[V1
 R2
 R0
-R9
-8C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/encrypt_decrypt.v
-FC:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/encrypt_decrypt.v
+w1676824804
+8C:/Users/Perux/Documents/KAU/5th year/Trimester 1/EE460/project/FPGA_RSA_UHF_RFID/rsa_rfid/encrypt_decrypt.v
+FC:/Users/Perux/Documents/KAU/5th year/Trimester 1/EE460/project/FPGA_RSA_UHF_RFID/rsa_rfid/encrypt_decrypt.v
 L0 3
 R3
 r1
 !s85 0
 31
-R4
-!s107 C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/encrypt_decrypt.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid|C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/encrypt_decrypt.v|
+R11
+!s107 C:/Users/Perux/Documents/KAU/5th year/Trimester 1/EE460/project/FPGA_RSA_UHF_RFID/rsa_rfid/encrypt_decrypt.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Perux/Documents/KAU/5th year/Trimester 1/EE460/project/FPGA_RSA_UHF_RFID/rsa_rfid|C:/Users/Perux/Documents/KAU/5th year/Trimester 1/EE460/project/FPGA_RSA_UHF_RFID/rsa_rfid/encrypt_decrypt.v|
 !i113 1
 R5
 R6
 R7
-vmux2to1
-Z10 !s110 1668515448
+vfifoRsa
+R1
 !i10b 1
-!s100 LIYd;AYRH=_VCjWcLIfG_2
-I;=@YI;4W`6XP3b?1f=X4h3
+!s100 VcPgBl7FHg6ah32=2G06R3
+I;`1nH5d[27Ej2L2G>D59b2
 R2
 R0
-R9
-8C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/mux2to1.v
-FC:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/mux2to1.v
-L0 1
+w1676759993
+8C:/Users/Perux/Documents/KAU/5th year/Trimester 1/EE460/project/FPGA_RSA_UHF_RFID/rsa_rfid/fiforsa.v
+FC:/Users/Perux/Documents/KAU/5th year/Trimester 1/EE460/project/FPGA_RSA_UHF_RFID/rsa_rfid/fiforsa.v
+R13
 R3
 r1
 !s85 0
 31
-R8
-!s107 C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/mux2to1.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid|C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/mux2to1.v|
+R4
+!s107 C:/Users/Perux/Documents/KAU/5th year/Trimester 1/EE460/project/FPGA_RSA_UHF_RFID/rsa_rfid/fiforsa.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Perux/Documents/KAU/5th year/Trimester 1/EE460/project/FPGA_RSA_UHF_RFID/rsa_rfid|C:/Users/Perux/Documents/KAU/5th year/Trimester 1/EE460/project/FPGA_RSA_UHF_RFID/rsa_rfid/fiforsa.v|
 !i113 1
 R5
 R6
 R7
+nfifo@rsa
 vmux4to1
 R1
 !i10b 1
 !s100 6dl>O2?oYLRXR:KK>7V2g2
-IO5SI:3bhWzd_je65Io@_j3
+IQmX>Ge`X9kciXeZ[1_58E1
 R2
 R0
-R9
-8C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/mux4to1.v
-FC:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/mux4to1.v
+R12
+8C:/Users/Perux/Documents/KAU/5th year/Trimester 1/EE460/project/FPGA_RSA_UHF_RFID/rsa_rfid/mux4to1.v
+FC:/Users/Perux/Documents/KAU/5th year/Trimester 1/EE460/project/FPGA_RSA_UHF_RFID/rsa_rfid/mux4to1.v
 L0 1
 R3
 r1
 !s85 0
 31
 R4
-!s107 C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/mux4to1.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid|C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/mux4to1.v|
+!s107 C:/Users/Perux/Documents/KAU/5th year/Trimester 1/EE460/project/FPGA_RSA_UHF_RFID/rsa_rfid/mux4to1.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Perux/Documents/KAU/5th year/Trimester 1/EE460/project/FPGA_RSA_UHF_RFID/rsa_rfid|C:/Users/Perux/Documents/KAU/5th year/Trimester 1/EE460/project/FPGA_RSA_UHF_RFID/rsa_rfid/mux4to1.v|
 !i113 1
 R5
 R6
@@ -168,90 +213,178 @@ vROM
 R1
 !i10b 1
 !s100 l;F@ScAK@A=9B=@KJNT_03
-IehRKeCT=1@?aCdZDCLAN>3
+Ig=Y`bilj3`kG[j1j`1HX_1
 R2
 R0
-w1668514807
-8C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/rom.v
-FC:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/rom.v
+R12
+8C:/Users/Perux/Documents/KAU/5th year/Trimester 1/EE460/project/FPGA_RSA_UHF_RFID/rsa_rfid/rom.v
+FC:/Users/Perux/Documents/KAU/5th year/Trimester 1/EE460/project/FPGA_RSA_UHF_RFID/rsa_rfid/rom.v
 L0 1
 R3
 r1
 !s85 0
 31
 R4
-!s107 C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/rom.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid|C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/rom.v|
+!s107 C:/Users/Perux/Documents/KAU/5th year/Trimester 1/EE460/project/FPGA_RSA_UHF_RFID/rsa_rfid/rom.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Perux/Documents/KAU/5th year/Trimester 1/EE460/project/FPGA_RSA_UHF_RFID/rsa_rfid|C:/Users/Perux/Documents/KAU/5th year/Trimester 1/EE460/project/FPGA_RSA_UHF_RFID/rsa_rfid/rom.v|
 !i113 1
 R5
 R6
 R7
 n@r@o@m
 vrsa_rfid
-R10
+R8
 !i10b 1
-!s100 ohKOEGflB=_lE;_I;6=253
-IjbGR`lGTGOKChWgCd:To82
+!s100 h^c]7;m`KRHXd`Z2NiTNg2
+IN_J[AbF5YSOQ@268f^EaL1
 R2
 R0
-w1668513170
-8C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/rsa_rfid.v
-FC:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/rsa_rfid.v
+w1676796925
+8C:/Users/Perux/Documents/KAU/5th year/Trimester 1/EE460/project/FPGA_RSA_UHF_RFID/rsa_rfid/rsa_rfid.v
+FC:/Users/Perux/Documents/KAU/5th year/Trimester 1/EE460/project/FPGA_RSA_UHF_RFID/rsa_rfid/rsa_rfid.v
 L0 1
 R3
 r1
 !s85 0
 31
-R8
-!s107 C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/rsa_rfid.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid|C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/rsa_rfid.v|
+R9
+!s107 C:/Users/Perux/Documents/KAU/5th year/Trimester 1/EE460/project/FPGA_RSA_UHF_RFID/rsa_rfid/rsa_rfid.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Perux/Documents/KAU/5th year/Trimester 1/EE460/project/FPGA_RSA_UHF_RFID/rsa_rfid|C:/Users/Perux/Documents/KAU/5th year/Trimester 1/EE460/project/FPGA_RSA_UHF_RFID/rsa_rfid/rsa_rfid.v|
+!i113 1
+R5
+R6
+R7
+vsend_data
+R10
+!i10b 1
+!s100 DGL=@XCMB5@8R<8nZnRNI1
+IKf_IPXVaZjEk=01n^YXMV3
+R2
+R0
+w1676773520
+8C:/Users/Perux/Documents/KAU/5th year/Trimester 1/EE460/project/FPGA_RSA_UHF_RFID/rsa_rfid/send_data.v
+FC:/Users/Perux/Documents/KAU/5th year/Trimester 1/EE460/project/FPGA_RSA_UHF_RFID/rsa_rfid/send_data.v
+L0 1
+R3
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/Perux/Documents/KAU/5th year/Trimester 1/EE460/project/FPGA_RSA_UHF_RFID/rsa_rfid/send_data.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Perux/Documents/KAU/5th year/Trimester 1/EE460/project/FPGA_RSA_UHF_RFID/rsa_rfid|C:/Users/Perux/Documents/KAU/5th year/Trimester 1/EE460/project/FPGA_RSA_UHF_RFID/rsa_rfid/send_data.v|
 !i113 1
 R5
 R6
 R7
 vstaticValue
-R1
+R10
 !i10b 1
 !s100 N:G3@hWDnf[0@K1l;ae@N1
-I:;L<El5mL0[g8La2Mb3:Z1
+IXo0ULF[C=AILlWKgfd=8i3
 R2
 R0
-R9
-8C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/staticvalue.v
-FC:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/staticvalue.v
+R12
+8C:/Users/Perux/Documents/KAU/5th year/Trimester 1/EE460/project/FPGA_RSA_UHF_RFID/rsa_rfid/staticvalue.v
+FC:/Users/Perux/Documents/KAU/5th year/Trimester 1/EE460/project/FPGA_RSA_UHF_RFID/rsa_rfid/staticvalue.v
 L0 1
 R3
 r1
 !s85 0
 31
-R4
-!s107 C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/staticvalue.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid|C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/staticvalue.v|
+R11
+!s107 C:/Users/Perux/Documents/KAU/5th year/Trimester 1/EE460/project/FPGA_RSA_UHF_RFID/rsa_rfid/staticvalue.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Perux/Documents/KAU/5th year/Trimester 1/EE460/project/FPGA_RSA_UHF_RFID/rsa_rfid|C:/Users/Perux/Documents/KAU/5th year/Trimester 1/EE460/project/FPGA_RSA_UHF_RFID/rsa_rfid/staticvalue.v|
 !i113 1
 R5
 R6
 R7
 nstatic@value
-vtestRSA
+vtestRSA2
 R1
 !i10b 1
-!s100 6PR9WIWc`A:kVElCJMh`L1
-I;`lahcR4<nND=3<jkYjf43
+!s100 8eBmIFZ0H230@<o624lah1
+IXcm]^;ECYjED76Q<Wm<hd3
 R2
 R0
-w1668512919
-8C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/testRSA.v
-FC:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/testRSA.v
+w1676827482
+8C:/Users/Perux/Documents/KAU/5th year/Trimester 1/EE460/project/FPGA_RSA_UHF_RFID/rsa_rfid/testRSA2.v
+FC:/Users/Perux/Documents/KAU/5th year/Trimester 1/EE460/project/FPGA_RSA_UHF_RFID/rsa_rfid/testRSA2.v
 L0 2
 R3
 r1
 !s85 0
 31
 R4
-!s107 C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/testRSA.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid|C:/Users/Perux/Desktop/RSA_empty/FPGA_RSA_UHF_RFID/rsa_rfid/testRSA.v|
+!s107 C:/Users/Perux/Documents/KAU/5th year/Trimester 1/EE460/project/FPGA_RSA_UHF_RFID/rsa_rfid/testRSA2.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Perux/Documents/KAU/5th year/Trimester 1/EE460/project/FPGA_RSA_UHF_RFID/rsa_rfid|C:/Users/Perux/Documents/KAU/5th year/Trimester 1/EE460/project/FPGA_RSA_UHF_RFID/rsa_rfid/testRSA2.v|
 !i113 1
 R5
 R6
 R7
-ntest@r@s@a
+ntest@r@s@a2
+vuart
+R1
+!i10b 1
+!s100 2_D`MWBb`6W?A>_hMZk>g3
+IiVQAhJOF0]AA9IHd=;`KA3
+R2
+R0
+w1676826017
+8C:/Users/Perux/Documents/KAU/5th year/Trimester 1/EE460/project/FPGA_RSA_UHF_RFID/rsa_rfid/uart.v
+FC:/Users/Perux/Documents/KAU/5th year/Trimester 1/EE460/project/FPGA_RSA_UHF_RFID/rsa_rfid/uart.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/Perux/Documents/KAU/5th year/Trimester 1/EE460/project/FPGA_RSA_UHF_RFID/rsa_rfid/uart.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Perux/Documents/KAU/5th year/Trimester 1/EE460/project/FPGA_RSA_UHF_RFID/rsa_rfid|C:/Users/Perux/Documents/KAU/5th year/Trimester 1/EE460/project/FPGA_RSA_UHF_RFID/rsa_rfid/uart.v|
+!i113 1
+R5
+R6
+R7
+vuart_rx
+R1
+!i10b 1
+!s100 ;1:@8:8ozQfHhbV6_=7m?1
+IXNCQdH=^imMW<aZ^g[Nf01
+R2
+R0
+w1676796952
+8C:/Users/Perux/Documents/KAU/5th year/Trimester 1/EE460/project/FPGA_RSA_UHF_RFID/rsa_rfid/uart_rx.v
+FC:/Users/Perux/Documents/KAU/5th year/Trimester 1/EE460/project/FPGA_RSA_UHF_RFID/rsa_rfid/uart_rx.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/Perux/Documents/KAU/5th year/Trimester 1/EE460/project/FPGA_RSA_UHF_RFID/rsa_rfid/uart_rx.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Perux/Documents/KAU/5th year/Trimester 1/EE460/project/FPGA_RSA_UHF_RFID/rsa_rfid|C:/Users/Perux/Documents/KAU/5th year/Trimester 1/EE460/project/FPGA_RSA_UHF_RFID/rsa_rfid/uart_rx.v|
+!i113 1
+R5
+R6
+R7
+vuart_tx
+R1
+!i10b 1
+!s100 l24L_IIaB6j>Xf?d>>67?2
+IP;9QMbEJDUOE530A5E9_k0
+R2
+R0
+w1676472395
+8C:/Users/Perux/Documents/KAU/5th year/Trimester 1/EE460/project/FPGA_RSA_UHF_RFID/rsa_rfid/uart_tx.v
+FC:/Users/Perux/Documents/KAU/5th year/Trimester 1/EE460/project/FPGA_RSA_UHF_RFID/rsa_rfid/uart_tx.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/Perux/Documents/KAU/5th year/Trimester 1/EE460/project/FPGA_RSA_UHF_RFID/rsa_rfid/uart_tx.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Perux/Documents/KAU/5th year/Trimester 1/EE460/project/FPGA_RSA_UHF_RFID/rsa_rfid|C:/Users/Perux/Documents/KAU/5th year/Trimester 1/EE460/project/FPGA_RSA_UHF_RFID/rsa_rfid/uart_tx.v|
+!i113 1
+R5
+R6
+R7

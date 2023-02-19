@@ -26,9 +26,9 @@ module testRSA;
 		
 		///////////////
 		@(posedge clk);
-		input_text = 5;
-		key        = 65537;
-		mod        = 36349;
+		input_text = 'h00982af2;
+		key        = 'ha51126c1;
+		mod        = 'hae177305;
 		
 		@(posedge clk);
 		go = 1;

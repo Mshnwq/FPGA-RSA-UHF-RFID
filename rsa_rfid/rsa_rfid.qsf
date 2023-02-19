@@ -232,7 +232,6 @@ set_location_assignment PIN_AB3 -to GPIO[32]
 set_location_assignment PIN_Y3 -to GPIO[33]
 set_location_assignment PIN_AB2 -to GPIO[34]
 set_location_assignment PIN_AA2 -to GPIO[35]
-set_global_assignment -name VERILOG_FILE DE10_LITE_Golden_Top.v
 set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
@@ -245,8 +244,6 @@ set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_symbol
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_signal_integrity
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_boundary_scan
-set_global_assignment -name VERILOG_FILE rsa_rfid.v
-set_global_assignment -name VERILOG_FILE mux2to1.v
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
@@ -436,9 +433,36 @@ set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPIO[33]
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPIO[34]
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPIO[35]
 set_global_assignment -name EDA_TEST_BENCH_ENABLE_STATUS TEST_BENCH_MODE -section_id eda_simulation
-set_global_assignment -name EDA_NATIVELINK_SIMULATION_TEST_BENCH testRSA -section_id eda_simulation
+set_global_assignment -name EDA_NATIVELINK_SIMULATION_TEST_BENCH testRSA2 -section_id eda_simulation
 set_global_assignment -name EDA_TEST_BENCH_NAME testRSA -section_id eda_simulation
 set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id testRSA
 set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME testRSA -section_id testRSA
+set_global_assignment -name EDA_TEST_BENCH_NAME test_fifoRsa -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id test_fifoRsa
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME test_fifoRsa -section_id test_fifoRsa
+set_global_assignment -name VERILOG_FILE DE10_LITE_Golden_Top.v
+set_global_assignment -name VERILOG_FILE rsa_rfid.v
+set_global_assignment -name VERILOG_FILE mux2to1.v
+set_global_assignment -name VERILOG_FILE bytes_to_3words.v
+set_global_assignment -name VERILOG_FILE test_fifoRsa.v
+set_global_assignment -name VERILOG_FILE bytes_to_words_opt.v
+set_global_assignment -name VERILOG_FILE New_Fifp.v
+set_global_assignment -name VERILOG_FILE New_Fifo.v
+set_global_assignment -name EDA_TEST_BENCH_NAME uartTestBench -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id uartTestBench
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME uartTestBench -section_id uartTestBench
+set_global_assignment -name VERILOG_FILE send_data.v
+set_global_assignment -name VERILOG_FILE SendDataTest.v
+set_global_assignment -name EDA_TEST_BENCH_NAME SendDataTest -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id SendDataTest
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME SendDataTest -section_id SendDataTest
+set_global_assignment -name VERILOG_FILE testRSA2.v
+set_global_assignment -name EDA_TEST_BENCH_NAME testRSA2 -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id testRSA2
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME testRSA2 -section_id testRSA2
 set_global_assignment -name EDA_TEST_BENCH_FILE testRSA.v -section_id testRSA
+set_global_assignment -name EDA_TEST_BENCH_FILE test_fifoRsa.v -section_id test_fifoRsa
+set_global_assignment -name EDA_TEST_BENCH_FILE uartTestBench.v -section_id uartTestBench
+set_global_assignment -name EDA_TEST_BENCH_FILE SendDataTest.v -section_id SendDataTest
+set_global_assignment -name EDA_TEST_BENCH_FILE testRSA2.v -section_id testRSA2
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

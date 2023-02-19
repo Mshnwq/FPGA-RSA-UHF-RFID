@@ -11,7 +11,7 @@ module counter (  input clk,               // Declare input port for clock to al
   out = 0;
   end
   always @ (posedge clk) begin
-    if (rstn==1)
+    if (!rstn)
       out <= 0;
     else if(count)
       out <= out + 1;

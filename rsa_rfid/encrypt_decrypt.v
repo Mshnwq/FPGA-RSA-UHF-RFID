@@ -15,16 +15,17 @@ module encrypt_decrypt
 	//localparam WORDSIZE = 8;
 	localparam DIVIDE_LATENCY = 5'd20;
 	//state definitions
-	localparam DIVIDING = 2'd1;
-	localparam UPDATE = 2'd2;
-	localparam HOLD =	2'd3;
+	localparam DIVIDING = 3'd1;
+	localparam UPDATE = 3'd2;
+	localparam HOLD =	3'd3;
+	localparam DONE =	3'd4;
 	
 	reg [WORDSIZE*2-1:0] base_reg;
 	reg [WORDSIZE*2-1:0] modulo_reg;
 	reg [WORDSIZE*2-1:0] exponent_reg;
 	reg [WORDSIZE*2-1:0] result_reg;
 	reg [4:0] divide_latency_counter;
-	reg [1:0] state;
+	reg [2:0] state;
 
 	wire [WORDSIZE*2-1:0] result_mul_base = result_reg * base_reg;	
 	wire [WORDSIZE*2-1:0] result_next;
@@ -86,7 +87,11 @@ module encrypt_decrypt
 				end
 			HOLD: 
 				begin
-				
+				state <= DONE;
+				end
+			DONE: 
+				begin
+
 				end	
 		endcase
 	end
