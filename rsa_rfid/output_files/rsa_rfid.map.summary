@@ -1,16 +1,16 @@
-Analysis & Synthesis Status : Successful - Sun Feb 19 20:00:54 2023
+Analysis & Synthesis Status : Successful - Tue Feb 21 04:27:15 2023
 Quartus Prime Version : 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 Revision Name : rsa_rfid
 Top-level Entity Name : rsa_rfid
 Family : MAX 10
-Total logic elements : 3,508
-    Total combinational functions : 2,559
-    Dedicated logic registers : 2,021
-Total registers : 2021
+Total logic elements : 8,988
+    Total combinational functions : 8,063
+    Dedicated logic registers : 2,748
+Total registers : 2748
 Total pins : 38
 Total virtual pins : 0
-Total memory bits : 65,848
-Embedded Multiplier 9-bit elements : 12
+Total memory bits : 66,360
+Embedded Multiplier 9-bit elements : 16
 Total PLLs : 0
 UFM blocks : 0
 ADC blocks : 0

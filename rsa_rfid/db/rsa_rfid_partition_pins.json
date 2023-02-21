@@ -4,6 +4,134 @@
 			"name" : "Top",
 			"pins" : [
 				{
+					"name" : "output_text[0]",
+					"strict" : false
+				},
+				{
+					"name" : "output_text[1]",
+					"strict" : false
+				},
+				{
+					"name" : "output_text[2]",
+					"strict" : false
+				},
+				{
+					"name" : "output_text[3]",
+					"strict" : false
+				},
+				{
+					"name" : "output_text[4]",
+					"strict" : false
+				},
+				{
+					"name" : "output_text[5]",
+					"strict" : false
+				},
+				{
+					"name" : "output_text[6]",
+					"strict" : false
+				},
+				{
+					"name" : "output_text[7]",
+					"strict" : false
+				},
+				{
+					"name" : "output_text[8]",
+					"strict" : false
+				},
+				{
+					"name" : "output_text[9]",
+					"strict" : false
+				},
+				{
+					"name" : "output_text[10]",
+					"strict" : false
+				},
+				{
+					"name" : "output_text[11]",
+					"strict" : false
+				},
+				{
+					"name" : "output_text[12]",
+					"strict" : false
+				},
+				{
+					"name" : "output_text[13]",
+					"strict" : false
+				},
+				{
+					"name" : "output_text[14]",
+					"strict" : false
+				},
+				{
+					"name" : "output_text[15]",
+					"strict" : false
+				},
+				{
+					"name" : "output_text[16]",
+					"strict" : false
+				},
+				{
+					"name" : "output_text[17]",
+					"strict" : false
+				},
+				{
+					"name" : "output_text[18]",
+					"strict" : false
+				},
+				{
+					"name" : "output_text[19]",
+					"strict" : false
+				},
+				{
+					"name" : "output_text[20]",
+					"strict" : false
+				},
+				{
+					"name" : "output_text[21]",
+					"strict" : false
+				},
+				{
+					"name" : "output_text[22]",
+					"strict" : false
+				},
+				{
+					"name" : "output_text[23]",
+					"strict" : false
+				},
+				{
+					"name" : "output_text[24]",
+					"strict" : false
+				},
+				{
+					"name" : "output_text[25]",
+					"strict" : false
+				},
+				{
+					"name" : "output_text[26]",
+					"strict" : false
+				},
+				{
+					"name" : "output_text[27]",
+					"strict" : false
+				},
+				{
+					"name" : "output_text[28]",
+					"strict" : false
+				},
+				{
+					"name" : "output_text[29]",
+					"strict" : false
+				},
+				{
+					"name" : "output_text[30]",
+					"strict" : false
+				},
+				{
+					"name" : "output_text[31]",
+					"strict" : false
+				},
+				{
 					"name" : "tx",
 					"strict" : false
 				},

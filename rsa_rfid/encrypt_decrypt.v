@@ -20,18 +20,20 @@ module encrypt_decrypt
 	localparam HOLD =	3'd3;
 	localparam DONE =	3'd4;
 	
-	reg [WORDSIZE*2-1:0] base_reg;
-	reg [WORDSIZE*2-1:0] modulo_reg;
-	reg [WORDSIZE*2-1:0] exponent_reg;
-	reg [WORDSIZE*2-1:0] result_reg;
+	reg [WORDSIZE*4-1:0] base_reg = 0;
+	reg [WORDSIZE*4-1:0] modulo_reg = 0;
+	reg [WORDSIZE*4-1:0] exponent_reg = 0;
+	reg [WORDSIZE*2-1:0] result_reg = 0;
 	reg [4:0] divide_latency_counter;
 	reg [2:0] state;
 
-	wire [WORDSIZE*2-1:0] result_mul_base = result_reg * base_reg;	
+	wire [WORDSIZE*4-1:0] result_mul_base;	
 	wire [WORDSIZE*2-1:0] result_next;
-	wire [WORDSIZE*2-1:0] base_squared = base_reg * base_reg;
+	wire [WORDSIZE*4-1:0] base_squared;
 	wire [WORDSIZE*2-1:0] base_next;
 	wire [WORDSIZE*2-1:0] exponent_next = exponent_reg >> 1;
+	assign base_squared = base_reg * base_reg;
+	assign result_mul_base = result_reg * base_reg;
 	assign finish = (state == HOLD) ? 1'b1 : 1'b0;
 	assign result = result_reg;
 	
@@ -87,6 +89,9 @@ module encrypt_decrypt
 				end
 			HOLD: 
 				begin
+				base_reg <= 64'd0;
+				modulo_reg <= 64'd0;
+				exponent_reg <= 64'd0;
 				state <= DONE;
 				end
 			DONE: 

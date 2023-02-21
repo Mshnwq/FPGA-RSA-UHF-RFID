@@ -6,7 +6,7 @@ module dataPath
 	// Data Path I/O	
 	input  [7:0] uart_in,
 	output [7:0] output_text,
-	output reg [WordSize-1:0] cipherFull,
+	output [WordSize-1:0] cipherFull,
 	output nextByte_in,
 	output nextByte_out,
 	input empty_fifo,
@@ -23,7 +23,7 @@ module dataPath
 	wire [WordSize-1:0] ground; 
 	wire start_Sending, start_Encrypting;
 	staticValue outDefValue(ground);
-	
+	assign cipherFull = Cipher_Text;
 //	mux2to1 loadInpMux(ground, input_text, load, inMux);       // to get input from MUX
 //	mux2to1 loadKeyMux(ground, key,        load, keyMux);      // to get input from MUX
 //	mux2to1 loadModMux(ground, mod,        load, modMux);      // to get input from MUX

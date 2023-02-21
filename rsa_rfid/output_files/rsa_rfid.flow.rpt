@@ -1,5 +1,5 @@
 Flow report for rsa_rfid
-Sun Feb 19 20:01:42 2023
+Tue Feb 21 04:28:47 2023
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -40,21 +40,21 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Sun Feb 19 20:01:42 2023       ;
+; Flow Status                        ; Successful - Tue Feb 21 04:28:47 2023       ;
 ; Quartus Prime Version              ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
 ; Revision Name                      ; rsa_rfid                                    ;
 ; Top-level Entity Name              ; rsa_rfid                                    ;
 ; Family                             ; MAX 10                                      ;
 ; Device                             ; 10M50DAF484C6GES                            ;
 ; Timing Models                      ; Preliminary                                 ;
-; Total logic elements               ; 3,258 / 49,760 ( 7 % )                      ;
-;     Total combinational functions  ; 2,559 / 49,760 ( 5 % )                      ;
-;     Dedicated logic registers      ; 2,021 / 49,760 ( 4 % )                      ;
-; Total registers                    ; 2021                                        ;
+; Total logic elements               ; 8,887 / 49,760 ( 18 % )                     ;
+;     Total combinational functions  ; 8,078 / 49,760 ( 16 % )                     ;
+;     Dedicated logic registers      ; 2,748 / 49,760 ( 6 % )                      ;
+; Total registers                    ; 2748                                        ;
 ; Total pins                         ; 38 / 360 ( 11 % )                           ;
 ; Total virtual pins                 ; 0                                           ;
-; Total memory bits                  ; 65,848 / 1,677,312 ( 4 % )                  ;
-; Embedded Multiplier 9-bit elements ; 12 / 288 ( 4 % )                            ;
+; Total memory bits                  ; 66,360 / 1,677,312 ( 4 % )                  ;
+; Embedded Multiplier 9-bit elements ; 16 / 288 ( 6 % )                            ;
 ; Total PLLs                         ; 0 / 4 ( 0 % )                               ;
 ; UFM blocks                         ; 0 / 1 ( 0 % )                               ;
 ; ADC blocks                         ; 0 / 2 ( 0 % )                               ;
@@ -66,7 +66,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 02/19/2023 20:00:31 ;
+; Start date & time ; 02/21/2023 04:26:40 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; rsa_rfid            ;
 +-------------------+---------------------+
@@ -77,7 +77,7 @@ refer to the applicable agreement for further details.
 +--------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
 ; Assignment Name                      ; Value                                  ; Default Value ; Entity Name ; Section Id                        ;
 +--------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
-; COMPILER_SIGNATURE_ID                ; 10995770589203.167682603103008         ; --            ; --          ; --                                ;
+; COMPILER_SIGNATURE_ID                ; 10995770589203.167694280022996         ; --            ; --          ; --                                ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; test_fifoRsa                      ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; SendDataTest                      ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; testRSA2                          ;
@@ -123,12 +123,12 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:23     ; 1.0                     ; 4901 MB             ; 00:00:20                           ;
-; Fitter               ; 00:00:31     ; 1.7                     ; 6665 MB             ; 00:00:39                           ;
-; Assembler            ; 00:00:04     ; 1.0                     ; 4694 MB             ; 00:00:03                           ;
-; Timing Analyzer      ; 00:00:04     ; 3.8                     ; 4996 MB             ; 00:00:09                           ;
-; EDA Netlist Writer   ; 00:00:02     ; 1.0                     ; 4674 MB             ; 00:00:01                           ;
-; Total                ; 00:01:04     ; --                      ; --                  ; 00:01:12                           ;
+; Analysis & Synthesis ; 00:00:34     ; 1.0                     ; 4958 MB             ; 00:00:30                           ;
+; Fitter               ; 00:01:10     ; 1.8                     ; 6814 MB             ; 00:02:00                           ;
+; Assembler            ; 00:00:05     ; 1.0                     ; 4712 MB             ; 00:00:04                           ;
+; Timing Analyzer      ; 00:00:07     ; 5.1                     ; 5040 MB             ; 00:00:24                           ;
+; EDA Netlist Writer   ; 00:00:04     ; 1.0                     ; 4701 MB             ; 00:00:03                           ;
+; Total                ; 00:02:00     ; --                      ; --                  ; 00:03:01                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

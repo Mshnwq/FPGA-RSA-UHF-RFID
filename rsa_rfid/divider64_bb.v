@@ -39,10 +39,10 @@ module divider64 (
 	remain);
 
 	input	  clock;
-	input	[31:0]  denom;
-	input	[31:0]  numer;
-	output	[31:0]  quotient;
-	output	[31:0]  remain;
+	input	[63:0]  denom;
+	input	[63:0]  numer;
+	output	[63:0]  quotient;
+	output	[63:0]  remain;
 
 endmodule
 
@@ -62,22 +62,22 @@ endmodule
 // Retrieval info: CONSTANT: LPM_NREPRESENTATION STRING "UNSIGNED"
 // Retrieval info: CONSTANT: LPM_PIPELINE NUMERIC "20"
 // Retrieval info: CONSTANT: LPM_TYPE STRING "LPM_DIVIDE"
-// Retrieval info: CONSTANT: LPM_WIDTHD NUMERIC "32"
-// Retrieval info: CONSTANT: LPM_WIDTHN NUMERIC "32"
+// Retrieval info: CONSTANT: LPM_WIDTHD NUMERIC "64"
+// Retrieval info: CONSTANT: LPM_WIDTHN NUMERIC "64"
 // Retrieval info: USED_PORT: clock 0 0 0 0 INPUT NODEFVAL "clock"
-// Retrieval info: USED_PORT: denom 0 0 32 0 INPUT NODEFVAL "denom[31..0]"
-// Retrieval info: USED_PORT: numer 0 0 32 0 INPUT NODEFVAL "numer[31..0]"
-// Retrieval info: USED_PORT: quotient 0 0 32 0 OUTPUT NODEFVAL "quotient[31..0]"
-// Retrieval info: USED_PORT: remain 0 0 32 0 OUTPUT NODEFVAL "remain[31..0]"
+// Retrieval info: USED_PORT: denom 0 0 64 0 INPUT NODEFVAL "denom[63..0]"
+// Retrieval info: USED_PORT: numer 0 0 64 0 INPUT NODEFVAL "numer[63..0]"
+// Retrieval info: USED_PORT: quotient 0 0 64 0 OUTPUT NODEFVAL "quotient[63..0]"
+// Retrieval info: USED_PORT: remain 0 0 64 0 OUTPUT NODEFVAL "remain[63..0]"
 // Retrieval info: CONNECT: @clock 0 0 0 0 clock 0 0 0 0
-// Retrieval info: CONNECT: @denom 0 0 32 0 denom 0 0 32 0
-// Retrieval info: CONNECT: @numer 0 0 32 0 numer 0 0 32 0
-// Retrieval info: CONNECT: quotient 0 0 32 0 @quotient 0 0 32 0
-// Retrieval info: CONNECT: remain 0 0 32 0 @remain 0 0 32 0
+// Retrieval info: CONNECT: @denom 0 0 64 0 denom 0 0 64 0
+// Retrieval info: CONNECT: @numer 0 0 64 0 numer 0 0 64 0
+// Retrieval info: CONNECT: quotient 0 0 64 0 @quotient 0 0 64 0
+// Retrieval info: CONNECT: remain 0 0 64 0 @remain 0 0 64 0
 // Retrieval info: GEN_FILE: TYPE_NORMAL divider64.v TRUE
 // Retrieval info: GEN_FILE: TYPE_NORMAL divider64.inc FALSE
 // Retrieval info: GEN_FILE: TYPE_NORMAL divider64.cmp FALSE
 // Retrieval info: GEN_FILE: TYPE_NORMAL divider64.bsf FALSE
-// Retrieval info: GEN_FILE: TYPE_NORMAL divider64_inst.v FALSE
+// Retrieval info: GEN_FILE: TYPE_NORMAL divider64_inst.v TRUE
 // Retrieval info: GEN_FILE: TYPE_NORMAL divider64_bb.v TRUE
 // Retrieval info: LIB_FILE: lpm
